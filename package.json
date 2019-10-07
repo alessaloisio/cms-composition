@@ -1,0 +1,24 @@
+{
+  "name": "composition",
+  "version": "1.0.0",
+  "description": "thème wordpress réaliser par les roues de secours",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alessaloisio/cms-composition.git"
+  },
+  "keywords": [
+    "wordpress",
+    "ACF",
+    "PHP"
+  ],
+  "author": "Les roues de secours",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alessaloisio/cms-composition/issues"
+  },
+  "homepage": "https://github.com/alessaloisio/cms-composition#readme"
+}

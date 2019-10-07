@@ -1,20 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<?php wp_head(); ?>
-  
+  <?php get_header(); ?>
 
-</head>
-<body>
-  <h1><?php echo get_bloginfo("name"); ?></h1>
-  <p><?php echo get_bloginfo("description"); ?></p>
+  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+  <!-- Si l'Article est dans la Catégorie que nous souhaitons exclure, nous passons à l'Article suivant. -->
+  <!-- Nous voulons exclure les projets -->
+  <?php if (in_category('3')) continue; ?> 
+  <div class="post">
+    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+    <small><?php the_time('F jS, Y'); ?></small>
+    <div class="entry">
+      <?php the_content(); ?>
+    </div>
+    <p class="postmetadata">Posted in <?php the_category(', '); ?></p>
+  </div> <!-- fin du premier bloc div -->
+  <?php endwhile; else: ?>
+  <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+  <?php endif; ?>
 
-
-  <div class="lists">
-    <?= var_dump(get_posts()); ?>
-  </div>
-</body>
-</html>
+  <?php get_footer(); ?>  
