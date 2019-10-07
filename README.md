@@ -1,13 +1,13 @@
-## Projet de Groupe
+# Projet - COMPOSITION
 
 -   GitHub Page : [CMS-Composition](https://alessaloisio.github.io/ "page de notre projet")
 -   Date début projet :  04-10-2019
 -   Date fin projet : 24-10-2019
--   Compo : [Augustin](https://github.com/Augustin "profil GitHub d'Augustin"), [AnneSophie](https://github.com/AnneSophie "profil GitHub d'AnneSophie"), [Serge](https://github.com/bayet "profil GitHub de Serge"), [Alessandro](https://github.com/alessaloisio "profil GitHub d'Alessandro")
+-   Team : [Augustin](https://github.com/Augustin "profil GitHub d'Augustin"), [AnneSophie](https://github.com/AnneSophie "profil GitHub d'AnneSophie"), [Serge](https://github.com/bayet "profil GitHub de Serge"), [Alessandro](https://github.com/alessaloisio "profil GitHub d'Alessandro")
 
 ## Objectif
 
-Réaliser un site Wordpress à partir d'une maquette adapatble pour mobile, tablette et ordinateur.
+Réaliser un site Wordpress à partir d'une maquette adapatble pour mobile, tablette et ordinateur réaliser par René Binamé.
 
 -   1 page d'accueil
 -   1 page regroupant les différents projets
