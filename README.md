@@ -3,7 +3,7 @@
 -   GitHub Page : [CMS-Composition](https://alessaloisio.github.io/ "page de notre projet")
 -   Date début projet :  04-10-2019
 -   Date fin projet : 24-10-2019
--   Team : [Augustin](https://github.com/Augustin "profil GitHub d'Augustin"), [AnneSophie](https://github.com/AnneSophie "profil GitHub d'AnneSophie"), [Serge](https://github.com/bayet "profil GitHub de Serge"), [Alessandro](https://github.com/alessaloisio "profil GitHub d'Alessandro")
+-   Team : [Anne Sophie](https://github.com/anso2410 "profil GitHub d'Anne Sophie"), [Augustin](https://github.com/AugustinDumont "profil GitHub d'Augustin"), [Serge](https://github.com/SergeBayet "profil GitHub de Serge"), [Alessandro](https://github.com/alessaloisio "profil GitHub d'Alessandro")
 
 ## Objectif
 
