@@ -8,4 +8,6 @@
   }
   add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
 
+  add_image_size('size_1500x1250', 1500, 1250, true);
+
 ?>
