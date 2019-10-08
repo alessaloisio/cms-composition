@@ -20,5 +20,15 @@
   "bugs": {
     "url": "https://github.com/alessaloisio/cms-composition/issues"
   },
-  "homepage": "https://github.com/alessaloisio/cms-composition#readme"
+  "homepage": "https://github.com/alessaloisio/cms-composition#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "babelify": "^10.0.0",
+    "gulp": "^4.0.2",
+    "gulp-browserify": "^0.5.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.12.0"
+  }
 }

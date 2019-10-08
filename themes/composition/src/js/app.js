@@ -1,7 +1,7 @@
-import mobileMenu from "./menuMobile";
+import mobileMenu from "./header/menuMobile";
 
 // DOM READY
-(window => {
+(() => {
   console.log("test");
   mobileMenu();
 })();
