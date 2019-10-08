@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.979" height="17.979" viewBox="0 0 17.979 17.979">
+  <g id="time-clock" transform="translate(-1 -1)">
+    <circle id="Ellipse_57" data-name="Ellipse 57" cx="8.489" cy="8.489" r="8.489" transform="translate(1.5 1.5)" stroke-width="1" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+    <path id="Path_1469" data-name="Path 1469" d="M5.5,5.5,9.138,9.138H15.2" transform="translate(0.851 0.851)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="Line_191" data-name="Line 191" y2="1.213" transform="translate(9.989 3.926)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="Line_192" data-name="Line 192" y1="1.213" transform="translate(9.989 14.84)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="Line_193" data-name="Line 193" x2="1.213" transform="translate(3.926 9.989)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>
