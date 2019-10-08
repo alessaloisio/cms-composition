@@ -1,0 +1,116 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-04 12:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: acf-column.php:86
+#, php-format
+msgid "%1$s requires ACF PRO v%2$s or higher to be installed and activated."
+msgstr ""
+
+#: acf-column.php:123
+msgid "Plugins by dreihochzwo"
+msgstr ""
+
+#: acf-column.php:143
+msgid "Thank you for using my plugins!"
+msgstr ""
+
+#: acf-column.php:152
+msgid "Documentation"
+msgstr ""
+
+#: acf-column.php:161
+msgid "Please consider making a small donation!"
+msgstr ""
+
+#: fields/acf-column-v5.php:36
+msgid "Column"
+msgstr ""
+
+#: fields/acf-column-v5.php:85
+msgid "Column Count"
+msgstr ""
+
+#: fields/acf-column-v5.php:86
+msgid "At the end of the row add a column reset."
+msgstr ""
+
+#: fields/acf-column-v5.php:91
+msgid "Reset"
+msgstr ""
+
+#: fields/acf-column-v5.php:92
+msgid "One Half"
+msgstr ""
+
+#: fields/acf-column-v5.php:93
+msgid "One Third"
+msgstr ""
+
+#: fields/acf-column-v5.php:94
+msgid "Two Thirds"
+msgstr ""
+
+#: fields/acf-column-v5.php:95
+msgid "One Quarter"
+msgstr ""
+
+#: fields/acf-column-v5.php:96
+msgid "Three Quarters"
+msgstr ""
+
+#: fields/acf-column-v5.php:97
+msgid "One Fifth"
+msgstr ""
+
+#: fields/acf-column-v5.php:98
+msgid "Two Fifth"
+msgstr ""
+
+#: fields/acf-column-v5.php:99
+msgid "Three Fifth"
+msgstr ""
+
+#: fields/acf-column-v5.php:100
+msgid "Four Fifth"
+msgstr ""
+
+#: fields/acf-column-v5.php:101
+msgid "One Sixth"
+msgstr ""
+
+#: fields/acf-column-v5.php:102
+msgid "One Eighth"
+msgstr ""
+
+#. Name of the plugin
+msgid "ACF Columns"
+msgstr ""
+
+#. Description of the plugin
+msgid "Adds an ACF field to arrange ACF fields into columns."
+msgstr ""
+
+#. URI of the plugin
+msgid "https://wordpress.org/plugins/acf-columns/"
+msgstr ""
+
+#. Author of the plugin
+msgid "Thomas Meyer"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://dreihochzwo.de"
+msgstr ""
