@@ -1,11 +1,12 @@
-<!-- BLOG PAGE -->
+<?php /* Template Name: Architecture Template */ ?>
 
 <?php get_header(); ?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<!-- Permet de faire un query pour récupérer les projets -->
+<!-- https://codex.wordpress.org/the_loop => Multiple Loops Example 2 -->
+<?php query_posts( 'category_name=projets' ); ?>
 
-  <!-- Nous voulons exclure les projets -->
-  <?php if (in_category('projets')) continue; ?> 
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
   <!-- début d'un bloc post -->
   <div class="post">
@@ -19,7 +20,7 @@
   <!-- fin d'un bloc post' -->
 
 <?php endwhile; else: ?>
-  <p><?php _e('Désolé, nous n\'avons pas d\'article à vous proposez pour le moment.'); ?></p>
+  <p><?php _e('Désolé, nous n\'avons pas de projet à vous présentez pour le moment.'); ?></p>
 <?php endif; ?>
 
 <?php get_footer(); ?>  

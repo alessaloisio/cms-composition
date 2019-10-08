@@ -23,7 +23,6 @@
 
     <nav>
       <ul>
-        <li><a href="<?= get_site_url(); ?>">Accueil</a></li>
         <?php 
           $pages = get_pages(); 
           foreach ( $pages as $page ) {
@@ -35,5 +34,5 @@
         ?>
       </ul>
     </nav>
-    
+
   </header>
