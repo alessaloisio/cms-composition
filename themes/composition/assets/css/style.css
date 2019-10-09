@@ -143,4 +143,96 @@ body {
   height: 100%; }
 
 body {
-  background-color: #ececec; }
+  background-color: #ffffff; }
+
+/**
+ * Images a now responsive
+ */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/**
+ * Limit the container in
+ * width for big screens
+ */
+.container {
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto; }
+
+/**
+ * By using display: flex
+ * Logo and nav are in 2 cols
+ * align-items make them
+ * vertically centered
+ * justify-content distribute
+ * horizontal spaces around
+ * and flex-wrap break the
+ * things in two lines in
+ * small screens
+ */
+.main-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  margin-top: 30px; }
+
+/**
+ * The followings are to
+ * make things more
+ * clean and airy
+ * and contents centered
+ */
+.main-nav ul {
+  margin: 1em 0 0.5em;
+  text-align: center; }
+  .main-nav ul li {
+    display: inline;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .main-nav ul .menu-item > a {
+    display: inline-block;
+    padding: 0.4em 1em;
+    text-decoration: none;
+    color: #111111;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px; }
+    .main-nav ul .menu-item > a::after {
+      content: "";
+      display: block;
+      width: 0;
+      margin-top: 13px;
+      height: 4px;
+      background: #6d6a6a;
+      transition: width 0.2s, background 0.2s; }
+    .main-nav ul .menu-item > a:hover::after {
+      width: 100%;
+      background: #111111; }
+  .main-nav ul .home > a {
+    display: inline-block;
+    padding: 0.4em 1em;
+    text-decoration: none;
+    color: #111111; }
+    .main-nav ul .home > a::after {
+      content: "";
+      display: block;
+      width: 100%;
+      margin-top: 13px;
+      height: 4px;
+      background: #000; }
+  .main-nav ul .wish-list {
+    background-color: #111111; }
+    .main-nav ul .wish-list a {
+      display: inline-block;
+      padding: 0.4em 1em;
+      text-decoration: none;
+      color: #ffffff;
+      font-family: "proxima-nova", sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.6px; }

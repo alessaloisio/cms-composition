@@ -1,5 +1,8 @@
 @import "./reset";
 
+$background-base-color: #ffffff;
+$foreground-base-color: #111111;
+$font-family-menu: "proxima-nova", sans-serif;
 html,
 body {
   width: 100%;
@@ -7,5 +10,114 @@ body {
 }
 
 body {
-  background-color: #ececec;
+  background-color: $background-base-color;
+}
+/**
+ * Images a now responsive
+ */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+ * Limit the container in
+ * width for big screens
+ */
+.container {
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/**
+ * By using display: flex
+ * Logo and nav are in 2 cols
+ * align-items make them
+ * vertically centered
+ * justify-content distribute
+ * horizontal spaces around
+ * and flex-wrap break the
+ * things in two lines in
+ * small screens
+ */
+.main-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  margin-top: 30px;
+}
+
+/**
+ * The followings are to
+ * make things more
+ * clean and airy
+ * and contents centered
+ */
+.main-nav {
+  ul {
+    margin: 1em 0 0.5em;
+    text-align: center;
+    li {
+      display: inline;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .menu-item > a {
+      display: inline-block;
+      padding: 0.4em 1em;
+      text-decoration: none;
+      color: $foreground-base-color;
+      font-family: $font-family-menu;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      &::after {
+        content: "";
+        display: block;
+        width: 0;
+        margin-top: 13px;
+        height: 4px;
+        background: rgb(109, 106, 106);
+        transition: width 0.2s, background 0.2s;
+      }
+
+      &:hover::after {
+        width: 100%;
+        background: $foreground-base-color;
+        //transition: width .3s;
+      }
+    }
+    .home > a {
+      display: inline-block;
+      padding: 0.4em 1em;
+      text-decoration: none;
+      color: $foreground-base-color;
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        margin-top: 13px;
+        height: 4px;
+        background: #000;
+      }
+    }
+    .wish-list {
+      background-color: $foreground-base-color;
+
+      a {
+        display: inline-block;
+        padding: 0.4em 1em;
+        text-decoration: none;
+        color: $background-base-color;
+        font-family: $font-family-menu;
+        font-size: 14px;
+        font-weight: 700;
+
+        letter-spacing: 0.6px;
+      }
+    }
+  }
 }
