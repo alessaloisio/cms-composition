@@ -10,7 +10,9 @@ $font-family-menu: "proxima-nova", sans-serif;
   padding: 20px;
   margin: 0 auto;
 }
-
+#menu-mobile {
+  display: none;
+}
 /**
  * By using display: flex
  * Logo and nav are in 2 cols
@@ -28,6 +30,12 @@ $font-family-menu: "proxima-nova", sans-serif;
   justify-content: space-around;
   flex-wrap: nowrap;
   margin-top: 30px;
+  .menu {
+    display: none;
+  }
+  .telephone {
+    display: none;
+  }
   &.black-style {
     .mh-logo img {
       filter: invert(1);
@@ -36,6 +44,10 @@ $font-family-menu: "proxima-nova", sans-serif;
     background-color: $foreground-base-color;
   }
 }
+
+/**
+ * Menu for tablet and mobile by default hidden
+ */
 
 /**
  * The followings are to
@@ -91,6 +103,37 @@ $font-family-menu: "proxima-nova", sans-serif;
         margin-top: 13px;
         height: 4px;
         background: #000;
+      }
+    }
+    .telephone {
+      a {
+        color: $background-base-color;
+        background-color: $foreground-base-color;
+        display: inline-block;
+        padding: 0.7em;
+        text-decoration: none;
+        border-radius: 50%;
+        img {
+          filter: invert(1);
+        }
+      }
+    }
+    .menu {
+      a {
+        color: $foreground-base-color;
+        background-color: $background-base-color;
+        display: inline-block;
+        padding: 1em 1em;
+        text-decoration: none;
+        font-family: $font-family-menu;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.6px;
+        img {
+          margin-left: 30px;
+          vertical-align: middle;
+          filter: invert(0);
+        }
       }
     }
     .wish-list {
@@ -175,6 +218,37 @@ $font-family-menu: "proxima-nova", sans-serif;
         background: $foreground-base-color;
       }
     }
+    .telephone {
+      a {
+        color: $foreground-base-color;
+        background-color: $background-base-color;
+        display: inline-block;
+        padding: 0.7em;
+        text-decoration: none;
+        border-radius: 50%;
+        img {
+          filter: invert(0);
+        }
+      }
+    }
+    .menu {
+      a {
+        color: $background-base-color;
+        background-color: $foreground-base-color;
+        display: inline-block;
+        padding: 1em 1em;
+        text-decoration: none;
+        font-family: $font-family-menu;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.6px;
+        img {
+          margin-left: 30px;
+          vertical-align: middle;
+          filter: invert(1);
+        }
+      }
+    }
     .wish-list {
       a {
         color: $foreground-base-color;
@@ -209,4 +283,68 @@ $font-family-menu: "proxima-nova", sans-serif;
 }
 .black-style img {
   filter: invert(1);
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  
+*/
+
+@media screen and (min-width: 641px) and (max-width: 1230px) {
+  //CSS
+  .main-nav.white-style ul .menu-item {
+    display: none;
+  }
+  .main-nav.white-style ul .menu {
+    display: inline-block;
+  }
+  .main-nav.black-style ul .menu-item {
+    display: none;
+  }
+  .main-nav.black-style ul .menu {
+    display: inline-block;
+  }
+  .main-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 640px) {
+  //CSS
+  .main-nav.white-style ul .menu-item {
+    display: none;
+  }
+  .main-nav.white-style ul .menu {
+    display: inline-block;
+    a img {
+      margin-left: 5px;
+    }
+  }
+  .main-nav.black-style ul .menu-item {
+    display: none;
+  }
+  .main-nav.black-style ul .menu {
+    display: inline-block;
+  }
+  .main-nav.black-style ul .wish-list {
+    display: none;
+  }
+  .main-nav.white-style ul .wish-list {
+    display: none;
+  }
+  .main-nav.black-style ul .telephone {
+    display: inline-block;
+  }
+  .main-nav.white-style ul .telephone {
+    display: inline-block;
+  }
+  .menu-label {
+    display: none !important;
+  }
+  .main-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

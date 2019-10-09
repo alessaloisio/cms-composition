@@ -21,7 +21,7 @@
 <body>
 	<div id="body-wrapper">
 		<header class="main-header">
-		<div class="container black-style">
+		<div class="container black-style"> 
 			<a href="#" class="mh-logo">
 
 				<?php $uri = get_stylesheet_directory_uri()."/assets/svg/logo-full.svg"; ?>
@@ -57,6 +57,19 @@
 							<img src="<?php echo $uri ?>" width="15"/>
 							
 						</a>
+					</li>
+					<li class="telephone">
+						<a href="#">
+							<?php $uri = get_stylesheet_directory_uri()."/assets/svg/phone-2.svg"; ?>
+							<img src="<?php echo $uri ?>" width="15"/>
+						</a>
+					</li>
+					<li class="menu">
+						<a href="#"><span class="menu-label">Menu</span>
+							<?php $uri = get_stylesheet_directory_uri()."/assets/svg/menu.png"; ?>
+							<img src="<?php echo $uri ?>" width="15"/>
+						</a>
+						<div id="menu-mobile"></div>
 					</li>
 				</ul>
 			</nav>
