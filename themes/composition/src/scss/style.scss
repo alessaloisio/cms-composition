@@ -9,3 +9,15 @@ body {
 body {
   background-color: #ececec;
 }
+
+
+
+/* Test configuration css front-page suite ACF par Augustin */
+.dispo_imgs {
+  display: flex;
+  flex-direction: row;
+}
+
+.image {
+  width: 50%;
+}
