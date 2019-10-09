@@ -2,6 +2,8 @@
 
 <?php get_header(); ?>
 
+
+
 <div class="content">
   <div class="block-black"></div>
   <div class="center">
