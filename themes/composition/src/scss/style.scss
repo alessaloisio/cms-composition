@@ -1,4 +1,5 @@
 @import "./reset";
+@import "./fonts";
 
 html,
 body {
@@ -7,5 +8,13 @@ body {
 }
 
 body {
-  background-color: #ececec;
+  background-color: #fff;
 }
+
+.center {
+  max-width: 1362px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@import "./architecte/index";

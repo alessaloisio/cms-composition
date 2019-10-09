@@ -1,0 +1,14 @@
+.content {
+  position: relative;
+  display: block;
+
+  .block-black {
+    background-color: #000;
+    height: 66.8vh;
+    width: 100%;
+  }
+}
+
+@import "./diaporama";
+@import "./histoire";
+@import "./caractere";

@@ -143,4 +143,17 @@ body {
   height: 100%; }
 
 body {
-  background-color: #ececec; }
+  background-color: #fff; }
+
+.center {
+  max-width: 1362px;
+  width: 100%;
+  margin: 0 auto; }
+
+.content {
+  position: relative;
+  display: block; }
+  .content .block-black {
+    background-color: #000;
+    height: 66.8vh;
+    width: 100%; }
