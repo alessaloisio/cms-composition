@@ -14,8 +14,12 @@ html {
   width: 100%;
   padding: 20px;
   margin: 0 auto;
+  transition: padding-top 0.2s, padding-bottom 0.4s;
+  transition-delay: 0.2s, 0s;
 }
-
+.clear-bar-nav {
+  margin-top: 115.6px;
+}
 /**
  * By using display: flex
  * Logo and nav are in 2 cols
@@ -27,24 +31,32 @@ html {
  * things in two lines in 
  * small screens
  */
-.main-header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: nowrap;
-  //margin-top: 30px;
-  .menu {
-    display: none;
-  }
-  .telephone {
-    display: none;
-  }
-  &.black-style {
-    .mh-logo img {
-      filter: invert(1);
+.main-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 5;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    //margin-top: 30px;
+    .menu {
+      display: none;
     }
+    .telephone {
+      display: none;
+    }
+    &.black-style {
+      .mh-logo img {
+        filter: invert(1);
+        transition: 0.4s;
+      }
 
-    background-color: $foreground-base-color;
+      background-color: $foreground-base-color;
+    }
   }
 }
 
@@ -218,7 +230,7 @@ html {
         width: 100%;
         margin-top: 13px;
         height: 4px;
-        background: $foreground-base-color;
+        background: $background-base-color;
       }
     }
     .telephone {
@@ -384,6 +396,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: 0.4s;
   }
 }
 .hidden {
@@ -399,6 +412,7 @@ html {
     display: inline-block;
     a img {
       margin-left: 5px;
+      transition: 0.4s;
     }
   }
   .main-nav.black-style ul .menu-item {
@@ -426,5 +440,6 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: 0.4s;
   }
 }

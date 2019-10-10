@@ -81,3 +81,4 @@
 			</nav>
 		</div>
 	</header>
+	<div class="clear-bar-nav"></div>
