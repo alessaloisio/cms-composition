@@ -1,0 +1,30 @@
+/* INTRODUCTION_FRONT PAGE */
+.section_information {
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+  .section_information .col_g,
+  .section_information .col_d {
+    max-width: 50%; }
+
+.information_text-container {
+  margin-top: 7.2vh;
+  margin-bottom: 7.5vh;
+  display: flex;
+  align-content: center;
+  padding: 50px;
+  width: 87%;
+  min-height: 0%;
+  background-color: #000000;
+  color: #FFFFFF; }
+  .information_text-container p {
+    font-size: 20px; }
+
+.title_textarea_link-container {
+  margin-left: 29%;
+  width: 58%; }
+
+.introduction_image {
+  width: 63.4%;
+  height: 75vh;
+  margin-left: 8.3%; }

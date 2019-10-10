@@ -1,0 +1,12 @@
+.section_centre {
+  width: 100%; }
+  .section_centre .centre_grey-container {
+    width: 43.5%;
+    height: 61vh;
+    background-color: #f6f6f6;
+    z-index: 0; }
+    .section_centre .centre_grey-container .centre_grey-container-superposition {
+      padding-top: 30.5vh;
+      margin-left: 61%;
+      width: 100%;
+      z-index: 1; }
