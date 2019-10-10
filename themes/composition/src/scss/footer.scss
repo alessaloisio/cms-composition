@@ -268,3 +268,71 @@ footer {
     }
   }
 }
+@media screen and (max-width: 640px) {
+  footer {
+    .cta-news {
+      width: 100%;
+      .image-container {
+        display: none;
+      }
+      .textes-container {
+        height: 100%;
+        background: #ffffff;
+        padding: 35px 5% 0px 5%;
+        float: right;
+        width: 100%;
+      }
+    }
+    .bloc-googlemap {
+      width: 100%;
+    }
+    .bloc-coordonnees {
+      margin-top: 30px;
+      width: 100%;
+    }
+    .heures-container.tablet-on {
+      display: block;
+      margin-top: 30px;
+      position: relative;
+      width: 100%;
+      float: left;
+      background: #000;
+      padding: 40px 0% 40px 12%;
+      .icon {
+        width: 17px;
+        position: absolute;
+        left: 6%;
+        //top: -38px;
+      }
+      .titre-section {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        margin-bottom: 15px;
+      }
+      li {
+        margin-bottom: 7px;
+        p {
+          font-weight: 400;
+          line-height: 1.5;
+          color: #fff;
+        }
+      }
+    }
+    .heures-container.tablet-off {
+      display: none;
+    }
+    .copyright-line {
+      display: none;
+    }
+    .social-icons {
+      width: 100%;
+      margin-top: 30px !important;
+      ul {
+        text-align: center;
+        float: none;
+      }
+    }
+  }
+}
