@@ -9,10 +9,11 @@
 .content {
   position: relative;
   display: block;
+  overflow: hidden;
 
   .block-black {
     background-color: #000;
-    height: 66.8vh;
+    height: 38em;
     width: 100%;
     position: absolute;
   }
