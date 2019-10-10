@@ -1,6 +1,11 @@
 $background-base-color: #ffffff;
 $foreground-base-color: #111111;
 $font-family-menu: "proxima-nova", sans-serif;
+
+html {
+  margin-top: 0 !important;
+}
+
 /**
  * Limit the container in
  * width for big screens
@@ -10,9 +15,7 @@ $font-family-menu: "proxima-nova", sans-serif;
   padding: 20px;
   margin: 0 auto;
 }
-#menu-mobile {
-  display: none;
-}
+
 /**
  * By using display: flex
  * Logo and nav are in 2 cols
@@ -29,7 +32,7 @@ $font-family-menu: "proxima-nova", sans-serif;
   align-items: center;
   justify-content: space-around;
   flex-wrap: nowrap;
-  margin-top: 30px;
+  //margin-top: 30px;
   .menu {
     display: none;
   }
@@ -285,6 +288,79 @@ $font-family-menu: "proxima-nova", sans-serif;
   filter: invert(1);
 }
 
+#menu-mobile {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  width: 350px;
+
+  background-color: $foreground-base-color;
+  padding-left: 20px;
+  padding-right: 20px;
+  ul > li {
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(66, 66, 66);
+    a {
+      background-color: $foreground-base-color;
+      color: $background-base-color;
+    }
+
+    img {
+      margin-left: 0;
+      filter: invert(1);
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .arrow-menu-mobile {
+      float: right;
+      padding-top: 10px;
+      padding-right: 20px;
+    }
+    .close-menu-mobile {
+      float: right;
+      padding-top: 16px;
+      padding-right: 22px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &:last-child {
+      border-bottom: 0px;
+      a {
+        background-color: $background-base-color;
+        color: $foreground-base-color;
+        display: inline-block;
+        text-transform: none;
+        padding: 1em 1em;
+        border: 1px solid $background-base-color;
+        text-decoration: none;
+        font-family: $font-family-menu;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.6px;
+        img {
+          margin-left: 10px;
+          vertical-align: middle;
+          filter: invert(0);
+        }
+        &:hover {
+          color: $background-base-color;
+          background-color: $foreground-base-color;
+          border: 1px solid gray;
+
+          img {
+            filter: invert(1);
+          }
+        }
+      }
+    }
+  }
+}
+
 /* 
   ##Device = Tablets, Ipads (landscape)
   
@@ -310,6 +386,10 @@ $font-family-menu: "proxima-nova", sans-serif;
     justify-content: space-between;
   }
 }
+.hidden {
+  display: none;
+}
+
 @media screen and (max-width: 640px) {
   //CSS
   .main-nav.white-style ul .menu-item {

@@ -16,7 +16,10 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri()."/assets/css/style.css"; ?>"">
   <title>Composition <?= wp_title( '|', false ); ?></title>
 
-  <?php wp_head(); ?>
+	<?php wp_head(); ?>
+	<script type="text/javascript">
+		const stylesheet_directory_uri = "<?php echo get_stylesheet_directory_uri(); ?>";
+	</script>
 </head>
 <body>
 	<div id="body-wrapper">
@@ -65,11 +68,14 @@
 						</a>
 					</li>
 					<li class="menu">
+						
 						<a href="#"><span class="menu-label">Menu</span>
 							<?php $uri = get_stylesheet_directory_uri()."/assets/svg/menu.png"; ?>
 							<img src="<?php echo $uri ?>" width="15"/>
 						</a>
-						<div id="menu-mobile"></div>
+						<div id="menu-mobile" class="hidden">
+						
+						</div>
 					</li>
 				</ul>
 			</nav>

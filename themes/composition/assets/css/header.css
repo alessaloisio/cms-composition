@@ -1,3 +1,6 @@
+html {
+  margin-top: 0 !important; }
+
 /**
  * Limit the container in
  * width for big screens
@@ -6,9 +9,6 @@
   width: 100%;
   padding: 20px;
   margin: 0 auto; }
-
-#menu-mobile {
-  display: none; }
 
 /**
  * By using display: flex
@@ -25,8 +25,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: nowrap;
-  margin-top: 30px; }
+  flex-wrap: nowrap; }
   .main-header .container .menu {
     display: none; }
   .main-header .container .telephone {
@@ -225,6 +224,63 @@
 .black-style img {
   filter: invert(1); }
 
+#menu-mobile {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  width: 350px;
+  background-color: #111111;
+  padding-left: 20px;
+  padding-right: 20px; }
+  #menu-mobile ul > li {
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+    border-bottom: 1px solid #424242; }
+    #menu-mobile ul > li a {
+      background-color: #111111;
+      color: #ffffff; }
+    #menu-mobile ul > li img {
+      margin-left: 0;
+      filter: invert(1); }
+    #menu-mobile ul > li a:hover {
+      text-decoration: underline; }
+    #menu-mobile ul > li .arrow-menu-mobile {
+      float: right;
+      padding-top: 10px;
+      padding-right: 20px; }
+    #menu-mobile ul > li .close-menu-mobile {
+      float: right;
+      padding-top: 16px;
+      padding-right: 22px; }
+      #menu-mobile ul > li .close-menu-mobile:hover {
+        cursor: pointer; }
+    #menu-mobile ul > li:last-child {
+      border-bottom: 0px; }
+      #menu-mobile ul > li:last-child a {
+        background-color: #ffffff;
+        color: #111111;
+        display: inline-block;
+        text-transform: none;
+        padding: 1em 1em;
+        border: 1px solid #ffffff;
+        text-decoration: none;
+        font-family: "proxima-nova", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.6px; }
+        #menu-mobile ul > li:last-child a img {
+          margin-left: 10px;
+          vertical-align: middle;
+          filter: invert(0); }
+        #menu-mobile ul > li:last-child a:hover {
+          color: #ffffff;
+          background-color: #111111;
+          border: 1px solid gray; }
+          #menu-mobile ul > li:last-child a:hover img {
+            filter: invert(1); }
+
 /* 
   ##Device = Tablets, Ipads (landscape)
   
@@ -242,6 +298,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between; } }
+
+.hidden {
+  display: none; }
 
 @media screen and (max-width: 640px) {
   .main-nav.white-style ul .menu-item {

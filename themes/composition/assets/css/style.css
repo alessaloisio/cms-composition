@@ -152,6 +152,9 @@ img {
   max-width: 100%;
   height: auto; }
 
+html {
+  margin-top: 0 !important; }
+
 /**
  * Limit the container in
  * width for big screens
@@ -160,9 +163,6 @@ img {
   width: 100%;
   padding: 20px;
   margin: 0 auto; }
-
-#menu-mobile {
-  display: none; }
 
 /**
  * By using display: flex
@@ -179,8 +179,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: nowrap;
-  margin-top: 30px; }
+  flex-wrap: nowrap; }
   .main-header .container .menu {
     display: none; }
   .main-header .container .telephone {
@@ -379,6 +378,63 @@ img {
 .black-style img {
   filter: invert(1); }
 
+#menu-mobile {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  width: 350px;
+  background-color: #111111;
+  padding-left: 20px;
+  padding-right: 20px; }
+  #menu-mobile ul > li {
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+    border-bottom: 1px solid #424242; }
+    #menu-mobile ul > li a {
+      background-color: #111111;
+      color: #ffffff; }
+    #menu-mobile ul > li img {
+      margin-left: 0;
+      filter: invert(1); }
+    #menu-mobile ul > li a:hover {
+      text-decoration: underline; }
+    #menu-mobile ul > li .arrow-menu-mobile {
+      float: right;
+      padding-top: 10px;
+      padding-right: 20px; }
+    #menu-mobile ul > li .close-menu-mobile {
+      float: right;
+      padding-top: 16px;
+      padding-right: 22px; }
+      #menu-mobile ul > li .close-menu-mobile:hover {
+        cursor: pointer; }
+    #menu-mobile ul > li:last-child {
+      border-bottom: 0px; }
+      #menu-mobile ul > li:last-child a {
+        background-color: #ffffff;
+        color: #111111;
+        display: inline-block;
+        text-transform: none;
+        padding: 1em 1em;
+        border: 1px solid #ffffff;
+        text-decoration: none;
+        font-family: "proxima-nova", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.6px; }
+        #menu-mobile ul > li:last-child a img {
+          margin-left: 10px;
+          vertical-align: middle;
+          filter: invert(0); }
+        #menu-mobile ul > li:last-child a:hover {
+          color: #ffffff;
+          background-color: #111111;
+          border: 1px solid gray; }
+          #menu-mobile ul > li:last-child a:hover img {
+            filter: invert(1); }
+
 /* 
   ##Device = Tablets, Ipads (landscape)
   
@@ -396,6 +452,9 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between; } }
+
+.hidden {
+  display: none; }
 
 @media screen and (max-width: 640px) {
   .main-nav.white-style ul .menu-item {
@@ -422,3 +481,217 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between; } }
+
+footer {
+  font-family: "proxima-nova", sans-serif;
+  color: #000;
+  overflow-y: hidden;
+  background: #ffffff; }
+  footer a {
+    text-decoration: none; }
+    footer a:visited {
+      color: #000; }
+  footer .copyright-line {
+    float: right;
+    text-align: right;
+    width: 33%; }
+    footer .copyright-line a {
+      padding: 15px 5px;
+      text-decoration: none;
+      position: relative;
+      cursor: pointer;
+      font-size: 11px;
+      font-weight: 400;
+      color: black;
+      text-transform: uppercase;
+      letter-spacing: 0.6px; }
+  footer .social-icons {
+    width: 33%;
+    float: right;
+    margin-bottom: 15px; }
+    footer .social-icons ul {
+      float: right; }
+    footer .social-icons ul li {
+      display: inline-block; }
+      footer .social-icons ul li a.icon-container {
+        margin-left: 13px; }
+        footer .social-icons ul li a.icon-container .icon {
+          display: inline-block;
+          width: 53px;
+          height: 53px;
+          text-align: center;
+          background: rgba(255, 255, 255, 0.1);
+          background-repeat: repeat;
+          border-radius: 50%;
+          border: 2px solid #d9d9d9; }
+          footer .social-icons ul li a.icon-container .icon:hover {
+            background: #000; }
+            footer .social-icons ul li a.icon-container .icon:hover img {
+              filter: invert(1); }
+          footer .social-icons ul li a.icon-container .icon img {
+            display: inline-block;
+            margin-top: 14px; }
+  footer .heures-container.tablet-on {
+    display: none; }
+  footer .bloc-coordonnees {
+    width: 33%;
+    float: left; }
+    footer .bloc-coordonnees span {
+      display: block;
+      color: #000;
+      padding-left: 9%;
+      position: relative; }
+      footer .bloc-coordonnees span .icon {
+        width: 18px;
+        position: absolute;
+        display: inline-block;
+        height: 100%;
+        left: 0;
+        top: 10px; }
+    footer .bloc-coordonnees p,
+    footer .bloc-coordonnees a {
+      display: inline-block;
+      font-size: 18px;
+      color: #000;
+      line-height: 2;
+      font-weight: 400;
+      font-family: "proxima-nova", sans-serif; }
+  footer .bloc-googlemap {
+    width: 33%;
+    float: left; }
+    footer .bloc-googlemap .titre-section {
+      font-size: 32px;
+      margin-bottom: 25px;
+      letter-spacing: 1px; }
+    footer .bloc-googlemap .googlemap {
+      position: relative;
+      display: inline-block;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-decoration: none;
+      color: #000; }
+      footer .bloc-googlemap .googlemap .icon {
+        display: inline-block;
+        width: 20px;
+        height: 9px;
+        position: absolute;
+        top: 14px;
+        right: -30px; }
+  footer #footer-bottom .content {
+    padding: 50px 0 40px; }
+  footer #footer-top .content {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 75px; }
+  footer .cta-news {
+    width: 68%;
+    float: left; }
+    footer .cta-news .image-container {
+      width: 150px;
+      height: 150px;
+      float: left; }
+      footer .cta-news .image-container img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%; }
+    footer .cta-news .textes-container {
+      height: 100%;
+      background: #ffffff;
+      padding: 35px 15% 0px 5%;
+      float: right;
+      width: calc(100% - 150px); }
+  footer .heures-container.tablet-off {
+    position: relative;
+    width: 32%;
+    float: right;
+    background: #000;
+    padding: 40px 0% 40px 5%; }
+    footer .heures-container.tablet-off .icon {
+      width: 17px;
+      position: absolute;
+      left: 6%; }
+    footer .heures-container.tablet-off .titre-section {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 15px; }
+    footer .heures-container.tablet-off li {
+      margin-bottom: 7px; }
+      footer .heures-container.tablet-off li p {
+        font-weight: 400;
+        line-height: 1.5;
+        color: #fff; }
+
+.banner {
+  display: inline-block;
+  width: 100%;
+  clear: both;
+  position: relative; }
+
+.banner-content {
+  max-width: 1500px;
+  padding: 0 70px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative; }
+
+.content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: inline-block; }
+
+.lien-texte-fleche {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px;
+  padding-left: 0;
+  display: inline-block;
+  position: relative; }
+  .lien-texte-fleche:hover {
+    text-decoration: underline; }
+
+@media screen and (min-width: 641px) and (max-width: 1230px) {
+  footer .cta-news {
+    width: 100%; }
+  footer .bloc-googlemap {
+    width: 100%; }
+  footer .bloc-coordonnees {
+    margin-top: 30px;
+    width: 100%; }
+  footer .heures-container.tablet-on {
+    display: block;
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    float: left;
+    background: #000;
+    padding: 40px 0% 40px 12%; }
+    footer .heures-container.tablet-on .icon {
+      width: 17px;
+      position: absolute;
+      left: 6%; }
+    footer .heures-container.tablet-on .titre-section {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 15px; }
+    footer .heures-container.tablet-on li {
+      margin-bottom: 7px; }
+      footer .heures-container.tablet-on li p {
+        font-weight: 400;
+        line-height: 1.5;
+        color: #fff; }
+  footer .heures-container.tablet-off {
+    display: none; }
+  footer .copyright-line {
+    width: 50%;
+    float: right;
+    margin-top: 50px; }
+  footer .social-icons {
+    margin-top: 30px;
+    width: 50%;
+    float: left; }
+    footer .social-icons ul {
+      float: left; } }
