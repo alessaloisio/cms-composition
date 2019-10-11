@@ -145,7 +145,7 @@ body {
 body {
   background-color: #ffffff; }
 
-/**
+/** 
  * Images a now responsive
  */
 img {
@@ -156,6 +156,9 @@ img {
  * Limit the container in
  * width for big screens
  */
+.clear-bar-nav {
+  margin-top: 115.6px; }
+
 header {
   /**
  * By using display: flex
@@ -182,8 +185,6 @@ header {
     padding: 20px;
     margin: 0 auto;
     transition: padding 0.4s; }
-  header .clear-bar-nav {
-    margin-top: 115.6px; }
   header.main-header {
     width: 100%;
     position: fixed;
