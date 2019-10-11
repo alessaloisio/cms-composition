@@ -2,20 +2,16 @@ $background-base-color: #ffffff;
 $foreground-base-color: #111111;
 $font-family-menu: "proxima-nova", sans-serif;
 
-html {
-  margin-top: 0 !important;
-}
-
 /**
  * Limit the container in
  * width for big screens
  */
+
 .container {
   width: 100%;
   padding: 20px;
   margin: 0 auto;
-  transition: padding-top 0.2s, padding-bottom 0.4s;
-  transition-delay: 0.2s, 0s;
+  transition: padding 0.4s;
 }
 .clear-bar-nav {
   margin-top: 115.6px;
@@ -35,13 +31,14 @@ html {
   width: 100%;
   position: fixed;
   top: 0;
-  overflow: hidden;
+  //overflow: hidden;
   z-index: 5;
   .container {
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: nowrap;
+    background-color: $background-base-color;
     //margin-top: 30px;
     .menu {
       display: none;
@@ -412,7 +409,6 @@ html {
     display: inline-block;
     a img {
       margin-left: 5px;
-      transition: 0.4s;
     }
   }
   .main-nav.black-style ul .menu-item {

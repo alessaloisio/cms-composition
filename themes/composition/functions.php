@@ -2,6 +2,10 @@
   /**
    * Proper way to enqueue scripts and styles.
    */
+	function register_my_menu() {
+		register_nav_menu('additional-menu',__( 'Additional Menu' ));
+	}
+	add_action( 'init', 'register_my_menu' );
   function wpdocs_theme_name_scripts() {
       // wp_enqueue_style( 'style-name', get_stylesheet_uri() );
       wp_enqueue_style( 'style-name', get_template_directory_uri() . '/assets/css/style.css' );

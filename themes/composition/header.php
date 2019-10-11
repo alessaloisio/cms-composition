@@ -22,37 +22,55 @@
 	</script>
 </head>
 <body>
+	
 	<div id="body-wrapper">
 		<header class="main-header">
-		<div class="container black-style"> 
+		<?php
+			$menuItems = wp_get_nav_menu_items("Principal");
+			if($pagename == '')
+			{
+				$style = "white-style";
+			}
+			else
+			{
+				$style = "black-style";
+			}
+		?>
+		<div class="container <?= $style ?>"> 
+		
 			<a href="#" class="mh-logo">
 
 				<?php $uri = get_stylesheet_directory_uri()."/assets/svg/logo-full.svg"; ?>
 				<img src="<?php echo $uri ?>"/>
 			</a>
-			<nav class="main-nav black-style">
+			<nav class="main-nav <?= $style ?>">
 				<ul class="main-nav-list">
-					<li class="menu-item">
-						<a href="#">
-							<?php $uri = get_stylesheet_directory_uri()."/assets/svg/home-minimal.svg"; ?>
-							<img src="<?php echo $uri ?>" width="15"/>
-						</a>
-					</li >
-					<li class="menu-item active">
-						<a href="#">Magasin</a>
-					</li>
-					<li class="menu-item">
-						<a href="#">Architecte d'intérieur</a>
-					</li>
-					<li class="menu-item">
-						<a href="#">À propos</a>
-					</li>
-					<li class="menu-item">
-						<a href="#">Blog</a>
-					</li>
-					<li class="menu-item">
-						<a href="#">Contact</a>
-					</li>
+					<?php
+						$html = '';
+						$counter = 0;
+						$uri = '<img src="'.get_stylesheet_directory_uri()."/assets/svg/home-minimal.svg".'" width="15"/>';
+						foreach($menuItems as $menuItem)
+						{
+							$class = "";
+							
+							if(home_url( $wp->request ).'/' == $menuItem->url) {
+								$class = "active";
+							}
+							if($counter == 0)
+							{
+								$menuItem->title = $uri;
+							}
+							
+							$html .= '<li class="menu-item '.$class.'">';
+								$html .= '<a href="'.$menuItem->url.'">';
+									$html .= $menuItem->title;
+								$html .= '</a>';
+							$html .= '</li>';
+							$counter++;
+						}
+						echo $html;
+					?>
+					
 					<li class="wish-list">
 						<a href="#">Wish List 
 							
