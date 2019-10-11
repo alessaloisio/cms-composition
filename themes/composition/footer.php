@@ -19,9 +19,7 @@
 							<ul>
 								<li when-visible="fade">
 
-									<p>Lundi › dimanche :  (Fermé le mardi)
-										<br />
-										10h › 18h
+									<p><?php the_field('footer_horaires', 'options')['titre']; ?>
 									</p>
 								</li>
 							</ul>
@@ -47,7 +45,7 @@
 									<img src="<?php echo get_stylesheet_directory_uri()."/assets/svg/marker-road.svg"; ?>"/>
 								</div>
 								<p>
-									Route de Hamoir, 87 – 4500 Huy
+								<?php the_field('footer_adresse', 'options')['titre']; ?>
 								</p>
 							</span>
 							<span class="email">
@@ -55,7 +53,7 @@
 									<img src="<?php echo get_stylesheet_directory_uri()."/assets/svg/icon-arrobas.svg"; ?>"/>
 								</div>
 								<p>
-									<a href="mailto:info@meubles-composition.be">info@meubles-composition.be</a>
+									<a href="mailto:<?php the_field('footer_email', 'options')['titre']; ?>"><?php the_field('footer_email', 'options')['titre']; ?></a>
 								</p>
 							</span>
 							<span class="telephone">
@@ -63,7 +61,7 @@
 									<img src="<?php echo get_stylesheet_directory_uri()."/assets/svg/phone-2.svg"; ?>"/>
 								</div>
 								<p>
-									<a href="tel:003285215238">+32 (0)85 21 52 38 </a>
+									<a href="tel:<?php the_field('footer_telephone', 'options')['titre']; ?>"><?php the_field('footer_telephone', 'options')['titre']; ?></a>
 								</p>
 							</span>
 						</div>

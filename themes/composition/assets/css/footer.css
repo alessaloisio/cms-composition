@@ -137,36 +137,32 @@ footer {
         font-weight: 400;
         line-height: 1.5;
         color: #fff; }
-
-.banner {
-  display: inline-block;
-  width: 100%;
-  clear: both;
-  position: relative; }
-
-.banner-content {
-  max-width: 1500px;
-  padding: 0 70px;
-  margin: 0 auto;
-  height: 100%;
-  position: relative; }
-
-.content {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  display: inline-block; }
-
-.lien-texte-fleche {
-  font-size: 18px;
-  font-weight: 700;
-  color: #000;
-  padding: 15px;
-  padding-left: 0;
-  display: inline-block;
-  position: relative; }
-  .lien-texte-fleche:hover {
-    text-decoration: underline; }
+  footer .banner {
+    display: inline-block;
+    width: 100%;
+    clear: both;
+    position: relative; }
+  footer .banner-content {
+    max-width: 1500px;
+    padding: 0 70px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative; }
+  footer .content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: inline-block; }
+  footer .lien-texte-fleche {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    padding: 15px;
+    padding-left: 0;
+    display: inline-block;
+    position: relative; }
+    footer .lien-texte-fleche:hover {
+      text-decoration: underline; }
 
 @media screen and (min-width: 641px) and (max-width: 1230px) {
   footer .cta-news {

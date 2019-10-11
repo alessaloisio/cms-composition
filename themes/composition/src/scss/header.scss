@@ -27,7 +27,7 @@ header {
  * things in two lines in 
  * small screens
  */
-  .main-header {
+  &.main-header {
     width: 100%;
     position: fixed;
     top: 0;
