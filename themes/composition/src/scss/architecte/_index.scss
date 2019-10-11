@@ -1,22 +1,5 @@
-.center {
-  max-width: 1362px;
-  width: 100%;
-  margin: 0 auto;
-  z-index: 2;
-  position: relative;
-}
-
-.content {
-  position: relative;
-  display: block;
-  overflow: hidden;
-
-  .block-black {
-    background-color: #000;
-    height: 38em;
-    width: 100%;
-    position: absolute;
-  }
+.block-content {
+  padding-bottom: 12em;
 }
 
 @import "./diaporama";

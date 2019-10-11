@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -234,6 +235,82 @@ html {
   font-display: swap;
   src: url(../fonts/ProximaNova/ProximaNovaCond-LightIt.otf) format("truetype"); }
 
+img {
+  width: 100%; }
+
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  padding-bottom: 1.5rem; }
+
+.subtitle {
+  padding-bottom: 3em; }
+
+p {
+  padding-bottom: 1.4em;
+  line-height: 2em; }
+
+.light {
+  font-weight: 100; }
+
+.strong {
+  font-weight: bold; }
+
+.justify {
+  text-align: justify; }
+
+ul {
+  list-style: disc; }
+  ul li {
+    line-height: 2.3em;
+    margin-left: 15px; }
+
+.center {
+  max-width: 1362px;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative; }
+
+.page-content {
+  position: relative;
+  display: block;
+  overflow: hidden; }
+  .page-content .block-black {
+    background-color: #000;
+    height: 38em;
+    width: 100%;
+    position: absolute; }
+  .page-content .block-contact {
+    background: url("../images/2600x700_01.jpg") no-repeat center bottom;
+    -webkit-background-size: cover;
+    /* pour anciens Chrome et Safari */
+    background-size: cover;
+    /* version standardisée */
+    max-height: 525px;
+    background-size: cover;
+    margin-bottom: 9.5em;
+    overflow: hidden; }
+    .page-content .block-contact .white-block {
+      background-color: #fff;
+      max-width: 900px;
+      max-height: 210px;
+      margin: 10em 0;
+      padding: 4.5em 4em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .page-content .block-contact .white-block .link {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        text-decoration: none;
+        font-weight: bold;
+        color: #000;
+        transition: transform 0.25s linear; }
+        .page-content .block-contact .white-block .link .arrow {
+          padding-left: 25px; }
+
 html,
 body {
   width: 100%;
@@ -244,22 +321,8 @@ body {
 body {
   background-color: #fff; }
 
-.center {
-  max-width: 1362px;
-  width: 100%;
-  margin: 0 auto;
-  z-index: 2;
-  position: relative; }
-
-.content {
-  position: relative;
-  display: block;
-  overflow: hidden; }
-  .content .block-black {
-    background-color: #000;
-    height: 38em;
-    width: 100%;
-    position: absolute; }
+.block-content {
+  padding-bottom: 12em; }
 
 .container-diaporama {
   display: block;
@@ -281,8 +344,7 @@ body {
       left: -102%; }
   .container-diaporama .content-diaporama {
     display: inline-flex;
-    width: 100%;
-    height: 100%; }
+    width: 100%; }
     .container-diaporama .content-diaporama .posts {
       max-width: 1100px;
       max-height: 705px;
@@ -379,33 +441,18 @@ body {
     .container-histoire .block:nth-child(even) {
       flex-basis: 58%;
       padding: 8.5em 7.5em 0 7.5em; }
-    .container-histoire .block img {
-      width: 100%; }
-    .container-histoire .block h1 {
-      font-size: 2.5em;
-      font-weight: bold;
-      padding-bottom: 1.5rem; }
-    .container-histoire .block .subtitle {
-      padding-bottom: 3em; }
-    .container-histoire .block p {
-      padding-bottom: 1.4em;
-      line-height: 2em; }
-      .container-histoire .block p.light {
-        font-weight: 100; }
-    .container-histoire .block .strong {
-      font-weight: bold; }
-    .container-histoire .block ul {
-      list-style: disc; }
-      .container-histoire .block ul li {
-        line-height: 2em;
-        padding-left: 3em;
-        margin-left: 15px; }
   .container-histoire .first-block {
     padding-right: 9.4em; }
   .container-histoire .second-block {
     background-color: #000;
     color: #fff;
     position: relative; }
+    .container-histoire .second-block ul {
+      list-style: disc; }
+      .container-histoire .second-block ul li {
+        line-height: 2em;
+        padding-left: 3em;
+        margin-left: 15px; }
     .container-histoire .second-block::before {
       content: "";
       position: absolute;
@@ -438,4 +485,20 @@ body {
       top: 0; }
 
 .container-caractere {
-  padding-top: 8em; }
+  padding-top: 8em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+  .container-caractere .container-diaporama {
+    margin-bottom: 5.5em; }
+  .container-caractere .content-caractere {
+    max-width: 1100px; }
+    .container-caractere .content-caractere .split {
+      display: flex; }
+      .container-caractere .content-caractere .split .col-4 {
+        flex-basis: 40%;
+        padding-right: 1em; }
+      .container-caractere .content-caractere .split .col p.no-padding {
+        padding-bottom: 0; }

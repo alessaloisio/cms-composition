@@ -15,43 +15,6 @@
       flex-basis: 58%;
       padding: 8.5em 7.5em 0 7.5em;
     }
-
-    img {
-      width: 100%;
-    }
-
-    h1 {
-      font-size: 2.5em;
-      font-weight: bold;
-      padding-bottom: 1.5rem;
-    }
-
-    .subtitle {
-      padding-bottom: 3em;
-    }
-
-    p {
-      padding-bottom: 1.4em;
-      line-height: 2em;
-
-      &.light {
-        font-weight: 100;
-      }
-    }
-
-    .strong {
-      font-weight: bold;
-    }
-
-    ul {
-      list-style: disc;
-
-      li {
-        line-height: 2em;
-        padding-left: 3em;
-        margin-left: 15px;
-      }
-    }
   }
 
   .first-block {
@@ -62,6 +25,16 @@
     background-color: #000;
     color: #fff;
     position: relative;
+
+    ul {
+      list-style: disc;
+
+      li {
+        line-height: 2em;
+        padding-left: 3em;
+        margin-left: 15px;
+      }
+    }
 
     &::before {
       content: "";
