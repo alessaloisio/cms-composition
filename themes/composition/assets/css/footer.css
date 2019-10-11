@@ -160,6 +160,7 @@ footer {
 .lien-texte-fleche {
   font-size: 18px;
   font-weight: 700;
+  color: #000;
   padding: 15px;
   padding-left: 0;
   display: inline-block;
