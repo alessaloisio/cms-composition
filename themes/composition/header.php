@@ -21,7 +21,6 @@
 <body>
 
   <header>
-
     <nav>
       <ul>
         <?php 

@@ -18,7 +18,7 @@
               <?php 
                         $group = get_field('bandeau_btn_g');
 
-                        if($group['title']) :
+                        if($group['titre']) :
 
                         $url = $group['url'];
                         $target = 'target="_blank" rel="noopener"';
@@ -29,7 +29,7 @@
                         } ?>
 
       <a class="dispo_lien" href="<?php echo $url ?>" <?php echo $target; ?> >
-      <p><?php echo $group['title']; ?></p>
+      <p><?php echo $group['titre']; ?></p>
         <div class="icon-container">
           <img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/svg/fleche-droite.svg" width="20">
         </div> 
@@ -93,9 +93,18 @@
      <?php 
           
           $introductionLink = get_field('introduction_bouton');
-          $url =  $introductionLink['page_link'];
-          $target ='';
-      ?>
+
+          if($introductionLink['titre']):
+
+            $url = $introductionLink['url'];
+            $target = 'target="_blank" rel="noopener"';
+
+            if( $introductionLink['choice'] == 'pagelink' ) {
+              $url = $introductionLink['page_link'];
+              $target = '';
+
+             } ?>
+
 
  <a class="dispo_lien" href="<?php echo $url ?>" <?php echo $target; ?> >
               <p><?php echo $introductionLink['titre']; ?></p>
@@ -103,6 +112,7 @@
                   <img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/svg/fleche-droite.svg" width="20">
                 </div> 
             </a>
+            <?php endif; ?>
  </div>
  </div>
 
@@ -119,12 +129,23 @@
                   <img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/svg/logo-small.svg" width="20">
     </div>
    <p class="centre_texte"><?php the_field('centre_texte')['titre'] ?></p>
-   <?php 
+  
+
+<?php 
           
           $centreLink = get_field('centre_bouton');
-          $url =  $centreLink['page_link'];
-          $target ='';
-      ?>
+
+          if($centreLink['titre']):
+
+            $url = $centreLink['url'];
+            $target = 'target="_blank" rel="noopener"';
+
+            if( $centreLink['choice'] == 'pagelink' ) {
+              $url = $centreLink['page_link'];
+              $target = '';
+
+             } ?>
+
 
  <a class="dispo_lien" href="<?php echo $url ?>" <?php echo $target; ?> >
               <p><?php echo $centreLink['titre']; ?></p>
@@ -132,6 +153,7 @@
                   <img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/svg/fleche-droite.svg" width="20">
                 </div> 
             </a>
+            <?php endif; ?>
             </div>
    </div>
  </section>
@@ -140,12 +162,10 @@
 
  <section class="section_inferieur">
           <div class ="col_g">
-              <img class="inferieur_image" src="<?php echo get_field('centre_image')['sizes']['medium_large']; ?>">
+              <img class="inferieur_image" src="<?php echo get_field('inferieur_image')['sizes']['medium_large']; ?>">
           </div>
 
           <div class ="col_d">
-            
-/*********** INSERRER TITRE WYSING LIEN **********************/
 
           </div>
 

@@ -11,4 +11,43 @@
 
   add_image_size('size_1500x1250', 1500, 1250, true);
 
+
+// Ajout upload format SVG
+
+  function add_file_types_to_uploads($file_types){
+    $new_filetypes = array();
+    $new_filetypes['svg'] = 'image/svg+xml';
+    $file_types = array_merge($file_types, $new_filetypes );
+    return $file_types;
+    }
+    add_action('upload_mimes', 'add_file_types_to_uploads');
+
+
+
+//  Récupérer add page pour settings global / header et footer
+
+  if( function_exists('acf_add_options_page') ) {
+	
+    acf_add_options_page(array(
+      'page_title' 	=> 'Theme General Settings',
+      'menu_title'	=> 'Theme Settings',
+      'menu_slug' 	=> 'theme-general-settings',
+      'capability'	=> 'edit_posts',
+      'redirect'		=> false
+    ));
+    
+    acf_add_options_sub_page(array(
+      'page_title' 	=> 'Theme Header Settings',
+      'menu_title'	=> 'Header',
+      'parent_slug'	=> 'theme-general-settings',
+    ));
+    
+    acf_add_options_sub_page(array(
+      'page_title' 	=> 'Theme Footer Settings',
+      'menu_title'	=> 'Footer',
+      'parent_slug'	=> 'theme-general-settings',
+    ));
+    
+  }
+
 ?>
