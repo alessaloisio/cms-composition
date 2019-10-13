@@ -145,7 +145,7 @@ body {
 body {
   background-color: #ffffff; }
 
-/**
+/** 
  * Images a now responsive
  */
 img {
@@ -156,16 +156,11 @@ img {
  * Limit the container in
  * width for big screens
  */
-.container {
-  width: 100%;
-  padding: 20px;
-  margin: 0 auto;
-  transition: padding 0.4s; }
-
 .clear-bar-nav {
   margin-top: 115.6px; }
 
-/**
+header {
+  /**
  * By using display: flex
  * Logo and nav are in 2 cols
  * align-items make them
@@ -176,255 +171,196 @@ img {
  * things in two lines in 
  * small screens
  */
-.main-header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 5; }
-  .main-header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    background-color: #ffffff; }
-    .main-header .container .menu {
-      display: none; }
-    .main-header .container .telephone {
-      display: none; }
-    .main-header .container.black-style {
-      background-color: #111111; }
-      .main-header .container.black-style .mh-logo img {
-        filter: invert(1);
-        transition: 0.4s; }
-
-/**
+  /**
  * Menu for tablet and mobile by default hidden
  */
-/**
+  /**
  * The followings are to
  * make things more
  * clean and airy
  * and contents centered
- */
-.main-nav.white-style {
-  background-color: #ffffff; }
-  .main-nav.white-style ul {
-    margin: 1em 0 0.5em;
-    text-align: center; }
-    .main-nav.white-style ul li {
-      display: inline;
-      padding-top: 10px;
-      padding-bottom: 10px; }
-    .main-nav.white-style ul .menu-item > a {
-      display: inline-block;
-      padding: 0.4em 1em;
-      text-decoration: none;
-      color: #111111;
-      font-family: "proxima-nova", sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.6px; }
-      .main-nav.white-style ul .menu-item > a::after {
-        content: "";
-        display: block;
-        width: 0;
-        margin-top: 13px;
-        height: 4px;
-        background: #ffffff;
-        transition: width 0.2s, background 0.2s; }
-      .main-nav.white-style ul .menu-item > a:hover::after {
-        width: 100%;
-        background: #111111; }
-    .main-nav.white-style ul .active.menu-item > a {
-      display: inline-block;
-      padding: 0.4em 1em;
-      text-decoration: none;
-      color: #111111; }
-      .main-nav.white-style ul .active.menu-item > a::after {
-        content: "";
-        display: block;
-        width: 100%;
-        margin-top: 13px;
-        height: 4px;
-        background: #000; }
-    .main-nav.white-style ul .telephone a {
-      color: #ffffff;
-      background-color: #111111;
-      display: inline-block;
-      padding: 0.7em;
-      text-decoration: none;
-      border-radius: 50%; }
-      .main-nav.white-style ul .telephone a img {
-        filter: invert(1); }
-    .main-nav.white-style ul .menu a {
-      color: #111111;
-      background-color: #ffffff;
-      display: inline-block;
-      padding: 1em 1em;
-      text-decoration: none;
-      font-family: "proxima-nova", sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 0.6px; }
-      .main-nav.white-style ul .menu a img {
-        margin-left: 30px;
-        vertical-align: middle;
-        filter: invert(0); }
-    .main-nav.white-style ul .wish-list a {
-      color: #ffffff;
-      background-color: #111111;
-      display: inline-block;
-      padding: 1em 1em;
-      text-decoration: none;
-      font-family: "proxima-nova", sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 0.6px; }
-      .main-nav.white-style ul .wish-list a img {
-        margin-left: 4px;
-        vertical-align: middle;
-        filter: invert(1); }
-      .main-nav.white-style ul .wish-list a:hover {
+ */ }
+  header .container {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    transition: padding 0.4s; }
+  header.main-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 5; }
+    header.main-header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+      background-color: #ffffff; }
+      header.main-header .container .menu {
+        display: none; }
+      header.main-header .container .telephone {
+        display: none; }
+      header.main-header .container.black-style {
+        background-color: #111111; }
+        header.main-header .container.black-style .mh-logo img {
+          filter: invert(1);
+          transition: 0.4s; }
+  header .main-nav.white-style {
+    background-color: #ffffff; }
+    header .main-nav.white-style ul {
+      margin: 1em 0 0.5em;
+      text-align: center; }
+      header .main-nav.white-style ul li {
+        display: inline;
+        padding-top: 10px;
+        padding-bottom: 10px; }
+      header .main-nav.white-style ul .menu-item > a {
+        display: inline-block;
+        padding: 0.4em 1em;
+        text-decoration: none;
         color: #111111;
-        background-color: #ffffff;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, 0.2); }
-        .main-nav.white-style ul .wish-list a:hover img {
-          margin-left: 4px;
-          vertical-align: middle;
-          filter: invert(0); }
-
-.main-nav.black-style {
-  background-color: #111111; }
-  .main-nav.black-style ul {
-    margin: 1em 0 0.5em;
-    text-align: center; }
-    .main-nav.black-style ul li {
-      display: inline;
-      padding-top: 10px;
-      padding-bottom: 10px; }
-    .main-nav.black-style ul .menu-item > a {
-      display: inline-block;
-      padding: 0.4em 1em;
-      text-decoration: none;
-      color: #ffffff;
-      font-family: "proxima-nova", sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.6px; }
-      .main-nav.black-style ul .menu-item > a::after {
-        content: "";
-        display: block;
-        width: 0;
-        margin-top: 13px;
-        height: 4px;
-        background: #111111;
-        transition: width 0.2s, background 0.2s; }
-      .main-nav.black-style ul .menu-item > a:hover::after {
-        width: 100%;
-        background: #ffffff; }
-    .main-nav.black-style ul .active.menu-item > a {
-      display: inline-block;
-      padding: 0.4em 1em;
-      text-decoration: none;
-      color: #ffffff; }
-      .main-nav.black-style ul .active.menu-item > a::after {
-        content: "";
-        display: block;
-        width: 100%;
-        margin-top: 13px;
-        height: 4px;
-        background: #ffffff; }
-    .main-nav.black-style ul .telephone a {
-      color: #111111;
-      background-color: #ffffff;
-      display: inline-block;
-      padding: 0.7em;
-      text-decoration: none;
-      border-radius: 50%; }
-      .main-nav.black-style ul .telephone a img {
-        filter: invert(0); }
-    .main-nav.black-style ul .menu a {
-      color: #ffffff;
-      background-color: #111111;
-      display: inline-block;
-      padding: 1em 1em;
-      text-decoration: none;
-      font-family: "proxima-nova", sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 0.6px; }
-      .main-nav.black-style ul .menu a img {
-        margin-left: 30px;
-        vertical-align: middle;
-        filter: invert(1); }
-    .main-nav.black-style ul .wish-list a {
-      color: #111111;
-      background-color: #ffffff;
-      display: inline-block;
-      padding: 1em 1em;
-      border: 1px solid #ffffff;
-      text-decoration: none;
-      font-family: "proxima-nova", sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 0.6px; }
-      .main-nav.black-style ul .wish-list a img {
-        margin-left: 4px;
-        vertical-align: middle;
-        filter: invert(0); }
-      .main-nav.black-style ul .wish-list a:hover {
+        font-family: "proxima-nova", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.6px; }
+        header .main-nav.white-style ul .menu-item > a::after {
+          content: "";
+          display: block;
+          width: 0;
+          margin-top: 13px;
+          height: 4px;
+          background: #ffffff;
+          transition: width 0.2s, background 0.2s; }
+        header .main-nav.white-style ul .menu-item > a:hover::after {
+          width: 100%;
+          background: #111111; }
+      header .main-nav.white-style ul .active.menu-item > a {
+        display: inline-block;
+        padding: 0.4em 1em;
+        text-decoration: none;
+        color: #111111; }
+        header .main-nav.white-style ul .active.menu-item > a::after {
+          content: "";
+          display: block;
+          width: 100%;
+          margin-top: 13px;
+          height: 4px;
+          background: #000; }
+      header .main-nav.white-style ul .telephone a {
         color: #ffffff;
         background-color: #111111;
-        border: 1px solid gray; }
-        .main-nav.black-style ul .wish-list a:hover img {
+        display: inline-block;
+        padding: 0.7em;
+        text-decoration: none;
+        border-radius: 50%; }
+        header .main-nav.white-style ul .telephone a img {
+          filter: invert(1); }
+      header .main-nav.white-style ul .menu a {
+        color: #111111;
+        background-color: #ffffff;
+        display: inline-block;
+        padding: 1em 1em;
+        text-decoration: none;
+        font-family: "proxima-nova", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.6px; }
+        header .main-nav.white-style ul .menu a img {
+          margin-left: 30px;
+          vertical-align: middle;
+          filter: invert(0); }
+      header .main-nav.white-style ul .wish-list a {
+        color: #ffffff;
+        background-color: #111111;
+        display: inline-block;
+        padding: 1em 1em;
+        text-decoration: none;
+        font-family: "proxima-nova", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.6px; }
+        header .main-nav.white-style ul .wish-list a img {
           margin-left: 4px;
           vertical-align: middle;
           filter: invert(1); }
-
-.black-style img {
-  filter: invert(1); }
-
-#menu-mobile {
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  right: 0;
-  width: 350px;
-  background-color: #111111;
-  padding-left: 20px;
-  padding-right: 20px; }
-  #menu-mobile ul > li {
-    display: block;
-    text-align: left;
-    text-transform: uppercase;
-    border-bottom: 1px solid #424242; }
-    #menu-mobile ul > li a {
-      background-color: #111111;
-      color: #ffffff; }
-    #menu-mobile ul > li img {
-      margin-left: 0;
-      filter: invert(1); }
-    #menu-mobile ul > li a:hover {
-      text-decoration: underline; }
-    #menu-mobile ul > li .arrow-menu-mobile {
-      float: right;
-      padding-top: 10px;
-      padding-right: 20px; }
-    #menu-mobile ul > li .close-menu-mobile {
-      float: right;
-      padding-top: 16px;
-      padding-right: 22px; }
-      #menu-mobile ul > li .close-menu-mobile:hover {
-        cursor: pointer; }
-    #menu-mobile ul > li:last-child {
-      border-bottom: 0px; }
-      #menu-mobile ul > li:last-child a {
-        background-color: #ffffff;
-        color: #111111;
+        header .main-nav.white-style ul .wish-list a:hover {
+          color: #111111;
+          background-color: #ffffff;
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, 0.2); }
+          header .main-nav.white-style ul .wish-list a:hover img {
+            margin-left: 4px;
+            vertical-align: middle;
+            filter: invert(0); }
+  header .main-nav.black-style {
+    background-color: #111111; }
+    header .main-nav.black-style ul {
+      margin: 1em 0 0.5em;
+      text-align: center; }
+      header .main-nav.black-style ul li {
+        display: inline;
+        padding-top: 10px;
+        padding-bottom: 10px; }
+      header .main-nav.black-style ul .menu-item > a {
         display: inline-block;
-        text-transform: none;
+        padding: 0.4em 1em;
+        text-decoration: none;
+        color: #ffffff;
+        font-family: "proxima-nova", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.6px; }
+        header .main-nav.black-style ul .menu-item > a::after {
+          content: "";
+          display: block;
+          width: 0;
+          margin-top: 13px;
+          height: 4px;
+          background: #111111;
+          transition: width 0.2s, background 0.2s; }
+        header .main-nav.black-style ul .menu-item > a:hover::after {
+          width: 100%;
+          background: #ffffff; }
+      header .main-nav.black-style ul .active.menu-item > a {
+        display: inline-block;
+        padding: 0.4em 1em;
+        text-decoration: none;
+        color: #ffffff; }
+        header .main-nav.black-style ul .active.menu-item > a::after {
+          content: "";
+          display: block;
+          width: 100%;
+          margin-top: 13px;
+          height: 4px;
+          background: #ffffff; }
+      header .main-nav.black-style ul .telephone a {
+        color: #111111;
+        background-color: #ffffff;
+        display: inline-block;
+        padding: 0.7em;
+        text-decoration: none;
+        border-radius: 50%; }
+        header .main-nav.black-style ul .telephone a img {
+          filter: invert(0); }
+      header .main-nav.black-style ul .menu a {
+        color: #ffffff;
+        background-color: #111111;
+        display: inline-block;
+        padding: 1em 1em;
+        text-decoration: none;
+        font-family: "proxima-nova", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.6px; }
+        header .main-nav.black-style ul .menu a img {
+          margin-left: 30px;
+          vertical-align: middle;
+          filter: invert(1); }
+      header .main-nav.black-style ul .wish-list a {
+        color: #111111;
+        background-color: #ffffff;
+        display: inline-block;
         padding: 1em 1em;
         border: 1px solid #ffffff;
         text-decoration: none;
@@ -432,61 +368,120 @@ img {
         font-size: 14px;
         font-weight: 700;
         letter-spacing: 0.6px; }
-        #menu-mobile ul > li:last-child a img {
-          margin-left: 10px;
+        header .main-nav.black-style ul .wish-list a img {
+          margin-left: 4px;
           vertical-align: middle;
           filter: invert(0); }
-        #menu-mobile ul > li:last-child a:hover {
+        header .main-nav.black-style ul .wish-list a:hover {
           color: #ffffff;
           background-color: #111111;
           border: 1px solid gray; }
-          #menu-mobile ul > li:last-child a:hover img {
+          header .main-nav.black-style ul .wish-list a:hover img {
+            margin-left: 4px;
+            vertical-align: middle;
             filter: invert(1); }
+  header .black-style img {
+    filter: invert(1); }
+  header #menu-mobile {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    width: 350px;
+    background-color: #111111;
+    padding-left: 20px;
+    padding-right: 20px; }
+    header #menu-mobile ul > li {
+      display: block;
+      text-align: left;
+      text-transform: uppercase;
+      border-bottom: 1px solid #424242; }
+      header #menu-mobile ul > li a {
+        background-color: #111111;
+        color: #ffffff; }
+      header #menu-mobile ul > li img {
+        margin-left: 0;
+        filter: invert(1); }
+      header #menu-mobile ul > li a:hover {
+        text-decoration: underline; }
+      header #menu-mobile ul > li .arrow-menu-mobile {
+        float: right;
+        padding-top: 10px;
+        padding-right: 20px; }
+      header #menu-mobile ul > li .close-menu-mobile {
+        float: right;
+        padding-top: 16px;
+        padding-right: 22px; }
+        header #menu-mobile ul > li .close-menu-mobile:hover {
+          cursor: pointer; }
+      header #menu-mobile ul > li:last-child {
+        border-bottom: 0px; }
+        header #menu-mobile ul > li:last-child a {
+          background-color: #ffffff;
+          color: #111111;
+          display: inline-block;
+          text-transform: none;
+          padding: 1em 1em;
+          border: 1px solid #ffffff;
+          text-decoration: none;
+          font-family: "proxima-nova", sans-serif;
+          font-size: 14px;
+          font-weight: 700;
+          letter-spacing: 0.6px; }
+          header #menu-mobile ul > li:last-child a img {
+            margin-left: 10px;
+            vertical-align: middle;
+            filter: invert(0); }
+          header #menu-mobile ul > li:last-child a:hover {
+            color: #ffffff;
+            background-color: #111111;
+            border: 1px solid gray; }
+            header #menu-mobile ul > li:last-child a:hover img {
+              filter: invert(1); }
 
 /* 
   ##Device = Tablets, Ipads (landscape)
   
 */
 @media screen and (min-width: 641px) and (max-width: 1230px) {
-  .main-nav.white-style ul .menu-item {
+  header .main-nav.white-style ul .menu-item {
     display: none; }
-  .main-nav.white-style ul .menu {
+  header .main-nav.white-style ul .menu {
     display: inline-block; }
-  .main-nav.black-style ul .menu-item {
+  header .main-nav.black-style ul .menu-item {
     display: none; }
-  .main-nav.black-style ul .menu {
+  header .main-nav.black-style ul .menu {
     display: inline-block; }
-  .main-header .container {
+  header .main-header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: 0.4s; } }
-
-.hidden {
-  display: none; }
+    transition: 0.4s; }
+  header .hidden {
+    display: none; } }
 
 @media screen and (max-width: 640px) {
-  .main-nav.white-style ul .menu-item {
+  header .main-nav.white-style ul .menu-item {
     display: none; }
-  .main-nav.white-style ul .menu {
+  header .main-nav.white-style ul .menu {
     display: inline-block; }
-    .main-nav.white-style ul .menu a img {
+    header .main-nav.white-style ul .menu a img {
       margin-left: 5px; }
-  .main-nav.black-style ul .menu-item {
+  header .main-nav.black-style ul .menu-item {
     display: none; }
-  .main-nav.black-style ul .menu {
+  header .main-nav.black-style ul .menu {
     display: inline-block; }
-  .main-nav.black-style ul .wish-list {
+  header .main-nav.black-style ul .wish-list {
     display: none; }
-  .main-nav.white-style ul .wish-list {
+  header .main-nav.white-style ul .wish-list {
     display: none; }
-  .main-nav.black-style ul .telephone {
+  header .main-nav.black-style ul .telephone {
     display: inline-block; }
-  .main-nav.white-style ul .telephone {
+  header .main-nav.white-style ul .telephone {
     display: inline-block; }
-  .menu-label {
+  header .menu-label {
     display: none !important; }
-  .main-header .container {
+  header .main-header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -515,6 +510,8 @@ footer {
       color: black;
       text-transform: uppercase;
       letter-spacing: 0.6px; }
+      footer .copyright-line a:hover {
+        text-decoration: underline; }
   footer .social-icons {
     width: 33%;
     float: right;
@@ -566,6 +563,8 @@ footer {
       line-height: 2;
       font-weight: 400;
       font-family: "proxima-nova", sans-serif; }
+    footer .bloc-coordonnees a:hover {
+      text-decoration: underline; }
   footer .bloc-googlemap {
     width: 33%;
     float: left; }
@@ -631,36 +630,32 @@ footer {
         font-weight: 400;
         line-height: 1.5;
         color: #fff; }
-
-.banner {
-  display: inline-block;
-  width: 100%;
-  clear: both;
-  position: relative; }
-
-.banner-content {
-  max-width: 1500px;
-  padding: 0 70px;
-  margin: 0 auto;
-  height: 100%;
-  position: relative; }
-
-.content {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  display: inline-block; }
-
-.lien-texte-fleche {
-  font-size: 18px;
-  font-weight: 700;
-  color: #000;
-  padding: 15px;
-  padding-left: 0;
-  display: inline-block;
-  position: relative; }
-  .lien-texte-fleche:hover {
-    text-decoration: underline; }
+  footer .banner {
+    display: inline-block;
+    width: 100%;
+    clear: both;
+    position: relative; }
+  footer .banner-content {
+    max-width: 1500px;
+    padding: 0 70px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative; }
+  footer .content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: inline-block; }
+  footer .lien-texte-fleche {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    padding: 15px;
+    padding-left: 0;
+    display: inline-block;
+    position: relative; }
+    footer .lien-texte-fleche:hover {
+      text-decoration: underline; }
 
 @media screen and (min-width: 641px) and (max-width: 1230px) {
   footer .cta-news {

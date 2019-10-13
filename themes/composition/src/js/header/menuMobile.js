@@ -8,7 +8,6 @@ const menuMobile = () => {
   let menuContainer = document.querySelector("#menu-mobile");
   let navContainer = document.querySelectorAll(".menu-item");
   let ul = document.createElement("ul");
-  let html = "";
   let counter = 0;
   navContainer.forEach(el => {
     if (counter == 0) {
