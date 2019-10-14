@@ -24,6 +24,9 @@ footer {
       color: black;
       text-transform: uppercase;
       letter-spacing: 0.6px;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   .social-icons {
@@ -89,6 +92,9 @@ footer {
       line-height: 2;
       font-weight: 400;
       font-family: "proxima-nova", sans-serif;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   }
   .bloc-googlemap {
