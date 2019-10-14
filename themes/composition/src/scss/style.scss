@@ -1,11 +1,17 @@
 @import "./reset";
+@import "./fonts";
+@import "./shared";
+
 $background-base-color: #ffffff;
 $foreground-base-color: #111111;
 $font-family-menu: "proxima-nova", sans-serif;
+
 html,
 body {
   width: 100%;
   height: 100%;
+  font-family: "ProximaNova";
+  font-size: 1em;
 }
 
 body {
@@ -18,5 +24,8 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 @import "./header.scss";
 @import "./footer.scss";
+
+@import "./architecte/index";
