@@ -4,13 +4,13 @@
     display: flex;
     flex-direction: row;
 
-    .col_g,
-    .col_d {
+    .information_col-g,
+    .information_col-d {
         max-width: 50%;
     }
 }
 
-.information_text-container {
+.information_black-container {
     margin-top: 7.2vh;
     margin-bottom: 7.5vh;
     display: flex;
@@ -26,13 +26,13 @@
     }
 }
 
-.title_textarea_link-container {
+.information_white-container {
     margin-left: 29%;
     width: 58%;
 
 }
 
-.introduction_image {
+.introduction_img {
     width: 63.4%;
     height: 75vh;
     margin-left: 8.3%;

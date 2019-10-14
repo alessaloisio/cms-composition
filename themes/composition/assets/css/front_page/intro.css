@@ -3,11 +3,11 @@
   width: 100%;
   display: flex;
   flex-direction: row; }
-  .section_information .col_g,
-  .section_information .col_d {
+  .section_information .information_col-g,
+  .section_information .information_col-d {
     max-width: 50%; }
 
-.information_text-container {
+.information_black-container {
   margin-top: 7.2vh;
   margin-bottom: 7.5vh;
   display: flex;
@@ -17,14 +17,14 @@
   min-height: 0%;
   background-color: #000000;
   color: #FFFFFF; }
-  .information_text-container p {
+  .information_black-container p {
     font-size: 20px; }
 
-.title_textarea_link-container {
+.information_white-container {
   margin-left: 29%;
   width: 58%; }
 
-.introduction_image {
+.introduction_img {
   width: 63.4%;
   height: 75vh;
   margin-left: 8.3%; }

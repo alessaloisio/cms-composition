@@ -1,0 +1,13 @@
+.section_inferieur {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row; }
+
+.inferieur_col-g {
+  max-width: 50%; }
+  .inferieur_col-g .inferieur_img {
+    max-width: 100%;
+    height: 547px; }
+
+.inferieur_col-d {
+  max-width: 50%; }
