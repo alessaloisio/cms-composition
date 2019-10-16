@@ -9,7 +9,16 @@
   }
   add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
 
+  // ajout nouvelle taille image
+
   add_image_size('size_1500x1250', 1500, 1250, true);
+
+  // ajout espace <br>
+
+  add_shortcode ( 'diviseur', 'shortcode_insert_divider');
+function shortcode_insert_divider () {
+ 	return '<div class = "diviseur"> </ div>';
+}
 
 
 // Ajout upload format SVG
@@ -49,5 +58,43 @@
     ));
     
   }
+
+  // Add advanced forms
+
+  function register_form() {
+    $form = array(
+        'title' => 'Formulaire de contact',
+        'key' => 'form_5da596a009fdd',
+        'display' => array(
+            'description' => '',
+            'success_message' => '',
+        ),
+        'create_entries' => false,
+        'restrict_entries' => false,
+        'entries_limit' => 0,
+        'entries_restriction_message' => '',
+    );
+    
+    af_register_form( $form );
+  }
+  add_action( 'af/register_forms', 'register_form' );
+  
+
+// Use the location rule with acf_add_local_field_group
+
+$acf_location_rule = array (
+  'param' => 'af_form',
+  'operator' => '==',
+  'value' => 'form_5da596a009fdd',
+);
+
+// Google map
+
+function my_acf_init() {
+	
+	acf_update_setting('google_api_key', 'xxx');
+}
+
+add_action('acf/init', 'my_acf_init');
 
 ?>

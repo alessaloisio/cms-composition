@@ -78,12 +78,12 @@
 
 
 <!---------------------------------------------------------------------------INTRODUCTION-------------------------------------------------------------------->
-<section class="section_information">
-  <div class="information_col-g">
-    <div class="information_black-container">
+<section class="section_introduction">
+  <div class="introduction_col-g">
+    <div class="introduction_black-container">
       <p><?php the_field('introduction_texte')['titre'] ?></p>
     </div>
-    <div class="information_white-container">
+    <div class="introduction_white-container">
       <h3><?php the_field('introduction_titre')['titre'] ?></h3>
       <p><?php the_field('introduction_textarea')['titre'] ?></p>
       <?php 

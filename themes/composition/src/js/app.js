@@ -1,5 +1,5 @@
 import mobileMenu from "./header/menuMobile";
-import frontPage from "./header/frontPage";
+import frontPage from "./frontPage/frontPage";
 
 // DOM READY
 (() => {

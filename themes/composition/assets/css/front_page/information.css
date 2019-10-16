@@ -1,0 +1,32 @@
+/* INTRODUCTION_FRONT PAGE */
+.section_introduction {
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+  .section_introduction .introduction_col-g,
+  .section_introduction .introduction_col-d {
+    max-width: 50%; }
+
+.introduction_black-container {
+  margin-top: 7.2vh;
+  margin-bottom: 65px;
+  display: flex;
+  align-content: center;
+  padding: 120px;
+  width: 87%;
+  min-height: 0%;
+  background-color: #000000;
+  color: #FFFFFF; }
+  .introduction_black-container p {
+    font-family: "proxima-nova";
+    font-size: 24px;
+    font-weight: bold; }
+
+.introduction_white-container {
+  margin-left: 29%;
+  width: 58%; }
+
+.introduction_img {
+  width: 63.4%;
+  height: 75vh;
+  margin-left: 8.3%; }

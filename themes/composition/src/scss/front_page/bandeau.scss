@@ -130,7 +130,7 @@ body {
             }
 
             p {
-                opacity: 0.8;
+                opacity: 1;
                 font-size: 16px;
                 font-family: "proxima-nova";
                 letter-spacing: 0.3px;
@@ -160,7 +160,11 @@ body {
 }
 
 .dispo_lien_white {
+    display: flex;
+    flex-direction: row;
+
     p {
         color: white;
+        text-decoration-color: white;
     }
 }
