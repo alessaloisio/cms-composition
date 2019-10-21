@@ -308,6 +308,9 @@ ul {
         .page-content .block-contact .white-block .link .arrow {
           padding-left: 25px; }
 
+#body-wrapper + #wpadminbar {
+  margin: 0; }
+
 html,
 body {
   width: 100%;
@@ -947,7 +950,7 @@ body {
       align-items: center;
       width: 80%;
       height: 16vh;
-      background-color: #FFFFFF;
+      background-color: #ffffff;
       color: #000000;
       box-shadow: 1px 3px 5px 1px #e4dfdff1;
       position: relative;
@@ -960,7 +963,6 @@ body {
         letter-spacing: 0.3px;
         word-spacing: 0.5px;
         font-size: 24px;
-        font-family: "proxima-nova";
         padding-top: 66px;
         padding-bottom: 66px; }
     .section_bandeau .bandeau_col-g .bandeau_black-container,
@@ -970,7 +972,7 @@ body {
       width: 80%;
       height: 16vh;
       background-color: #000000;
-      color: #FFFFFF;
+      color: #ffffff;
       position: relative;
       left: 8.3%;
       top: -8vh;
@@ -982,12 +984,11 @@ body {
         letter-spacing: 0.3px;
         word-spacing: 0.5px;
         font-size: 24px;
-        font-family: "proxima-nova";
         padding-top: 66px;
         padding-bottom: 66px; }
     .section_bandeau .bandeau_col-g .bandeau_white-container-hover,
     .section_bandeau .bandeau_col-d .bandeau_white-container-hover {
-      background-color: #FFFFFF;
+      background-color: #ffffff;
       box-shadow: 1px 3px 5px 1px #e4dfdff1;
       color: #000000;
       width: 70%;
@@ -1007,7 +1008,6 @@ body {
       .section_bandeau .bandeau_col-d .bandeau_white-container-hover h3 {
         opacity: 0.8;
         font-size: 24px;
-        font-family: "proxima-nova";
         margin-bottom: 30px;
         letter-spacing: 0.3px;
         word-spacing: 0.5px; }
@@ -1015,13 +1015,12 @@ body {
       .section_bandeau .bandeau_col-d .bandeau_white-container-hover p {
         opacity: 0.7;
         font-size: 16px;
-        font-family: "proxima-nova";
         letter-spacing: 0.3px;
         line-height: 2; }
     .section_bandeau .bandeau_col-g .bandeau_black-container-hover,
     .section_bandeau .bandeau_col-d .bandeau_black-container-hover {
       background-color: #000000;
-      color: #FFFFFF;
+      color: #ffffff;
       width: 70%;
       min-height: 0%;
       position: relative;
@@ -1041,13 +1040,11 @@ body {
         letter-spacing: 0.3px;
         word-spacing: 0.5px;
         font-size: 24px;
-        font-family: "proxima-nova";
         margin-bottom: 30px; }
       .section_bandeau .bandeau_col-g .bandeau_black-container-hover p,
       .section_bandeau .bandeau_col-d .bandeau_black-container-hover p {
         opacity: 1;
         font-size: 16px;
-        font-family: "proxima-nova";
         letter-spacing: 0.3px;
         line-height: 2; }
 

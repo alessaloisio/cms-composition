@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<div class="center">
+
 <h1>Front Page</h1>
 
 <section class="section_bandeau">
@@ -184,19 +186,6 @@
     <?php endif; ?>
   </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
 
 <?php get_footer(); ?>
