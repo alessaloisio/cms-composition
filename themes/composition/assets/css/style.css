@@ -333,7 +333,7 @@ img {
  * width for big screens
  */
 .clear-bar-nav {
-  margin-top: 115.6px; }
+  height: 115.6px; }
 
 header {
   /**
@@ -381,6 +381,8 @@ header {
         header.main-header .container.black-style .mh-logo img {
           filter: invert(1);
           transition: 0.4s; }
+      header.main-header .container.white-style .mh-logo img {
+        transition: 0.4s; }
   header .main-nav.white-style {
     background-color: #fff; }
     header .main-nav.white-style ul {
@@ -429,6 +431,8 @@ header {
         display: inline-block;
         padding: 0.7em;
         text-decoration: none;
+        width: 59px;
+        height: 59px;
         border-radius: 50%; }
         header .main-nav.white-style ul .telephone a img {
           filter: invert(1); }
@@ -515,6 +519,8 @@ header {
         background-color: #fff;
         display: inline-block;
         padding: 0.7em;
+        width: 59px;
+        height: 59px;
         text-decoration: none;
         border-radius: 50%; }
         header .main-nav.black-style ul .telephone a img {
@@ -661,7 +667,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: 0.4s; } }
+    transition: 0.4s; }
+  header .hidden {
+    display: none; } }
 
 footer {
   font-family: "proxima-nova", sans-serif;

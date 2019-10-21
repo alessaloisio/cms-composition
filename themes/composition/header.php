@@ -25,15 +25,31 @@
 	<div id="body-wrapper">
 		<header class="main-header">
 		<?php
+			
 			$menuItems = wp_get_nav_menu_items("Principal");
 			if($pagename == '')
 			{
 				$style = "white-style";
+				$color = "white";
 			}
 			else
 			{
 				$style = "black-style";
+				$color = "black";
 			}
+			if( current_user_can('editor') || current_user_can('administrator') ) {
+				?>
+				<style>
+					header.main-header {
+						top: 10px;
+					}
+					.clear-bar-nav {
+						background-color: <?= $color ?>;
+					}
+				</style>
+				<?php
+			}
+		
 		?>
 		<div class="container <?= $style ?>"> 
 		

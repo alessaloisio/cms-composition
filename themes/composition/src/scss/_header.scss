@@ -3,7 +3,7 @@
  * width for big screens
  */
 .clear-bar-nav {
-  margin-top: 115.6px;
+  height: 115.6px;
 }
 header {
   .container {
@@ -48,8 +48,12 @@ header {
           filter: invert(1);
           transition: 0.4s;
         }
-
         background-color: $foreground-base-color;
+      }
+      &.white-style {
+        .mh-logo img {
+          transition: 0.4s;
+        }
       }
     }
   }
@@ -121,6 +125,8 @@ header {
           display: inline-block;
           padding: 0.7em;
           text-decoration: none;
+          width: 59px;
+          height: 59px;
           border-radius: 50%;
           img {
             filter: invert(1);
@@ -233,6 +239,8 @@ header {
           background-color: $background-base-color;
           display: inline-block;
           padding: 0.7em;
+          width: 59px;
+          height: 59px;
           text-decoration: none;
           border-radius: 50%;
           img {
@@ -436,6 +444,9 @@ header {
       align-items: center;
       justify-content: space-between;
       transition: 0.4s;
+    }
+    .hidden {
+      display: none;
     }
   }
 }
