@@ -1,0 +1,80 @@
+.formulaire {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .formulaire_col-side {
+        width: 42%;
+    }
+
+    .formulaire_col-form {
+        width: 55%;
+        margin-right: 3%;
+
+    }
+}
+
+
+
+.formulaire_form {
+    background-color: white;
+    border: none;
+
+    .acf-label {
+        display: none;
+    }
+
+
+    .acf-fields>.acf-field,
+    .acf-fields.-border {
+        border: none;
+    }
+
+    .acf-fields>.acf-field {
+        padding: 15px 12px 15px 0px;
+    }
+
+    input,
+    textarea {
+
+        border: none;
+        border-bottom: #EEEEEE solid 1px;
+        font-weight: 400;
+        font-family: "proxima-nova", sans-serif;
+        color: #000;
+        letter-spacing: 1px;
+
+    }
+
+    .acf-input-wrap input {
+        height: 54px;
+    }
+
+}
+
+.formulaire_accroche {
+    margin-left: 70px;
+    width: 100%;
+    padding-top: 50px;
+    margin-bottom: 45px;
+
+    h3 {
+        font-size: 40px;
+        font-family: "proxima-nova", sans-serif;
+        color: #000;
+        letter-spacing: 1px;
+        font-weight: 800;
+    }
+
+
+
+}
+
+.formulaire_de_contact {
+    margin-left: 70px;
+    font-size: 22px;
+    font-family: "proxima-nova", sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 0.6;
+}
