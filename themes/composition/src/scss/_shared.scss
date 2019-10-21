@@ -1,0 +1,97 @@
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+}
+
+.subtitle {
+  padding-bottom: 3em;
+}
+
+p {
+  padding-bottom: 1.4em;
+  line-height: 2em;
+}
+.light {
+  font-weight: 100;
+}
+.strong {
+  font-weight: bold;
+}
+
+.justify {
+  text-align: justify;
+}
+
+ul {
+  list-style: disc;
+
+  li {
+    line-height: 2.3em;
+    margin-left: 15px;
+  }
+}
+
+// CENTER CONTAINER
+.center {
+  max-width: 1362px;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+}
+
+// BLACK INTRO BLOCK
+// CONTACT BLOCK
+.page-content {
+  position: relative;
+  display: block;
+  overflow: hidden;
+
+  .block-black {
+    background-color: #000;
+    height: 38em;
+    width: 100%;
+    position: absolute;
+  }
+
+  .block-contact {
+    background: url("../images/2600x700_01.jpg") no-repeat center bottom;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+    max-height: 525px;
+    background-size: cover;
+    margin-bottom: 9.5em;
+    overflow: hidden;
+
+    .white-block {
+      background-color: #fff;
+      max-width: 900px;
+      max-height: 210px;
+      margin: 10em 0;
+      padding: 4.5em 4em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .link {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        text-decoration: none;
+        font-weight: bold;
+        color: #000;
+
+        transition: transform 0.25s linear;
+
+        .arrow {
+          padding-left: 25px;
+        }
+      }
+    }
+  }
+}
+
+#body-wrapper + #wpadminbar {
+  margin: 0;
+}

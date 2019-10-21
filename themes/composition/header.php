@@ -10,29 +10,93 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
+	<link rel="icon" type="image/svg" href="<?php echo get_stylesheet_directory_uri()."/assets/svg/logo-small.svg"; ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri()."/assets/css/style.css"; ?>"">
   <title>Composition <?= wp_title( '|', false ); ?></title>
 
-  <?php wp_head(); ?>
+	<?php wp_head(); ?>
+	<script type="text/javascript">
+		const stylesheet_directory_uri = "<?php echo get_stylesheet_directory_uri(); ?>";
+	</script>
 </head>
 <body>
+	
+	<div id="body-wrapper">
+		<header class="main-header">
+		<?php
+			$menuItems = wp_get_nav_menu_items("Principal");
+			if($pagename == '')
+			{
+				$style = "white-style";
+			}
+			else
+			{
+				$style = "black-style";
+			}
+		?>
+		<div class="container <?= $style ?>"> 
+		
+			<a href="#" class="mh-logo">
 
-  <header>
-
-    <nav>
-      <ul>
-        <?php 
-          $pages = get_pages(); 
-          foreach ( $pages as $page ) {
-            $option = '<li><a href="' . get_page_link( $page->ID ) . '">';
-            $option .= $page->post_title;
-            $option .= '</a></li>';
-            echo $option;
-          }
-        ?>
-      </ul>
-    </nav>
-
-  </header>
+				<?php $uri = get_stylesheet_directory_uri()."/assets/svg/logo-full.svg"; ?>
+				<img src="<?php echo $uri ?>"/>
+			</a>
+			<nav class="main-nav <?= $style ?>">
+				<ul class="main-nav-list">
+					<?php
+						$html = '';
+						$counter = 0;
+						$uri = '<img src="'.get_stylesheet_directory_uri()."/assets/svg/home-minimal.svg".'" width="15"/>';
+						foreach($menuItems as $menuItem)
+						{
+							$class = "";
+							
+							if(home_url( $wp->request ).'/' == $menuItem->url) {
+								$class = "active";
+							}
+							if($counter == 0)
+							{
+								$menuItem->title = $uri;
+							}
+							
+							$html .= '<li class="menu-item '.$class.'">';
+								$html .= '<a href="'.$menuItem->url.'">';
+									$html .= $menuItem->title;
+								$html .= '</a>';
+							$html .= '</li>';
+							$counter++;
+						}
+						echo $html;
+					?>
+					
+					<li class="wish-list">
+						<a href="#">Wish List 
+							
+							<?php $uri = get_stylesheet_directory_uri()."/assets/svg/wish.svg"; ?>
+							<img src="<?php echo $uri ?>" width="15"/>
+							
+						</a>
+					</li>
+					<li class="telephone">
+						<a href="#">
+							<?php $uri = get_stylesheet_directory_uri()."/assets/svg/phone-2.svg"; ?>
+							<img src="<?php echo $uri ?>" width="15"/>
+						</a>
+					</li>
+					<li class="menu">
+						
+						<a href="#"><span class="menu-label">Menu</span>
+							<?php $uri = get_stylesheet_directory_uri()."/assets/svg/menu.png"; ?>
+							<img src="<?php echo $uri ?>" width="15"/>
+						</a>
+						<div id="menu-mobile" class="hidden">
+						
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="clear-bar-nav"></div>
