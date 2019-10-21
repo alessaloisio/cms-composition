@@ -8,7 +8,7 @@
 header {
   .container {
     width: 100%;
-    padding: 20px;
+    padding: 20px 0px;
     margin: 0 auto;
     transition: padding 0.4s;
   }
@@ -33,7 +33,7 @@ header {
     .container {
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-wrap: nowrap;
       background-color: $background-base-color;
       //margin-top: 30px;

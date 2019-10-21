@@ -42,6 +42,7 @@
 				<style>
 					header.main-header {
 						top: 10px;
+						background-color: <?= $color ?>;
 					}
 					.clear-bar-nav {
 						background-color: <?= $color ?>;
@@ -51,7 +52,7 @@
 			}
 		
 		?>
-		<div class="container <?= $style ?>"> 
+		<div class="center container <?= $style ?>"> 
 		
 			<a href="#" class="mh-logo">
 
@@ -87,7 +88,7 @@
 					?>
 					
 					<li class="wish-list">
-						<a href="#">Wish List 
+						<a href="#">Wishlist 
 							
 							<?php $uri = get_stylesheet_directory_uri()."/assets/svg/wish.svg"; ?>
 							<img src="<?php echo $uri ?>" width="15"/>
