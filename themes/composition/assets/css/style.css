@@ -741,6 +741,7 @@ footer {
         top: 10px; }
     footer .bloc-coordonnees p,
     footer .bloc-coordonnees a {
+      padding-bottom: inherit;
       display: inline-block;
       font-size: 18px;
       color: #000;
