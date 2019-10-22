@@ -29,3 +29,37 @@
     }
   }
 }
+
+@media (max-width: 1230px) {
+  .container-caractere {
+    max-width: 100%;
+    padding-top: 0;
+
+    .content-caractere {
+      max-width: 640px;
+      margin: 0 auto;
+
+      .split {
+        flex-wrap: wrap;
+        .col-4,
+        .col {
+          flex-basis: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .container-caractere {
+    &.center {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+
+      .content-caractere {
+        padding-right: $mobile-padding-center !important;
+        padding-left: $mobile-padding-center !important;
+      }
+    }
+  }
+}
