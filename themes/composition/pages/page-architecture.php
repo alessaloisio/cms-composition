@@ -53,6 +53,7 @@
           <?php else: ?>
             <p><?php _e('Désolé, nous n\'avons pas de projet à vous présentez pour le moment.'); ?></p>
           <?php endif; ?>
+        </div>
       </div>
     </section>
     <section class="container-histoire center">

@@ -41,7 +41,7 @@
 				?>
 				<style>
 					header.main-header {
-						top: 10px;
+						top: 28px;
 						background-color: <?= $color ?>;
 					}
 					.clear-bar-nav {

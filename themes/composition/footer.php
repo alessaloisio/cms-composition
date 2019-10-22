@@ -1,5 +1,5 @@
-		<footer class="banner">
-			<div id="footer-top center">
+		<footer class="banner center">
+			<div id="footer-top">
 				<div class="banner-content">
 					<div class="content">
 					<?php // var_dump(get_field('timeline', 'options')); ?>
