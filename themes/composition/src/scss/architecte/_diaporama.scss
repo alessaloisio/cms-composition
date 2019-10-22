@@ -57,6 +57,7 @@
           transition: all 0.3s linear;
 
           svg {
+
             path,
             line {
               stroke: #efefef;
@@ -69,7 +70,9 @@
 
           &:hover {
             background-color: #efefef;
+
             svg {
+
               path,
               line {
                 stroke: #2f2f2f;

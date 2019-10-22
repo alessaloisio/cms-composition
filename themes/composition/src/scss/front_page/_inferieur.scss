@@ -5,7 +5,7 @@
 }
 
 .inferieur_col-g {
-    max-width: 50%;
+    width: 50%;
 
     .inferieur_img {
         max-width: 100%;
@@ -14,5 +14,39 @@
 }
 
 .inferieur_col-d {
-    max-width: 50%;
+    width: 50%;
+
+    .inferieur_container-white {
+        margin-left: 70px;
+        padding-top: 75px;
+        padding-bottom: 80px;
+
+        h3 {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 27px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 2;
+            padding: 0px;
+        }
+
+        .dispo_lien {
+            margin-top: 50px;
+
+            .icon-container {
+                margin: 11px 0px 0px 25px;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 700;
+                padding-top: 2px;
+            }
+        }
+    }
 }

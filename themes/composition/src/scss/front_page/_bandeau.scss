@@ -3,17 +3,24 @@ body {
   font-size: 1em;
 }
 
+
 .section_bandeau {
   width: 100%;
+  height: 70vh;
   display: flex;
   flex-direction: row;
+  margin-bottom: 320px;
+
 
   .bandeau_col-g,
   .bandeau_col-d {
     max-width: 50%;
+    flex-basis: 50%;
 
     .bandeau_img {
       width: 100%;
+      height: 100%;
+      background-size: cover !important;
     }
 
     .bandeau_white-container {
@@ -25,16 +32,16 @@ body {
       color: #000000;
       box-shadow: 1px 3px 5px 1px #e4dfdff1;
       position: relative;
-      left: 11.3%;
+      left: 18%;
       top: -8vh;
       padding: 0px 7%;
+      margin-bottom: 320px;
 
       h1 {
-        opacity: 0.8;
+        font-size: 24px;
+        font-weight: 300;
         letter-spacing: 0.3px;
         word-spacing: 0.5px;
-        font-size: 24px;
-
         padding-top: 66px;
         padding-bottom: 66px;
       }
@@ -48,17 +55,15 @@ body {
       background-color: #000000;
       color: #ffffff;
       position: relative;
-      left: 8.3%;
+      left: 12%;
       top: -8vh;
       padding: 0px 7%;
-      margin-bottom: 19.8vh;
 
       h1 {
-        opacity: 1;
+        font-weight: 300;
+        font-size: 24px;
         letter-spacing: 0.3px;
         word-spacing: 0.5px;
-        font-size: 24px;
-
         padding-top: 66px;
         padding-bottom: 66px;
       }
@@ -69,10 +74,10 @@ body {
       background-color: #ffffff;
       box-shadow: 1px 3px 5px 1px #e4dfdff1;
       color: #000000;
-      width: 70%;
+      width: 80%;
       min-height: 0%;
       position: relative;
-      left: 22%;
+      left: 18%;
       top: -18%;
       display: none;
       justify-content: center;
@@ -80,34 +85,33 @@ body {
       padding-top: 50px;
       padding-left: 7%;
       padding-right: 7%;
-      margin-top: 0px;
-      margin-bottom: 0px;
+      margin-bottom: 260px;
+
+
 
       h3 {
         opacity: 0.8;
         font-size: 24px;
-
+        font-weight: 300;
         margin-bottom: 30px;
         letter-spacing: 0.3px;
         word-spacing: 0.5px;
       }
 
       p {
-        opacity: 0.7;
-        font-size: 16px;
-
+        font-size: 14px;
         letter-spacing: 0.3px;
-        line-height: 2;
+        line-height: 1.8;
       }
     }
 
     .bandeau_black-container-hover {
       background-color: #000000;
       color: #ffffff;
-      width: 70%;
+      width: 80%;
       min-height: 0%;
       position: relative;
-      left: 8.3%;
+      left: 12%;
       top: -18%;
       display: none;
       justify-content: center;
@@ -115,24 +119,20 @@ body {
       padding-top: 50px;
       padding-left: 7%;
       padding-right: 7%;
-      margin-top: 0px;
-      margin-bottom: 0px;
 
       h3 {
         opacity: 1;
         letter-spacing: 0.3px;
         word-spacing: 0.5px;
         font-size: 24px;
-
+        font-weight: 300;
         margin-bottom: 30px;
       }
 
       p {
-        opacity: 1;
-        font-size: 16px;
-
+        font-size: 14px;
         letter-spacing: 0.3px;
-        line-height: 2;
+        line-height: 1.8;
       }
     }
   }
@@ -141,18 +141,24 @@ body {
 .dispo_lien {
   display: flex;
   flex-direction: row;
-  opacity: 1;
   margin-top: 15px;
+
+  &:link,
+  &:visited {
+    text-decoration-color: #000;
+    color: #000;
+
+  }
 
   p {
     font-size: 18px;
-    font-family: "proxima-nova", serif;
-    font-weight: bold;
-    color: black;
+    font-weight: 700;
+    color: #000;
   }
 
   .icon-container {
     margin-left: 25px;
+    margin-top: 7px;
   }
 }
 
@@ -161,7 +167,80 @@ body {
   flex-direction: row;
 
   p {
-    color: white;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
     text-decoration-color: white;
   }
+
+  &:link,
+  &:visited {
+    text-decoration-color: white;
+
+  }
+
+}
+
+.icon-container-white {
+  width: 45px;
+  height: 45px;
+  margin-left: 25px;
+  margin-top: 5px;
+
+  svg {
+
+    path,
+    line {
+      stroke: #efefef;
+    }
+  }
+}
+
+.previous,
+.next {
+  background-color: #2f2f2f;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+
+  svg {
+
+    path,
+    line {
+      stroke: #efefef;
+    }
+  }
+
+  &:first-child {
+    margin-bottom: 18px;
+  }
+
+  &:hover {
+    background-color: #efefef;
+
+    svg {
+
+      path,
+      line {
+        stroke: #2f2f2f;
+      }
+    }
+  }
+}
+
+.bandeau_relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.absolute {
+  position: absolute;
+  right: -20px;
+  top: 45%;
 }

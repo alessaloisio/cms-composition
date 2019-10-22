@@ -2,16 +2,49 @@
   width: 100%;
 
   .centre_grey-container {
-    width: 43.5%;
-    height: 61vh;
+    width: 40%;
+    height: 770px;
     background-color: #f6f6f6;
     z-index: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100vw;
+      background-color: #f6f6f6;
+      top: 0;
+      left: -100vw;
+    }
 
     .centre_white-container {
-      padding-top: 30.5vh;
-      margin-left: 61%;
-      width: 100%;
+      padding-top: 35%;
+      margin-left: 50%;
+      width: 140%;
       z-index: 1;
+
+      p {
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: 0.3px;
+        word-spacing: 0.5px;
+        padding: 0px;
+        margin: 0px 0px 50px;
+      }
+
+      .dispo_lien {
+        .icon-container {
+          margin: 5px 0px 0px 25px;
+        }
+
+        p {
+          font-size: 18px;
+          font-weight: 700;
+          padding-top: 2px;
+        }
+      }
     }
   }
 }
