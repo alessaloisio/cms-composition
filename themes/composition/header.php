@@ -37,21 +37,17 @@
 				$style = "black-style";
 				$color = "black";
 			}
-			if( current_user_can('editor') || current_user_can('administrator') ) {
+			
 				?>
 				<style>
 					header.main-header {
-						top: 10px;
 						background-color: <?= $color ?>;
 					}
 					.clear-bar-nav {
 						background-color: <?= $color ?>;
 					}
 				</style>
-				<?php
-			}
-		
-		?>
+				
 		<div class="center container <?= $style ?>"> 
 		
 			<a href="#" class="mh-logo">

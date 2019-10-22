@@ -95,3 +95,72 @@ ul {
 #body-wrapper + #wpadminbar {
   margin: 0;
 }
+.slide-content-right {
+  visibility: hidden;
+}
+.slide-from-right {
+  -webkit-animation: animat_slide_right 1.4s;
+  animation: animat_slide_right 1.4s;
+  visibility: visible !important;
+}
+.slide-content-left {
+  visibility: hidden;
+}
+.slide-from-left {
+  -webkit-animation: animat_slide_left 1.4s;
+  animation: animat_slide_left 1.4s;
+  visibility: visible !important;
+}
+.fade-content {
+  visibility: hidden;
+}
+.fade-in {
+  -webkit-animation: animat_show 1.4s;
+  animation: animat_show 1.4s;
+  visibility: visible !important;
+}
+
+@-webkit-keyframes animat_show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animat_show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animat_slide_left {
+  0% {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes animat_slide_right {
+  0% {
+    opacity: 0;
+    transform: translateX(400px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.rotate {
+  transform: rotate(0deg);
+  transition: transform 3s;
+  transition-timing-function: ease-in-out;
+  &:hover {
+    transform: rotate(720deg);
+  }
+}

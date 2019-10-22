@@ -6,8 +6,11 @@
   <div class="block-black"></div>
   <div class="block-content center">
     <section class="container-diaporama">
- 
-      <h1>Pas plus de design, du meilleur design.</h1>
+			<?php 
+				$titre = get_field('titre_de_la_page', 'options');
+
+			?>
+      <h1 class="slide-content-left"><?= $titre ?></h1>
         
       <div class="content-diaporama">
         <!-- Permet de faire un query pour récupérer les projets -->
@@ -25,7 +28,7 @@
 							{
 								
 								$html .= '  <div class="post">';
-								$html .= '<img src="'.$image['image']['sizes']['large'].'"/>';
+								$html .= '<img class="fade-content" src="'.$image['image']['sizes']['large'].'"/>';
 								$html .= '	</div>';
 							}
 							$html .= '</div>';
@@ -55,17 +58,17 @@
       </div>
     </section>
     <section class="container-histoire">
-      <div class="block first-block">
+      <div class="block first-block slide-content-left">
 			<?php 
 				$histoire = get_field('histoire', 'options');
 				$html = '<h1>'.$histoire['titre'].'</h1>';
 				$html .= '<p class="subtitle">'.$histoire['sous-titre'].'</p>';
-				$html .= $histoire['texte'];
+				$html .= str_replace('<p>','<p class="fade-content">', $histoire['texte']);
 				echo $html;
 			?>
         
     	</div>
-      <div class="block second-block">
+      <div class="block second-block fade-content">
 				<?php 
 				//var_dump(get_field('timeline', 'options')); 
 				$rows = get_field('timeline', 'options');
@@ -74,7 +77,7 @@
 				{
 					foreach($rows as $row)
 					{
-						$html .= '<li class="light"><span class="annee">'.$row['annee'].'</span>';
+						$html .= '<li class="light fade-content"><span class="annee">'.$row['annee'].'</span>';
 						$html .= '<div class="trait"></div><p class="texte">'.$row['description'].'</p></li>';
 						
 					}
@@ -87,14 +90,14 @@
 				<?php
 					$caractere = get_field('caractere', 'options');
 				?>
-        <img src=" <?= $caractere['image']['sizes']['large'] ?>" alt="">
+        <img class="fade-content" src=" <?= $caractere['image']['sizes']['large'] ?>" alt="">
       </div>
-      <div class="block fourth-block">
+      <div class="block fourth-block slide-content-right">
 				<?php
 				
 				$html = '<h1>'.$caractere['titre'].'</h1>';
 				$html .= '<p class="subtitle">'.$caractere['sous-titre'].'</p>';
-				$html .= $caractere['texte'];
+				$html .= str_replace('<p>','<p class="fade-content">', $caractere['texte']);
 				echo $html; 
 				?>
         
@@ -102,9 +105,9 @@
      
     </section>
   </div>
-  <div class="block-contact about">
+  <div class="block-contact about slide-content-right">
     <div class="center">
-      <div class="white-block">
+      <div class="white-block slide-content-left">
         <h1>Je souhaite connaître les conditions</h1>
         <a class="link" href="<?php echo get_site_url(); ?>/contact">
           Contact <span class="arrow"><img src="<?= get_template_directory_uri() ?>/assets/svg/Group 1300.svg" alt="Fleche vers la droite"></span>

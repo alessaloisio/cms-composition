@@ -1,10 +1,10 @@
 		<footer class="banner">
-			<div id="footer-top center">
+			<div id="footer-top" class="center fade-content">
 				<div class="banner-content">
 					<div class="content">
 					
 						<div class="cta-news">
-							<div class="image-container">
+							<div class="image-container slide-content-left">
 								<img src="<?= get_field('footer_image','options')['sizes']['medium_large']; ?>"/>
 							</div>
 							<div class="textes-container">
@@ -13,13 +13,13 @@
 								<img src="<?php echo get_stylesheet_directory_uri()."/assets/svg/fleche-droite.svg"; ?>"/>
 							</div>
 						</div>
-						<div class="heures-container tablet-off">
+						<div class="heures-container tablet-off slide-content-right">
 							<div class="icon">
 							<img src="<?php echo get_stylesheet_directory_uri()."/assets/svg/time-clock.svg"; ?>"/>
 							</div>
-							<h5 class="titre-section" when-visible="fade">Horaires</h5>
+							<h5 class="titre-section">Horaires</h5>
 							<ul>
-								<li when-visible="fade">
+								<li>
 
 									<p><?php the_field('footer_horaires', 'options')['titre']; ?>
 									</p>
@@ -30,13 +30,13 @@
 					</div>
 				</div>
 			</div>
-			<div id="footer-bottom">
+			<div id="footer-bottom" class="fade-content">
 				<div class="banner-content">
 					<div class="content">
 						<div class="bloc-googlemap">
-							<h5 class="titre-section">Rendez-nous visite !</h5>
+							<h5 class="titre-section slide-content-left">Rendez-nous visite !</h5>
 							
-							<a class="googlemap lien-texte-fleche" when-visible="fade" href="<?= get_field('footer_googleMap_link','options'); ?>" target="_blank" rel="noopener">Google map
+							<a class="googlemap lien-texte-fleche" href="<?= get_field('footer_googleMap_link','options'); ?>" target="_blank" rel="noopener">Google map
 								<div class="icon">
 									<img src="<?php echo get_stylesheet_directory_uri()."/assets/svg/fleche-droite.svg"; ?>"/>
 								</div>
@@ -69,25 +69,25 @@
 							</span>
 						</div>
 						<div class="heures-container tablet-on"></div>
-						<div class="social-icons desktop">
+						<div class="social-icons desktop slide-content-right">
 							<ul>
 								<li class="facebook">
 									<a class="icon-container" href="<?= get_field('footer_facebook','options'); ?>">
-										<div class="icon facebook">
+										<div class="icon facebook rotate">
 											<img src="<?php echo get_stylesheet_directory_uri()."/assets/svg/logo-facebook.svg"; ?>"/>
 										</div>
 									</a>
 								</li>
 								<li class="instagram">
 									<a class="icon-container" href="<?= get_field('footer_instagram','options'); ?>">
-										<div class="icon instagram">
+										<div class="icon instagram rotate">
 											<img src="<?php echo get_stylesheet_directory_uri()."/assets/svg/logo-instagram.svg"; ?>"/>
 										</div>
 									</a>
 								</li>
 								<li class="pinterest">
 									<a class="icon-container" href="<?= get_field('footer_pinterest','options'); ?>">
-										<div class="icon pinterest">
+										<div class="icon pinterest rotate">
 											<img src="<?php echo get_stylesheet_directory_uri()."/assets/svg/logo-pinterest.svg"; ?>"/>
 										</div>
 									</a>
