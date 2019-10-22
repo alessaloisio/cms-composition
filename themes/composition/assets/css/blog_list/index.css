@@ -1,0 +1,21 @@
+.banner-bloglist {
+  border: black;
+  width: 1284px;
+  height: 400px;
+  background-color: black; }
+
+.container-bloglist {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto; }
+  .container-bloglist .post {
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 240px; }
+    .container-bloglist .post img {
+      width: 100%;
+      max-height: 463px;
+      max-width: 458px; }

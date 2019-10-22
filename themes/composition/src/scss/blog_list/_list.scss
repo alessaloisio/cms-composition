@@ -1,0 +1,30 @@
+
+
+
+
+.container-bloglist {
+    
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1360px;
+    width: 100%;
+    margin: 0 auto;
+
+    .post {
+        width: 50%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 240px;
+
+        img {
+            width: 100%;
+            max-height: 463px;
+            max-width: 458px;
+
+        }
+    }
+
+
+
+}
+
