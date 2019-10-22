@@ -2,6 +2,10 @@
   display: block;
   margin-bottom: 12em;
 
+  * {
+    transition: all 0.5s linear;
+  }
+
   h1 {
     padding: 5em 0;
     color: #fff;
@@ -22,7 +26,6 @@
   }
 
   .content-diaporama {
-    display: inline-flex;
     width: 100%;
 
     .posts {
@@ -137,6 +140,76 @@
               align-items: center;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+// FIX NAV SLIDER 2
+@media (max-width: 1565px) {
+  #history-gallery {
+    .content-diaporama {
+      .posts {
+        #nav-diaporama {
+          right: 32px;
+          top: 35px;
+        }
+      }
+    }
+  }
+}
+
+/**
+* TABLET MODE
+*/
+@media (max-width: 1230px) {
+  .container-diaporama {
+    margin-bottom: 7em;
+
+    h1 {
+      padding: 4em 0;
+    }
+    .content-diaporama {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+
+      &.center {
+        max-width: 100%;
+      }
+
+      .posts {
+        max-width: 100%;
+
+        #slider-diaporama {
+          height: 48em;
+        }
+
+        #nav-diaporama {
+          right: 32px;
+          top: 35px;
+        }
+      }
+    }
+  }
+}
+
+/**
+* MOBILE MODE
+*/
+@media (max-width: 640px) {
+  .container-diaporama {
+    h1 {
+      padding-left: $mobile-padding-center / 2 !important;
+      padding-right: $mobile-padding-center / 2 !important;
+    }
+
+    .content-diaporama {
+      .posts {
+        max-height: 30em;
+
+        #slider-diaporama {
+          height: 30em;
         }
       }
     }
