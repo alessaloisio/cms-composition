@@ -1,9 +1,24 @@
+@mixin admin-sticky-fix($offset: 0) {
+  $narrow-offset: 46px;
+  $wide-offset: 32px;
+  @if $offset != 0 and type-of($offset) == "number" {
+    $narrow-offset: $narrow-offset + $offset;
+    $wide-offset: $wide-offset + $offset;
+  }
+  #admin-bar & {
+    top: $narrow-offset;
+    @media screen and (min-width: 783px) {
+      top: $wide-offset;
+    }
+  }
+}
+
 /**
  * Limit the container in
  * width for big screens
  */
 .clear-bar-nav {
-  height: 115.6px;
+  height: 140px;
 }
 header {
   .container {
@@ -27,7 +42,8 @@ header {
   &.main-header {
     width: 100%;
     position: fixed;
-    top: 0;
+
+    @include admin-sticky-fix;
     //overflow: hidden;
     z-index: 5;
     .container {
