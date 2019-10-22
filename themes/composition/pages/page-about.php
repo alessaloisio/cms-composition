@@ -63,18 +63,22 @@
 
     	</div>
       <div class="block second-block">
-				
-        <ul class="chronologie">
-          <li class="light"><span class="annee">2005</span><div class="trait"></div><p class="texte">Magasin de 200 m2, route du Condroz</p></li>
-          <li class="light"><span class="annee">2005</span><div class="trait"></div><p class="texte">Premium dealer pour Ethnicraft</p></li>
-					<li class="light"><span class="annee">2012</span><div class="trait"></div><p class="texte">Magasin de 1000m2, Huy</p></li>
-					<li class="light"><span class="annee">2014</span><div class="trait"></div><p class="texte">Premium dealer pour Vincent Shepard</p></li>
-					<li class="light"><span class="annee">2015</span><div class="trait"></div><p class="texte">Premium dealer pour Fama</p></li>
-					<li class="light"><span class="annee">2016</span><div class="trait"></div><p class="texte">Premium dealer pour MD House</p></li>
-					<li class="light"><span class="annee">2017</span><div class="trait"></div><p class="texte">Premium dealer pour Fermob</p></li>
-					<li class="light"><span class="annee">2018</span><div class="trait"></div><p class="texte">Premium dealer pour Diaz</p></li>
-					<li class="light"><span class="annee">2018</span><div class="trait"></div><p class="texte">Premium dealer pour Oliver B</p></li>
-        </ul>
+				<?php 
+				//var_dump(get_field('timeline', 'options')); 
+				$rows = get_field('timeline', 'options');
+				$html = '<ul class="chronologie">';
+				if(!empty($rows))
+				{
+					foreach($rows as $row)
+					{
+						$html .= '<li class="light"><span class="annee">'.$row['annee'].'</span>';
+						$html .= '<div class="trait"></div><p class="texte">'.$row['description'].'</p></li>';
+						
+					}
+				}
+				$html .= '</ul>';
+				echo $html;
+				?>
       </div>
       <div class="block third-block">
         <img src=" <?= get_template_directory_uri() ?>/assets/images/1000x1300_01.jpg" alt="">
