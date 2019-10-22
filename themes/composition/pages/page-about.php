@@ -1,4 +1,4 @@
-<?php /* Template Name: Architecture Template */ ?>
+<?php /* Template Name: About Template */ ?>
 
 <?php get_header(); ?>
 
@@ -63,6 +63,7 @@
 
     	</div>
       <div class="block second-block">
+				
         <ul class="chronologie">
           <li class="light"><span class="annee">2005</span><div class="trait"></div><p class="texte">Magasin de 200 m2, route du Condroz</p></li>
           <li class="light"><span class="annee">2005</span><div class="trait"></div><p class="texte">Premium dealer pour Ethnicraft</p></li>
