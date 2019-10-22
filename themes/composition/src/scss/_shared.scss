@@ -41,6 +41,19 @@ ul {
   position: relative;
 }
 
+@media (max-width: 1230px) {
+  .center {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 640px) {
+  .center {
+    padding-left: $mobile-padding-center !important;
+    padding-right: $mobile-padding-center !important;
+  }
+}
+
 // BLACK INTRO BLOCK
 // CONTACT BLOCK
 .page-content {
@@ -63,6 +76,7 @@ ul {
     background-size: cover;
     margin-bottom: 9.5em;
     overflow: hidden;
+    position: relative;
 
     .white-block {
       background-color: #fff;
@@ -86,6 +100,38 @@ ul {
 
         .arrow {
           padding-left: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1230px) {
+  .page-content {
+    .block-contact {
+      min-height: 25em;
+      max-height: 100%;
+      display: grid;
+      overflow: initial;
+      margin-bottom: 18em;
+
+      .white-block {
+        position: absolute;
+        margin: 0;
+        bottom: -9em;
+        border-bottom: 2px solid #f1f1f1;
+
+        & * {
+          transition: all 0.5s linear;
+        }
+
+        &::before {
+          content: "";
+          width: 100vw;
+          position: absolute;
+          height: 100%;
+          left: 100%;
+          background-color: #fff;
         }
       }
     }
