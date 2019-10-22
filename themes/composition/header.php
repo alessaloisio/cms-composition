@@ -54,7 +54,7 @@
 		?>
 		<div class="center container <?= $style ?>"> 
 		
-			<a href="#" class="mh-logo">
+			<a href="<?= home_url(); ?>" class="mh-logo">
 
 				<?php $uri = get_stylesheet_directory_uri()."/assets/svg/logo-full.svg"; ?>
 				<img src="<?php echo $uri ?>"/>
