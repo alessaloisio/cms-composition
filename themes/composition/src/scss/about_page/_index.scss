@@ -1,0 +1,37 @@
+.container-histoire .second-block ul.chronologie {
+  list-style: none;
+  height: 100%;
+  padding: 0;
+  padding-bottom: 100px;
+  li {
+    padding-left: 0;
+    .annee {
+      display: inline-block;
+      width: 10%;
+      color: $background-base-color;
+      font-weight: bold;
+    }
+    div.trait {
+      position: relative;
+      bottom: 4px;
+      display: inline-block;
+      margin-left: 10px;
+      margin-right: 20px;
+      width: 6.7%;
+      border-top: 1px solid grey;
+    }
+    .texte {
+      display: inline-block;
+    }
+  }
+}
+.page-content .block-contact.about {
+  background: url("../images/1170x600.jpg") no-repeat center bottom;
+  background-size: auto;
+  -webkit-background-size: cover;
+  background-size: cover;
+  max-height: 525px;
+  background-size: cover;
+  margin-bottom: 9.5em;
+  overflow: hidden;
+}

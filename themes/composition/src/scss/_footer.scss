@@ -1,0 +1,345 @@
+footer {
+  font-family: "proxima-nova", sans-serif;
+  color: #000;
+  a {
+    text-decoration: none;
+    &:visited {
+      color: #000;
+    }
+  }
+  overflow-y: hidden;
+  background: #ffffff; //$background-base-color;
+  .copyright-line {
+    float: right;
+    text-align: right;
+    width: 33%;
+
+    a {
+      padding: 15px 5px;
+      text-decoration: none;
+      position: relative;
+      cursor: pointer;
+      font-size: 11px;
+      font-weight: 400;
+      color: black;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .social-icons {
+    width: 33%;
+    float: right;
+    margin-bottom: 15px;
+    ul {
+      float: right;
+    }
+    ul li {
+      display: inline-block;
+      a.icon-container {
+        margin-left: 13px;
+
+        .icon {
+          display: inline-block;
+          width: 53px;
+          height: 53px;
+          text-align: center;
+          background: rgba(255, 255, 255, 0.1);
+          background-repeat: repeat;
+          border-radius: 50%;
+          border: 2px solid #d9d9d9;
+          &:hover {
+            background: #000;
+            img {
+              filter: invert(1);
+            }
+          }
+          img {
+            display: inline-block;
+            margin-top: 14px;
+          }
+        }
+      }
+    }
+  }
+  .heures-container.tablet-on {
+    display: none;
+  }
+  .bloc-coordonnees {
+    width: 33%;
+    float: left;
+    span {
+      display: block;
+      color: #000;
+      padding-left: 9%;
+      position: relative;
+      .icon {
+        width: 18px;
+        position: absolute;
+        display: inline-block;
+        height: 100%;
+        left: 0;
+        top: 10px;
+      }
+    }
+    p,
+    a {
+      display: inline-block;
+      font-size: 18px;
+      color: #000;
+      line-height: 2;
+      font-weight: 400;
+      font-family: "proxima-nova", sans-serif;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  .bloc-googlemap {
+    width: 33%;
+    float: left;
+    .titre-section {
+      font-size: 32px;
+      margin-bottom: 25px;
+      letter-spacing: 1px;
+    }
+    .googlemap {
+      position: relative;
+      display: inline-block;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-decoration: none;
+      color: #000;
+      .icon {
+        display: inline-block;
+        width: 20px;
+        height: 9px;
+        position: absolute;
+        top: 14px;
+        right: -30px;
+      }
+    }
+  }
+  #footer-bottom {
+    .content {
+      padding: 50px 0 40px;
+    }
+  }
+  #footer-top {
+    .content {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding-bottom: 75px;
+    }
+  }
+  .cta-news {
+    width: 68%;
+    float: left;
+    .image-container {
+      width: 150px;
+      height: 150px;
+      float: left;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+    .textes-container {
+      height: 100%;
+      background: #ffffff;
+      padding: 35px 15% 0px 5%;
+      float: right;
+      width: calc(100% - 150px);
+    }
+  }
+  .heures-container.tablet-off {
+    position: relative;
+    width: 32%;
+    float: right;
+    background: #000;
+    padding: 40px 0% 40px 5%;
+    .icon {
+      width: 17px;
+      position: absolute;
+      left: 6%;
+      //top: -38px;
+    }
+    .titre-section {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 15px;
+    }
+    li {
+      margin-bottom: 7px;
+      p {
+        font-weight: 400;
+        line-height: 1.5;
+        color: #fff;
+      }
+    }
+  }
+  .banner {
+    display: inline-block;
+    width: 100%;
+    clear: both;
+    position: relative;
+  }
+  .banner-content {
+    max-width: 1500px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+  }
+  .content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+  }
+  .lien-texte-fleche {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    padding: 15px;
+    padding-left: 0;
+    display: inline-block;
+    position: relative;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1230px) {
+  //CSS
+  footer {
+    .cta-news {
+      width: 100%;
+    }
+    .bloc-googlemap {
+      width: 100%;
+    }
+    .bloc-coordonnees {
+      margin-top: 30px;
+      width: 100%;
+    }
+    .heures-container.tablet-on {
+      display: block;
+      margin-top: 30px;
+      position: relative;
+      width: 100%;
+      float: left;
+      background: #000;
+      padding: 40px 0% 40px 12%;
+      .icon {
+        width: 17px;
+        position: absolute;
+        left: 6%;
+        //top: -38px;
+      }
+      .titre-section {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        margin-bottom: 15px;
+      }
+      li {
+        margin-bottom: 7px;
+        p {
+          font-weight: 400;
+          line-height: 1.5;
+          color: #fff;
+        }
+      }
+    }
+    .heures-container.tablet-off {
+      display: none;
+    }
+    .copyright-line {
+      width: 50%;
+      float: right;
+      margin-top: 50px;
+    }
+    .social-icons {
+      margin-top: 30px;
+      width: 50%;
+      float: left;
+      ul {
+        float: left;
+      }
+    }
+  }
+}
+@media screen and (max-width: 640px) {
+  footer {
+    .cta-news {
+      width: 100%;
+      .image-container {
+        display: none;
+      }
+      .textes-container {
+        height: 100%;
+        background: #ffffff;
+        padding: 35px 5% 0px 5%;
+        float: right;
+        width: 100%;
+      }
+    }
+    .bloc-googlemap {
+      width: 100%;
+    }
+    .bloc-coordonnees {
+      margin-top: 30px;
+      width: 100%;
+    }
+    .heures-container.tablet-on {
+      display: block;
+      margin-top: 30px;
+      position: relative;
+      width: 100%;
+      float: left;
+      background: #000;
+      padding: 40px 0% 40px 12%;
+      .icon {
+        width: 17px;
+        position: absolute;
+        left: 6%;
+        //top: -38px;
+      }
+      .titre-section {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        margin-bottom: 15px;
+      }
+      li {
+        margin-bottom: 7px;
+        p {
+          font-weight: 400;
+          line-height: 1.5;
+          color: #fff;
+        }
+      }
+    }
+    .heures-container.tablet-off {
+      display: none;
+    }
+    .copyright-line {
+      display: none;
+    }
+    .social-icons {
+      width: 100%;
+      margin-top: 30px !important;
+      ul {
+        text-align: center;
+        float: none;
+      }
+    }
+  }
+}

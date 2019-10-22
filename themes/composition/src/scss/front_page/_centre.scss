@@ -1,0 +1,17 @@
+.section_centre {
+  width: 100%;
+
+  .centre_grey-container {
+    width: 43.5%;
+    height: 61vh;
+    background-color: #f6f6f6;
+    z-index: 0;
+
+    .centre_white-container {
+      padding-top: 30.5vh;
+      margin-left: 61%;
+      width: 100%;
+      z-index: 1;
+    }
+  }
+}

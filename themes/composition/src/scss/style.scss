@@ -1,13 +1,36 @@
 @import "./reset";
+@import "./fonts";
+@import "./shared";
+
+$background-base-color: #fff;
+$foreground-base-color: #000;
+$font-family-menu: "ProximaNova", sans-serif;
 
 html,
 body {
   width: 100%;
   height: 100%;
+  font-family: "ProximaNova";
+  font-size: 1em;
 }
 
 body {
-  background-color: #ececec;
+  background-color: $background-base-color;
+}
+/** 
+ * Images a now responsive
+ */
+img {
+  max-width: 100%;
+  height: auto;
 }
 
+
+@import "./header.scss";
+@import "./footer.scss";
+
 @import "./blog_list/index.scss";
+@import "./front_page/index";
+@import "./contact_page/index";
+@import "./architecte/index";
+@import "./about_page/index";
