@@ -2,6 +2,12 @@
   padding-bottom: 12em;
 }
 
+@media (max-width: 1230px) {
+  .block-content {
+    padding-bottom: 4em;
+  }
+}
+
 @import "./diaporama";
 @import "./histoire";
 @import "./caractere";

@@ -13,7 +13,6 @@
 	<link rel="icon" type="image/svg" href="<?php echo get_stylesheet_directory_uri()."/assets/svg/logo-small.svg"; ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri()."/assets/css/style.css"; ?>"">
   <title>Composition <?= wp_title( '|', false ); ?></title>
 
 	<?php wp_head(); ?>
@@ -26,17 +25,34 @@
 	<div id="body-wrapper">
 		<header class="main-header">
 		<?php
+			
 			$menuItems = wp_get_nav_menu_items("Principal");
 			if($pagename == '')
 			{
 				$style = "white-style";
+				$color = "white";
 			}
 			else
 			{
 				$style = "black-style";
+				$color = "black";
 			}
+			if( current_user_can('editor') || current_user_can('administrator') ) {
+				?>
+				<style>
+					header.main-header {
+						top: 28px;
+						background-color: <?= $color ?>;
+					}
+					.clear-bar-nav {
+						background-color: <?= $color ?>;
+					}
+				</style>
+				<?php
+			}
+		
 		?>
-		<div class="container <?= $style ?>"> 
+		<div class="center container <?= $style ?>"> 
 		
 			<a href="#" class="mh-logo">
 
@@ -72,7 +88,7 @@
 					?>
 					
 					<li class="wish-list">
-						<a href="#">Wish List 
+						<a href="#">Wishlist 
 							
 							<?php $uri = get_stylesheet_directory_uri()."/assets/svg/wish.svg"; ?>
 							<img src="<?php echo $uri ?>" width="15"/>

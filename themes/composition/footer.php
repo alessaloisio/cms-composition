@@ -1,7 +1,8 @@
-		<footer class="banner">
+		<footer class="banner center">
 			<div id="footer-top">
 				<div class="banner-content">
 					<div class="content">
+					<?php // var_dump(get_field('timeline', 'options')); ?>
 						<div class="cta-news">
 							<div class="image-container">
 								<img src="<?= get_field('footer_image','options')['sizes']['medium_large']; ?>"/>

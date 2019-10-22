@@ -4,12 +4,10 @@
 
 <div class="page-content">
   <div class="block-black"></div>
-  <div class="block-content center">
+  <div class="block-content">
     <section class="container-diaporama">
-
-      <h1>Prendre soin de votre schéma de vie.</h1>
-        
-      <div class="content-diaporama">
+      <h1 class="center">Prendre soin de votre schéma de vie.</h1>
+      <div class="content-diaporama center">
         <!-- Permet de faire un query pour récupérer les projets -->
         <!-- https://codex.wordpress.org/the_loop => Multiple Loops Example 2 -->
         <?php query_posts( 'category_name=projets' ); ?>
@@ -55,9 +53,10 @@
           <?php else: ?>
             <p><?php _e('Désolé, nous n\'avons pas de projet à vous présentez pour le moment.'); ?></p>
           <?php endif; ?>
+        </div>
       </div>
     </section>
-    <section class="container-histoire">
+    <section class="container-histoire center">
       <div class="block first-block">
         <h1><span class="bolder">150 €</span> d'étude d'archi</h1>
         <p class="subtitle">Plutôt une bonne affaire, non ?</p>
@@ -90,8 +89,8 @@
         <div class="block-grey"></div>
       </div>
     </section>
-    <section class="container-caractere">
-      <div class="container-diaporama">
+    <section class="container-caractere center">
+      <div id="history-gallery" class="container-diaporama">
         <div class="content-diaporama">
           <!-- Permet de faire un query pour récupérer les projets -->
           <!-- https://codex.wordpress.org/the_loop => Multiple Loops Example 2 -->

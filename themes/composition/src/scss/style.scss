@@ -1,10 +1,7 @@
+@import "./variables";
 @import "./reset";
 @import "./fonts";
 @import "./shared";
-
-$background-base-color: #fff;
-$foreground-base-color: #000;
-$font-family-menu: "ProximaNova", sans-serif;
 
 html,
 body {
@@ -25,9 +22,18 @@ img {
   height: auto;
 }
 
+// Resize font size tablet
+@media (max-width: 1230px) {
+  html,
+  body {
+    font-size: 0.9em !important;
+  }
+}
+
 @import "./header.scss";
 @import "./footer.scss";
 
 @import "./front_page/index";
 @import "./contact_page/index";
 @import "./architecte/index";
+@import "./about_page/index";
