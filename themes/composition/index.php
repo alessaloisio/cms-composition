@@ -12,11 +12,14 @@
         <?php query_posts(array("category_name" => "articles","posts_per_page" => 6 )); ?>
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <!-- début d'un bloc post -->
-          <div class="post" class="attachment" >
+          <div class="post" class="attachment">
             <div class="image"><?php the_post_thumbnail(array(670,500)); ?></div>
-            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-            <small><?php the_time('F jS, Y'); ?></small>
-          </div>
+            <div class="title"><a href="<?php the_permalink(); ?>" alt="<?php the_title(); ?>"><?php the_title(); ?></a></div>
+            <div class="date">
+              <span class="trait"></span>
+              <p><?php the_time('j F Y'); ?></p>
+            </div>
+          </div>  
         <!-- fin d'un bloc post' -->
         <?php endwhile; else: ?>
           <p><?php _e('Désolé, nous n\'avons pas d\'article à vous proposez pour le moment.'); ?></p>
