@@ -6,7 +6,7 @@
   <div class="block-black"></div>
   <div class="block-content">
     <section class="container-diaporama">
-      <h1 class="center"><?= get_field('title_page', 'options'); ?></h1>
+      <h1 class="center slide-content-left"><?= get_field('title_page', 'options'); ?></h1>
       <div class="content-diaporama center">
         <!-- Permet de faire un query pour récupérer les projets -->
         <!-- https://codex.wordpress.org/the_loop => Multiple Loops Example 2 -->
@@ -17,7 +17,7 @@
             <div id="slider-diaporama">
               <?php while ( have_posts() ) : the_post(); ?>
                 <!-- début d'un bloc post -->
-                <div class="post">
+                <div class="post fade-content">
                   <?php the_post_thumbnail(); ?>
                   <div class="info-project">
                     <div class="info-content">
@@ -57,29 +57,29 @@
       </div>
     </section>
     <section class="container-histoire center">
-      <div class="block first-block">
+      <div class="block first-block slide-content-left">
         <?php $firstBlock = get_field('partie_1', 'options'); ?>
         
         <h1><?= $firstBlock['title']; ?></h1>
         <p class="subtitle"><?= $firstBlock['sous_titre'] ?></p>
         <?= $firstBlock['texte'] ?>
       </div>
-      <div class="block second-block">
+      <div class="block second-block fade-content">
         <?php $secondBlock = get_field('partie_2', 'options'); ?>
         <?= $secondBlock['texte']; ?>
       </div>
-      <div class="block third-block">
+      <div class="block third-block fade-content">
         <img src=" <?= get_field('partie_3', 'options')['image']['url']; ?>" alt="">
       </div>
-      <div class="block fourth-block">
+      <div class="block fourth-block slide-content-right">
         <?= get_field('partie_4', 'options')['texte']; ?>
       </div>
-      <div class="block fifth-block">
+      <div class="block fifth-block slide-content-right">
         <div class="block-grey"></div>
       </div>
     </section>
     <section class="container-caractere center">
-      <div id="history-gallery" class="container-diaporama">
+      <div id="history-gallery" class="container-diaporama fade-content">
         <div class="content-diaporama">
           <div class="posts">
             <div id="slider-diaporama">
@@ -89,7 +89,7 @@
                 foreach($slider as $value):
               ?>
                 <div class="post">
-                  <img src="<?= $value['image']['url'] ?>" alt="<?= $value['image']['title'] ?>" />
+                  <img class="fade-content" src="<?= $value['image']['url'] ?>" alt="<?= $value['image']['title'] ?>" />
                 </div>
               <?php 
                 endforeach; 
@@ -119,7 +119,7 @@
         </div>
       </div>
 
-      <div class="content-caractere">
+      <div class="content-caractere slide-content-left">
         <?php $caractereBlock = get_field('details', 'options'); ?>
         <h1><?= $caractereBlock['titre'] ?></h1>
         <p class="subtitle"><?= $caractereBlock['sous-titre'] ?></p>
@@ -135,9 +135,9 @@
       </div>
     </section>
   </div>
-  <div class="block-contact">
+  <div class="block-contact slide-content-right">
     <div class="center">
-      <div class="white-block">
+      <div class="white-block slide-content-left">
         <h1>Je souhaite connaître les conditions</h1>
         <a class="link" href="<?php echo get_site_url(); ?>/contact">
           Contact <span class="arrow"><img src="<?= get_template_directory_uri() ?>/assets/svg/Group 1300.svg" alt="Fleche vers la droite"></span>
