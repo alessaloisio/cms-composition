@@ -1,19 +1,11 @@
 
-
-.block-black.index {
-    z-index: -1;
+.container-diaporama.bloglist {
+    margin-bottom: 0;
 }
 
-
 .container-bloglist {
-    
     display: flex;
     flex-wrap: wrap;
-    max-width: 1360px;
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 454px;
-    
 
     .post {
         width: 50%;
@@ -23,27 +15,12 @@
 
         img {
             width: 100%;
-           
-            
          }
     
          .attachment-670x500 {
              width: 670px;
              height: 500px;
          }
-         h1 ::after {
-             content:"";
-             position: absolute;
-             width: 100%;
-             height: 1px;
-             background-color:#707070 ;
-             top: 50%;
-             display: block;
-             left: -102%;
-
-         }
-        
-
     
     }
 
