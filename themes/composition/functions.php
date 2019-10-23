@@ -52,6 +52,12 @@
       'menu_title'	=> 'Architecture',
       'parent_slug'	=> 'theme-general-settings',
     ));
+
+    acf_add_options_sub_page(array(
+      'page_title' 	=> 'Theme Magasin Settings',
+      'menu_title'	=> 'Magasin',
+      'parent_slug'	=> 'theme-general-settings',
+    ));
     
   }
 
