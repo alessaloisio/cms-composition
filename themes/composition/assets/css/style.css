@@ -343,6 +343,65 @@ ul {
 #body-wrapper + #wpadminbar {
   margin: 0; }
 
+.slide-content-right {
+  visibility: hidden; }
+
+.slide-from-right {
+  -webkit-animation: animat_slide_right 1.4s;
+  animation: animat_slide_right 1.4s;
+  visibility: visible !important; }
+
+.slide-content-left {
+  visibility: hidden; }
+
+.slide-from-left {
+  -webkit-animation: animat_slide_left 1.4s;
+  animation: animat_slide_left 1.4s;
+  visibility: visible !important; }
+
+.fade-content {
+  visibility: hidden; }
+
+.fade-in {
+  -webkit-animation: animat_show 1.4s;
+  animation: animat_show 1.4s;
+  visibility: visible !important; }
+
+@-webkit-keyframes animat_show {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes animat_show {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes animat_slide_left {
+  0% {
+    opacity: 0;
+    transform: translateX(-400px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+@keyframes animat_slide_right {
+  0% {
+    opacity: 0;
+    transform: translateX(400px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+.rotate {
+  transform: rotate(0deg);
+  transition: transform 3s;
+  transition-timing-function: ease-in-out; }
+  .rotate:hover {
+    transform: rotate(720deg); }
+
 html,
 body {
   width: 100%;
@@ -370,7 +429,7 @@ img {
  * width for big screens
  */
 .clear-bar-nav {
-  height: 115.6px; }
+  height: 140px; }
 
 header {
   /**
@@ -401,8 +460,12 @@ header {
   header.main-header {
     width: 100%;
     position: fixed;
-    top: 0;
     z-index: 5; }
+    #admin-bar header.main-header {
+      top: 46px; }
+      @media screen and (min-width: 783px) {
+        #admin-bar header.main-header {
+          top: 32px; } }
     header.main-header .container {
       display: flex;
       align-items: center;
@@ -782,6 +845,7 @@ footer {
         top: 10px; }
     footer .bloc-coordonnees p,
     footer .bloc-coordonnees a {
+      padding-bottom: inherit;
       display: inline-block;
       font-size: 18px;
       color: #000;
@@ -850,8 +914,10 @@ footer {
       letter-spacing: 0.5px;
       margin-bottom: 15px; }
     footer .heures-container.tablet-off li {
-      margin-bottom: 7px; }
+      margin-bottom: 7px;
+      margin-left: inherit; }
       footer .heures-container.tablet-off li p {
+        width: 80%;
         font-weight: 400;
         line-height: 1.5;
         color: #fff; }
