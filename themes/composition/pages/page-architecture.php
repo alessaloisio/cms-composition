@@ -6,7 +6,7 @@
   <div class="block-black"></div>
   <div class="block-content">
     <section class="container-diaporama">
-      <h1 class="center">Prendre soin de votre schéma de vie.</h1>
+      <h1 class="center"><?= get_field('title_page', 'options'); ?></h1>
       <div class="content-diaporama center">
         <!-- Permet de faire un query pour récupérer les projets -->
         <!-- https://codex.wordpress.org/the_loop => Multiple Loops Example 2 -->

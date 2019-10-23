@@ -1632,3 +1632,10 @@ body {
   background-size: cover;
   margin-bottom: 9.5em;
   overflow: hidden; }
+
+.container-histoire.shop .block {
+  padding: 5em; }
+  .container-histoire.shop .block.img-block {
+    padding: 0; }
+  .container-histoire.shop .block:nth-child(even), .container-histoire.shop .block:nth-child(odd) {
+    flex-basis: 50%; }
