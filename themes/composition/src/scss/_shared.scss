@@ -37,6 +37,8 @@ ul {
   max-width: 1362px;
   width: 100%;
   margin: 0 auto;
+  padding-left: $mobile-padding-center !important;
+  padding-right: $mobile-padding-center !important;
   z-index: 2;
   position: relative;
 }
@@ -75,7 +77,7 @@ ul {
     max-height: 525px;
     background-size: cover;
     margin-bottom: 9.5em;
-    overflow: hidden;
+
     position: relative;
 
     .white-block {

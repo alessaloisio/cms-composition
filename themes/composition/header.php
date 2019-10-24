@@ -27,7 +27,8 @@
 		<?php
 			
 			$menuItems = wp_get_nav_menu_items("Principal");
-			if($pagename == '')
+			
+			if($pagename == '' && (get_post_type($post) !== 'post'))
 			{
 				$style = "white-style";
 				$color = "white";
@@ -99,7 +100,7 @@
 					</li>
 					<li class="menu">
 						
-						<a href="#"><span class="menu-label">Menu</span>
+						<a><span class="menu-label">Menu</span>
 							<?php $uri = get_stylesheet_directory_uri()."/assets/svg/menu.png"; ?>
 							<img src="<?php echo $uri ?>" width="15"/>
 						</a>
