@@ -32,7 +32,7 @@ body {
       color: #000000;
       box-shadow: 1px 3px 5px 1px #e4dfdff1;
       position: relative;
-      left: 18%;
+      left: 4%;
       top: -8vh;
       padding: 0px 7%;
       margin-bottom: 320px;
@@ -55,7 +55,7 @@ body {
       background-color: #000000;
       color: #ffffff;
       position: relative;
-      left: 12%;
+      left: 16%;
       top: -8vh;
       padding: 0px 7%;
 
@@ -77,7 +77,7 @@ body {
       width: 80%;
       min-height: 0%;
       position: relative;
-      left: 18%;
+      left: 4%;
       top: -18%;
       display: none;
       justify-content: center;
@@ -111,7 +111,7 @@ body {
       width: 80%;
       min-height: 0%;
       position: relative;
-      left: 12%;
+      left: 16%;
       top: -18%;
       display: none;
       justify-content: center;
@@ -243,4 +243,102 @@ body {
   position: absolute;
   right: -20px;
   top: 45%;
+}
+
+
+
+
+
+@media screen and (max-width: 1230px) {
+  .section_bandeau {
+    margin-bottom: 185px;
+
+
+    .bandeau_col-g,
+    .bandeau_col-d {
+      .bandeau_white-container {
+        width: 63%;
+        position: relative;
+        left: 18.5%;
+
+        h1 {
+          text-align: center;
+        }
+      }
+
+      .bandeau_black-container {
+        width: 63%;
+        position: relative;
+        left: 18.5%;
+
+        h1 {
+          text-align: center;
+        }
+      }
+    }
+
+    .bandeau_white-container-hover {
+      width: 63%;
+      position: relative;
+      left: 18.5%;
+    }
+
+    .bandeau_black-container-hover {
+      width: 63%;
+      position: relative;
+      left: 18.5%;
+    }
+  }
+
+}
+
+
+
+
+@media (max-width: 640px) {
+  .section_bandeau {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+
+    .bandeau_col-g,
+    .bandeau_col-d {
+      max-width: 100%;
+      height: 210px;
+
+      .bandeau_img {
+        width: 100%;
+        height: 100%;
+        background-size: cover !important;
+      }
+
+      .bandeau_white-container {
+        width: 50%;
+        height: 40%;
+        left: 25%;
+        top: -150px;
+        box-shadow: none;
+
+        h1 {
+          font-size: 15px;
+        }
+
+      }
+
+
+      .bandeau_black-container {
+        width: 50%;
+        height: 40%;
+        left: 25%;
+        top: -150px;
+
+        h1 {
+          font-size: 15px;
+        }
+
+      }
+
+    }
+  }
 }

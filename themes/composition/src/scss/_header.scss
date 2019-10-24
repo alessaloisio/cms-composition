@@ -5,10 +5,12 @@
 .clear-bar-nav {
   height: 115.6px;
 }
+
 header {
   .container {
     width: 100%;
-    padding: 20px 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin: 0 auto;
     transition: padding 0.4s;
   }
@@ -30,26 +32,32 @@ header {
     top: 0;
     //overflow: hidden;
     z-index: 5;
+
     .container {
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: nowrap;
       background-color: $background-base-color;
+
       //margin-top: 30px;
       .menu {
         display: none;
       }
+
       .telephone {
         display: none;
       }
+
       &.black-style {
         .mh-logo img {
           filter: invert(1);
           transition: 0.4s;
         }
+
         background-color: $foreground-base-color;
       }
+
       &.white-style {
         .mh-logo img {
           transition: 0.4s;
@@ -70,15 +78,18 @@ header {
  */
   .main-nav.white-style {
     background-color: $background-base-color;
+
     ul {
       margin: 1em 0 0.5em;
       text-align: center;
+
       li {
         display: inline;
         padding-top: 10px;
         padding-bottom: 10px;
       }
-      .menu-item > a {
+
+      .menu-item>a {
         display: inline-block;
         padding: 0.4em 1em;
         text-decoration: none;
@@ -88,6 +99,7 @@ header {
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.6px;
+
         &::after {
           content: "";
           display: block;
@@ -104,11 +116,13 @@ header {
           //transition: width .3s;
         }
       }
-      .active.menu-item > a {
+
+      .active.menu-item>a {
         display: inline-block;
         padding: 0.4em 1em;
         text-decoration: none;
         color: $foreground-base-color;
+
         &::after {
           content: "";
           display: block;
@@ -118,6 +132,7 @@ header {
           background: #000;
         }
       }
+
       .telephone {
         a {
           color: $background-base-color;
@@ -130,11 +145,13 @@ header {
           width: 59px;
           height: 59px;
           border-radius: 50%;
+
           img {
             filter: invert(1);
           }
         }
       }
+
       .menu {
         a {
           color: $foreground-base-color;
@@ -146,6 +163,7 @@ header {
           font-size: 14px;
           font-weight: 700;
           letter-spacing: 0.6px;
+
           img {
             margin-left: 30px;
             vertical-align: middle;
@@ -153,6 +171,7 @@ header {
           }
         }
       }
+
       .wish-list {
         a {
           color: $background-base-color;
@@ -164,16 +183,19 @@ header {
           font-size: 14px;
           font-weight: 700;
           letter-spacing: 0.6px;
+
           img {
             margin-left: 4px;
             vertical-align: middle;
             filter: invert(1);
           }
+
           &:hover {
             color: $foreground-base-color;
 
             background-color: $background-base-color;
             box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, 0.2);
+
             img {
               margin-left: 4px;
               vertical-align: middle;
@@ -187,15 +209,18 @@ header {
 
   .main-nav.black-style {
     background-color: $foreground-base-color;
+
     ul {
       margin: 1em 0 0.5em;
       text-align: center;
+
       li {
         display: inline;
         padding-top: 10px;
         padding-bottom: 10px;
       }
-      .menu-item > a {
+
+      .menu-item>a {
         display: inline-block;
         padding: 0.4em 1em;
         text-decoration: none;
@@ -205,6 +230,7 @@ header {
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.6px;
+
         &::after {
           content: "";
           display: block;
@@ -221,11 +247,13 @@ header {
           //transition: width .3s;
         }
       }
-      .active.menu-item > a {
+
+      .active.menu-item>a {
         display: inline-block;
         padding: 0.4em 1em;
         text-decoration: none;
         color: $background-base-color;
+
         &::after {
           content: "";
           display: block;
@@ -235,6 +263,7 @@ header {
           background: $background-base-color;
         }
       }
+
       .telephone {
         a {
           color: $foreground-base-color;
@@ -247,11 +276,13 @@ header {
           height: 59px;
           text-decoration: none;
           border-radius: 50%;
+
           img {
             filter: invert(0);
           }
         }
       }
+
       .menu {
         a {
           color: $background-base-color;
@@ -263,6 +294,7 @@ header {
           font-size: 14px;
           font-weight: 700;
           letter-spacing: 0.6px;
+
           img {
             margin-left: 30px;
             vertical-align: middle;
@@ -270,6 +302,7 @@ header {
           }
         }
       }
+
       .wish-list {
         a {
           color: $foreground-base-color;
@@ -282,11 +315,13 @@ header {
           font-size: 14px;
           font-weight: 700;
           letter-spacing: 0.6px;
+
           img {
             margin-left: 4px;
             vertical-align: middle;
             filter: invert(0);
           }
+
           &:hover {
             color: $background-base-color;
             background-color: $foreground-base-color;
@@ -302,6 +337,7 @@ header {
       }
     }
   }
+
   .black-style img {
     filter: invert(1);
   }
@@ -316,11 +352,13 @@ header {
     background-color: $foreground-base-color;
     padding-left: 20px;
     padding-right: 20px;
-    ul > li {
+
+    ul>li {
       display: block;
       text-align: left;
       text-transform: uppercase;
       border-bottom: 1px solid rgb(66, 66, 66);
+
       a {
         background-color: $foreground-base-color;
         color: $background-base-color;
@@ -330,24 +368,30 @@ header {
         margin-left: 0;
         filter: invert(1);
       }
+
       a:hover {
         text-decoration: underline;
       }
+
       .arrow-menu-mobile {
         float: right;
         padding-top: 10px;
         padding-right: 20px;
       }
+
       .close-menu-mobile {
         float: right;
         padding-top: 16px;
         padding-right: 22px;
+
         &:hover {
           cursor: pointer;
         }
       }
+
       &:last-child {
         border-bottom: 0px;
+
         a {
           background-color: $background-base-color;
           color: $foreground-base-color;
@@ -360,11 +404,13 @@ header {
           font-size: 14px;
           font-weight: 700;
           letter-spacing: 0.6px;
+
           img {
             margin-left: 10px;
             vertical-align: middle;
             filter: invert(0);
           }
+
           &:hover {
             color: $background-base-color;
             background-color: $foreground-base-color;
@@ -379,76 +425,96 @@ header {
     }
   }
 }
+
 /* 
   ##Device = Tablets, Ipads (landscape)
   
 */
 
 @media screen and (min-width: 641px) and (max-width: 1230px) {
+
   //CSS
   header {
     .main-nav.white-style ul .menu-item {
       display: none;
     }
+
     .main-nav.white-style ul .menu {
       display: inline-block;
     }
+
     .main-nav.black-style ul .menu-item {
       display: none;
     }
+
     .main-nav.black-style ul .menu {
       display: inline-block;
     }
+
     .main-header .container {
       display: flex;
       align-items: center;
       justify-content: space-between;
       transition: 0.4s;
     }
+
     .hidden {
       display: none;
     }
   }
 }
+
 @media screen and (max-width: 640px) {
+
   //CSS
   header {
     .main-nav.white-style ul .menu-item {
       display: none;
     }
+
     .main-nav.white-style ul .menu {
       display: inline-block;
+
       a img {
         margin-left: 5px;
       }
     }
+
     .main-nav.black-style ul .menu-item {
       display: none;
     }
+
     .main-nav.black-style ul .menu {
       display: inline-block;
     }
+
     .main-nav.black-style ul .wish-list {
       display: none;
     }
+
     .main-nav.white-style ul .wish-list {
       display: none;
     }
+
     .main-nav.black-style ul .telephone {
       display: inline-block;
     }
+
     .main-nav.white-style ul .telephone {
       display: inline-block;
     }
+
     .menu-label {
       display: none !important;
     }
+
     .main-header .container {
       display: flex;
       align-items: center;
       justify-content: space-between;
       transition: 0.4s;
     }
+
     .hidden {
       display: none;
     }

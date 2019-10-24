@@ -12,11 +12,17 @@ p {
   padding-bottom: 1.4em;
   line-height: 2em;
 }
+
 .light {
   font-weight: 100;
 }
+
 .strong {
-  font-weight: bold;
+  font-weight: bold !important;
+}
+
+strong {
+  font-weight: bold !important;
 }
 
 .justify {
@@ -39,18 +45,15 @@ ul {
   margin: 0 auto;
   z-index: 2;
   position: relative;
-}
 
-@media (max-width: 1230px) {
-  .center {
-    max-width: 640px;
-  }
+  padding-left: $mobile-padding-center;
+  padding-right: $mobile-padding-center;
 }
 
 @media (max-width: 640px) {
   .center {
-    padding-left: $mobile-padding-center !important;
-    padding-right: $mobile-padding-center !important;
+    padding-left: $mobile-padding-center/2;
+    padding-right: $mobile-padding-center/2;
   }
 }
 
@@ -70,8 +73,10 @@ ul {
 
   .block-contact {
     background: url("../images/2600x700_01.jpg") no-repeat center bottom;
-    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-    background-size: cover; /* version standardisée */
+    -webkit-background-size: cover;
+    /* pour anciens Chrome et Safari */
+    background-size: cover;
+    /* version standardisée */
     max-height: 525px;
     background-size: cover;
     margin-bottom: 9.5em;
@@ -138,6 +143,6 @@ ul {
   }
 }
 
-#body-wrapper + #wpadminbar {
+#body-wrapper+#wpadminbar {
   margin: 0;
 }

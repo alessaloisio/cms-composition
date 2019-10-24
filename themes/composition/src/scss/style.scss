@@ -14,6 +14,7 @@ body {
 body {
   background-color: $background-base-color;
 }
+
 /** 
  * Images a now responsive
  */
@@ -24,6 +25,7 @@ img {
 
 // Resize font size tablet
 @media (max-width: 1230px) {
+
   html,
   body {
     font-size: 0.9em !important;

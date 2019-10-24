@@ -91,7 +91,7 @@
 
 
 
-<div class="center">
+<div class="frontpage-content center">
 <!---------------------------------------------------------------------------INTRODUCTION-------------------------------------------------------------------->
 <section class="section_introduction">
   <div class="introduction_col-g">
