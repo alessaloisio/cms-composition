@@ -269,6 +269,8 @@ ul {
   max-width: 1362px;
   width: 100%;
   margin: 0 auto;
+  padding-left: 4em !important;
+  padding-right: 4em !important;
   z-index: 2;
   position: relative;
   padding-left: 4em;
@@ -297,7 +299,6 @@ ul {
     max-height: 525px;
     background-size: cover;
     margin-bottom: 9.5em;
-    overflow: hidden;
     position: relative; }
     .page-content .block-contact .white-block {
       background-color: #fff;
@@ -419,6 +420,15 @@ body {
 img {
   max-width: 100%;
   height: auto; }
+
+@media (max-width: 1230px) {
+  html,
+  body {
+    font-size: 0.9em !important; } }
+
+#wpadminbar {
+  position: fixed !important;
+  bottom: 0px !important; }
 
 /**
  * Limit the container in
@@ -635,7 +645,8 @@ header {
         font-family: "ProximaNova" sans-serif;
         font-size: 14px;
         font-weight: 700;
-        letter-spacing: 0.6px; }
+        letter-spacing: 0.6px;
+        cursor: pointer; }
         header .main-nav.black-style ul .menu a img {
           margin-left: 30px;
           vertical-align: middle;
@@ -2096,8 +2107,7 @@ p {
   background-size: cover;
   max-height: 525px;
   background-size: cover;
-  margin-bottom: 9.5em;
-  overflow: hidden; }
+  margin-bottom: 9.5em; }
 
 .container-histoire.shop .block {
   padding: 5em; }
@@ -2105,3 +2115,78 @@ p {
     padding: 0; }
   .container-histoire.shop .block:nth-child(even), .container-histoire.shop .block:nth-child(odd) {
     flex-basis: 50%; }
+
+.single-page-content .center-post {
+  max-width: 1362px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 290px;
+  z-index: 2;
+  position: relative; }
+
+@media (max-width: 1230px) {
+  .single-page-content .center-post {
+    padding: 0 8%; } }
+
+.single-page-content .top-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  color: #fff;
+  padding: 15px 0;
+  margin-top: 85px;
+  margin-bottom: 25px; }
+  .single-page-content .top-container .retour-posts .icon img {
+    filter: invert(1); }
+  .single-page-content .top-container .retour-posts a {
+    color: #fff;
+    text-decoration: none; }
+    .single-page-content .top-container .retour-posts a:hover {
+      text-decoration: underline; }
+
+.single-page-content .retour-posts a {
+  color: #000;
+  text-decoration: none; }
+  .single-page-content .retour-posts a:hover {
+    text-decoration: underline; }
+
+.single-page-content .post-title {
+  color: #fff;
+  margin-bottom: 85px; }
+
+.single-page-content .post-thumbnail {
+  margin-bottom: 85px; }
+  .single-page-content .post-thumbnail .wp-post-image {
+    height: 500px; }
+  .single-page-content .post-thumbnail .networks {
+    position: relative;
+    left: -12%;
+    bottom: 190px;
+    width: 45px; }
+    @media (max-width: 1230px) {
+      .single-page-content .post-thumbnail .networks {
+        display: none; } }
+    .single-page-content .post-thumbnail .networks ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center; }
+      .single-page-content .post-thumbnail .networks ul li {
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        margin-top: 10px;
+        width: 45px;
+        height: 45px;
+        border: 2px solid #d9d9d9;
+        border-radius: 50%; }
+        .single-page-content .post-thumbnail .networks ul li img {
+          padding-top: 11px; }
+        .single-page-content .post-thumbnail .networks ul li:hover {
+          background-color: black; }
+          .single-page-content .post-thumbnail .networks ul li:hover img {
+            filter: invert(1); }
+        .single-page-content .post-thumbnail .networks ul li .icon.mail img {
+          height: 30px; }

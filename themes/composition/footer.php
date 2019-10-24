@@ -1,5 +1,5 @@
-		<footer class="banner">
-			<div id="footer-top" class="center fade-content">
+		<footer class="banner center">
+			<div id="footer-top" class="fade-content">
 				<div class="banner-content">
 					<div class="content">
 					

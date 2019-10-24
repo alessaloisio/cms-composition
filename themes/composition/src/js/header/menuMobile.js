@@ -54,6 +54,7 @@ const menuMobile = () => {
   menuElement.addEventListener(
     "click",
     () => {
+      //event.preventDefault();
       document.querySelector("#menu-mobile").className = "";
     },
     true
@@ -74,10 +75,12 @@ const menuMobile = () => {
       document.body.scrollTop > 40 ||
       document.documentElement.scrollTop > 40
     ) {
-      document.querySelector(".container").style.padding = "0px 0px";
+      document.querySelector(".container").style.paddingTop = "0px";
+      document.querySelector(".container").style.paddingBottom = "0px";
       document.querySelector(".mh-logo img").style.width = "80%";
     } else {
-      document.querySelector(".container").style.padding = "20px 0px";
+      document.querySelector(".container").style.paddingTop = "20px";
+      document.querySelector(".container").style.paddingBottom = "20px";
       document.querySelector(".mh-logo img").style.width = "100%";
       //document.getElementById("logo").style.fontSize = "35px";
     }

@@ -12,7 +12,10 @@
     }
   }
 }
-
+#wpadminbar {
+  position: fixed !important;
+  bottom: 0px !important;
+}
 /**
  * Limit the container in
  * width for big screens
@@ -105,7 +108,7 @@ header {
         padding-bottom: 10px;
       }
 
-      .menu-item>a {
+      .menu-item > a {
         display: inline-block;
         padding: 0.4em 1em;
         text-decoration: none;
@@ -133,7 +136,7 @@ header {
         }
       }
 
-      .active.menu-item>a {
+      .active.menu-item > a {
         display: inline-block;
         padding: 0.4em 1em;
         text-decoration: none;
@@ -236,7 +239,7 @@ header {
         padding-bottom: 10px;
       }
 
-      .menu-item>a {
+      .menu-item > a {
         display: inline-block;
         padding: 0.4em 1em;
         text-decoration: none;
@@ -264,7 +267,7 @@ header {
         }
       }
 
-      .active.menu-item>a {
+      .active.menu-item > a {
         display: inline-block;
         padding: 0.4em 1em;
         text-decoration: none;
@@ -310,7 +313,7 @@ header {
           font-size: 14px;
           font-weight: 700;
           letter-spacing: 0.6px;
-
+          cursor: pointer;
           img {
             margin-left: 30px;
             vertical-align: middle;
@@ -369,7 +372,7 @@ header {
     padding-left: 20px;
     padding-right: 20px;
 
-    ul>li {
+    ul > li {
       display: block;
       text-align: left;
       text-transform: uppercase;
@@ -448,7 +451,6 @@ header {
 */
 
 @media screen and (min-width: 641px) and (max-width: 1230px) {
-
   //CSS
   header {
     .main-nav.white-style ul .menu-item {
@@ -481,7 +483,6 @@ header {
 }
 
 @media screen and (max-width: 640px) {
-
   //CSS
   header {
     .main-nav.white-style ul .menu-item {

@@ -8,9 +8,6 @@ import slideContent from "./animations/slideContent";
 (() => {
   console.log("test");
 
-  let adminBar = document.querySelector("#wpadminbar");
-  console.log(adminBar);
-
   mobileMenu();
   footer();
 
