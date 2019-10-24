@@ -1,0 +1,13 @@
+.container-histoire.shop {
+  .block {
+    padding: 5em;
+
+    &.img-block {
+      padding: 0;
+    }
+    &:nth-child(even),
+    &:nth-child(odd) {
+      flex-basis: 50%;
+    }
+  }
+}

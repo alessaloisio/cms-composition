@@ -344,6 +344,65 @@ ul {
 #body-wrapper + #wpadminbar {
   margin: 0; }
 
+.slide-content-right {
+  visibility: hidden; }
+
+.slide-from-right {
+  -webkit-animation: animat_slide_right 1.4s;
+  animation: animat_slide_right 1.4s;
+  visibility: visible !important; }
+
+.slide-content-left {
+  visibility: hidden; }
+
+.slide-from-left {
+  -webkit-animation: animat_slide_left 1.4s;
+  animation: animat_slide_left 1.4s;
+  visibility: visible !important; }
+
+.fade-content {
+  visibility: hidden; }
+
+.fade-in {
+  -webkit-animation: animat_show 1.4s;
+  animation: animat_show 1.4s;
+  visibility: visible !important; }
+
+@-webkit-keyframes animat_show {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes animat_show {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes animat_slide_left {
+  0% {
+    opacity: 0;
+    transform: translateX(-400px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+@keyframes animat_slide_right {
+  0% {
+    opacity: 0;
+    transform: translateX(400px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+.rotate {
+  transform: rotate(0deg);
+  transition: transform 3s;
+  transition-timing-function: ease-in-out; }
+  .rotate:hover {
+    transform: rotate(720deg); }
+
 html,
 body {
   width: 100%;
@@ -361,17 +420,12 @@ img {
   max-width: 100%;
   height: auto; }
 
-@media (max-width: 1230px) {
-  html,
-  body {
-    font-size: 0.9em !important; } }
-
 /**
  * Limit the container in
  * width for big screens
  */
 .clear-bar-nav {
-  height: 115.6px; }
+  height: 140px; }
 
 header {
   /**
@@ -403,8 +457,12 @@ header {
   header.main-header {
     width: 100%;
     position: fixed;
-    top: 0;
     z-index: 5; }
+    #admin-bar header.main-header {
+      top: 46px; }
+      @media screen and (min-width: 783px) {
+        #admin-bar header.main-header {
+          top: 32px; } }
     header.main-header .container {
       display: flex;
       align-items: center;
@@ -784,6 +842,7 @@ footer {
         top: 10px; }
     footer .bloc-coordonnees p,
     footer .bloc-coordonnees a {
+      padding-bottom: inherit;
       display: inline-block;
       font-size: 18px;
       color: #000;
@@ -852,8 +911,10 @@ footer {
       letter-spacing: 0.5px;
       margin-bottom: 15px; }
     footer .heures-container.tablet-off li {
-      margin-bottom: 7px; }
+      margin-bottom: 7px;
+      margin-left: inherit; }
       footer .heures-container.tablet-off li p {
+        width: 80%;
         font-weight: 400;
         line-height: 1.5;
         color: #fff; }
@@ -978,6 +1039,56 @@ footer {
     footer .social-icons ul {
       text-align: center;
       float: none; } }
+
+/*.banner-bloglist {
+    border:black ;
+    width: 1284px;
+    height: 400px;
+    background-color: black;}*/
+.container-diaporama.bloglist {
+  margin-bottom: 0; }
+
+.container-bloglist {
+  display: flex;
+  flex-wrap: wrap; }
+  .container-bloglist .post {
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 114px; }
+    .container-bloglist .post img {
+      width: 100%; }
+    .container-bloglist .post .attachment-670x500 {
+      width: 670px;
+      height: 500px; }
+    .container-bloglist .post .title {
+      margin-bottom: 30px;
+      cursor: inherit;
+      user-select: text;
+      line-height: 1em;
+      letter-spacing: 0.3px;
+      word-spacing: 0.5px;
+      margin-top: 20px;
+      font-weight: 700;
+      font-size: 2em;
+      color: black;
+      max-width: 70%;
+      display: block;
+      word-wrap: break-word; }
+      .container-bloglist .post .title a {
+        color: black;
+        text-decoration: none; }
+    .container-bloglist .post .date {
+      display: flex;
+      align-items: center; }
+      .container-bloglist .post .date .trait {
+        width: 10px;
+        height: 1px;
+        background-color: #000;
+        margin-right: 1em; }
+      .container-bloglist .post .date p {
+        font-size: 1em;
+        padding: 0; }
 
 html,
 body {
@@ -1987,3 +2098,10 @@ p {
   background-size: cover;
   margin-bottom: 9.5em;
   overflow: hidden; }
+
+.container-histoire.shop .block {
+  padding: 5em; }
+  .container-histoire.shop .block.img-block {
+    padding: 0; }
+  .container-histoire.shop .block:nth-child(even), .container-histoire.shop .block:nth-child(odd) {
+    flex-basis: 50%; }

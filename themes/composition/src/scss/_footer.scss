@@ -86,6 +86,7 @@ footer {
     }
     p,
     a {
+      padding-bottom: inherit;
       display: inline-block;
       font-size: 18px;
       color: #000;
@@ -175,7 +176,9 @@ footer {
     }
     li {
       margin-bottom: 7px;
+      margin-left: inherit;
       p {
+        width: 80%;
         font-weight: 400;
         line-height: 1.5;
         color: #fff;

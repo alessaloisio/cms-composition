@@ -11,6 +11,8 @@ body {
   font-size: 1em;
 }
 
+
+
 body {
   background-color: $background-base-color;
 }
@@ -35,7 +37,9 @@ img {
 @import "./header.scss";
 @import "./footer.scss";
 
+@import "./blog_list/index.scss";
 @import "./front_page/index";
 @import "./contact_page/index";
 @import "./architecte/index";
 @import "./about_page/index";
+@import "./shop_page/index";

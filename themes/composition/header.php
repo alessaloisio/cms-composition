@@ -37,24 +37,20 @@
 				$style = "black-style";
 				$color = "black";
 			}
-			if( current_user_can('editor') || current_user_can('administrator') ) {
+			
 				?>
 				<style>
 					header.main-header {
-						top: 28px;
 						background-color: <?= $color ?>;
 					}
 					.clear-bar-nav {
 						background-color: <?= $color ?>;
 					}
 				</style>
-				<?php
-			}
-		
-		?>
+				
 		<div class="center container <?= $style ?>"> 
 		
-			<a href="#" class="mh-logo">
+			<a href="<?= home_url(); ?>" class="mh-logo">
 
 				<?php $uri = get_stylesheet_directory_uri()."/assets/svg/logo-full.svg"; ?>
 				<img src="<?php echo $uri ?>"/>
