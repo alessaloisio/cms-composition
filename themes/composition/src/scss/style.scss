@@ -11,6 +11,8 @@ body {
   font-size: 1em;
 }
 
+
+
 body {
   background-color: $background-base-color;
 }
@@ -22,17 +24,11 @@ img {
   height: auto;
 }
 
-// Resize font size tablet
-@media (max-width: 1230px) {
-  html,
-  body {
-    font-size: 0.9em !important;
-  }
-}
 
 @import "./header.scss";
 @import "./footer.scss";
 
+@import "./blog_list/index.scss";
 @import "./front_page/index";
 @import "./contact_page/index";
 @import "./architecte/index";
