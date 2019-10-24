@@ -33,17 +33,6 @@ header {
     transition: padding 0.4s;
   }
 
-  /**
- * By using display: flex
- * Logo and nav are in 2 cols
- * align-items make them
- * vertically centered
- * justify-content distribute
- * horizontal spaces around
- * and flex-wrap break the
- * things in two lines in 
- * small screens
- */
   &.main-header {
     width: 100%;
     position: fixed;
@@ -85,16 +74,6 @@ header {
     }
   }
 
-  /**
- * Menu for tablet and mobile by default hidden
- */
-
-  /**
- * The followings are to
- * make things more
- * clean and airy
- * and contents centered
- */
   .main-nav.white-style {
     background-color: $background-base-color;
 
@@ -291,8 +270,8 @@ header {
           align-items: center;
           justify-content: center;
           padding: 0.7em;
-          width: 59px;
-          height: 59px;
+          width: 35px;
+          height: 35px;
           text-decoration: none;
           border-radius: 50%;
 
@@ -303,11 +282,14 @@ header {
       }
 
       .menu {
+        margin-left: 0px;
         a {
           color: $background-base-color;
           background-color: $foreground-base-color;
           display: inline-block;
-          padding: 1em 1em;
+          padding-top: 1em;
+          padding-bottom: 1em;
+          padding-left: 1em;
           text-decoration: none;
           font-family: $font-family-menu;
           font-size: 14px;
@@ -315,7 +297,6 @@ header {
           letter-spacing: 0.6px;
           cursor: pointer;
           img {
-            margin-left: 30px;
             vertical-align: middle;
             filter: invert(1);
           }

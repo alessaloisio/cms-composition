@@ -34,7 +34,7 @@
 				<div class="banner-content">
 					<div class="content">
 						<div class="bloc-googlemap">
-							<h5 class="titre-section slide-content-left">Rendez-nous visite !</h5>
+							<h5 class="titre-section slide-content-left">Rendez-nous visite!</h5>
 							
 							<a class="googlemap lien-texte-fleche" href="<?= get_field('footer_googleMap_link','options'); ?>" target="_blank" rel="noopener">Google map
 								<div class="icon">

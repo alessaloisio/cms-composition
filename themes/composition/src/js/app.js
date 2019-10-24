@@ -4,6 +4,7 @@ import sliderDiaporamaArchi from "./architecture/slider";
 import frontPage from "./frontPage/frontPage";
 import showContent from "./animations/showContent";
 import slideContent from "./animations/slideContent";
+import fixNetwork from "./animations/fixNetwork";
 // DOM READY
 (() => {
   console.log("test");
@@ -13,6 +14,8 @@ import slideContent from "./animations/slideContent";
 
   sliderDiaporamaArchi();
   frontPage();
+
+  fixNetwork();
 
   let elementsToSlide = document.querySelectorAll(
     ".slide-content-right, .slide-content-left"

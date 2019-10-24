@@ -65,7 +65,7 @@ const menuMobile = () => {
     }
   }
   window.onresize = closeMenuMobileOnResize;
-
+  scrollFunction();
   window.onscroll = function() {
     scrollFunction();
   };

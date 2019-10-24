@@ -437,210 +437,196 @@ img {
 .clear-bar-nav {
   height: 140px; }
 
-header {
-  /**
- * By using display: flex
- * Logo and nav are in 2 cols
- * align-items make them
- * vertically centered
- * justify-content distribute
- * horizontal spaces around
- * and flex-wrap break the
- * things in two lines in 
- * small screens
- */
-  /**
- * Menu for tablet and mobile by default hidden
- */
-  /**
- * The followings are to
- * make things more
- * clean and airy
- * and contents centered
- */ }
-  header .container {
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: 0 auto;
-    transition: padding 0.4s; }
-  header.main-header {
-    width: 100%;
-    position: fixed;
-    z-index: 5; }
-    #admin-bar header.main-header {
-      top: 46px; }
-      @media screen and (min-width: 783px) {
-        #admin-bar header.main-header {
-          top: 32px; } }
-    header.main-header .container {
+header .container {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  transition: padding 0.4s; }
+
+header.main-header {
+  width: 100%;
+  position: fixed;
+  z-index: 5; }
+  #admin-bar header.main-header {
+    top: 46px; }
+    @media screen and (min-width: 783px) {
+      #admin-bar header.main-header {
+        top: 32px; } }
+  header.main-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-color: #fff; }
+    header.main-header .container .menu {
+      display: none; }
+    header.main-header .container .telephone {
+      display: none; }
+    header.main-header .container.black-style {
+      background-color: #000; }
+      header.main-header .container.black-style .mh-logo img {
+        filter: invert(1);
+        transition: 0.4s; }
+    header.main-header .container.white-style .mh-logo img {
+      transition: 0.4s; }
+
+header .main-nav.white-style {
+  background-color: #fff; }
+  header .main-nav.white-style ul {
+    margin: 1em 0 0.5em;
+    text-align: center; }
+    header .main-nav.white-style ul li {
+      display: inline;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+    header .main-nav.white-style ul .menu-item > a {
+      display: inline-block;
+      padding: 0.4em 1em;
+      text-decoration: none;
+      color: #000;
+      font-family: "ProximaNova" sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px; }
+      header .main-nav.white-style ul .menu-item > a::after {
+        content: "";
+        display: block;
+        width: 0;
+        margin-top: 13px;
+        height: 4px;
+        background: #fff;
+        transition: width 0.2s, background 0.2s; }
+      header .main-nav.white-style ul .menu-item > a:hover::after {
+        width: 100%;
+        background: #000; }
+    header .main-nav.white-style ul .active.menu-item > a {
+      display: inline-block;
+      padding: 0.4em 1em;
+      text-decoration: none;
+      color: #000; }
+      header .main-nav.white-style ul .active.menu-item > a::after {
+        content: "";
+        display: block;
+        width: 100%;
+        margin-top: 13px;
+        height: 4px;
+        background: #000; }
+    header .main-nav.white-style ul .telephone a {
+      color: #fff;
+      background-color: #000;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      flex-wrap: nowrap;
-      background-color: #fff; }
-      header.main-header .container .menu {
-        display: none; }
-      header.main-header .container .telephone {
-        display: none; }
-      header.main-header .container.black-style {
-        background-color: #000; }
-        header.main-header .container.black-style .mh-logo img {
-          filter: invert(1);
-          transition: 0.4s; }
-      header.main-header .container.white-style .mh-logo img {
-        transition: 0.4s; }
-  header .main-nav.white-style {
-    background-color: #fff; }
-    header .main-nav.white-style ul {
-      margin: 1em 0 0.5em;
-      text-align: center; }
-      header .main-nav.white-style ul li {
-        display: inline;
-        padding-top: 10px;
-        padding-bottom: 10px; }
-      header .main-nav.white-style ul .menu-item > a {
-        display: inline-block;
-        padding: 0.4em 1em;
-        text-decoration: none;
-        color: #000;
-        font-family: "ProximaNova" sans-serif;
-        font-size: 14px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.6px; }
-        header .main-nav.white-style ul .menu-item > a::after {
-          content: "";
-          display: block;
-          width: 0;
-          margin-top: 13px;
-          height: 4px;
-          background: #fff;
-          transition: width 0.2s, background 0.2s; }
-        header .main-nav.white-style ul .menu-item > a:hover::after {
-          width: 100%;
-          background: #000; }
-      header .main-nav.white-style ul .active.menu-item > a {
-        display: inline-block;
-        padding: 0.4em 1em;
-        text-decoration: none;
-        color: #000; }
-        header .main-nav.white-style ul .active.menu-item > a::after {
-          content: "";
-          display: block;
-          width: 100%;
-          margin-top: 13px;
-          height: 4px;
-          background: #000; }
-      header .main-nav.white-style ul .telephone a {
-        color: #fff;
-        background-color: #000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0.7em;
-        text-decoration: none;
-        width: 59px;
-        height: 59px;
-        border-radius: 50%; }
-        header .main-nav.white-style ul .telephone a img {
-          filter: invert(1); }
-      header .main-nav.white-style ul .menu a {
+      justify-content: center;
+      padding: 0.7em;
+      text-decoration: none;
+      width: 59px;
+      height: 59px;
+      border-radius: 50%; }
+      header .main-nav.white-style ul .telephone a img {
+        filter: invert(1); }
+    header .main-nav.white-style ul .menu a {
+      color: #000;
+      background-color: #fff;
+      display: inline-block;
+      padding: 1em 1em;
+      text-decoration: none;
+      font-family: "ProximaNova" sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.6px; }
+      header .main-nav.white-style ul .menu a img {
+        margin-left: 30px;
+        vertical-align: middle;
+        filter: invert(0); }
+    header .main-nav.white-style ul .wish-list a {
+      color: #fff;
+      background-color: #000;
+      display: inline-block;
+      padding: 1em 1em;
+      text-decoration: none;
+      font-family: "ProximaNova" sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.6px; }
+      header .main-nav.white-style ul .wish-list a img {
+        margin-left: 4px;
+        vertical-align: middle;
+        filter: invert(1); }
+      header .main-nav.white-style ul .wish-list a:hover {
         color: #000;
         background-color: #fff;
-        display: inline-block;
-        padding: 1em 1em;
-        text-decoration: none;
-        font-family: "ProximaNova" sans-serif;
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 0.6px; }
-        header .main-nav.white-style ul .menu a img {
-          margin-left: 30px;
-          vertical-align: middle;
-          filter: invert(0); }
-      header .main-nav.white-style ul .wish-list a {
-        color: #fff;
-        background-color: #000;
-        display: inline-block;
-        padding: 1em 1em;
-        text-decoration: none;
-        font-family: "ProximaNova" sans-serif;
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 0.6px; }
-        header .main-nav.white-style ul .wish-list a img {
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, 0.2); }
+        header .main-nav.white-style ul .wish-list a:hover img {
           margin-left: 4px;
           vertical-align: middle;
-          filter: invert(1); }
-        header .main-nav.white-style ul .wish-list a:hover {
-          color: #000;
-          background-color: #fff;
-          box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, 0.2); }
-          header .main-nav.white-style ul .wish-list a:hover img {
-            margin-left: 4px;
-            vertical-align: middle;
-            filter: invert(0); }
-  header .main-nav.black-style {
-    background-color: #000; }
-    header .main-nav.black-style ul {
-      margin: 1em 0 0.5em;
-      text-align: center; }
-      header .main-nav.black-style ul li {
-        display: inline;
-        padding-top: 10px;
-        padding-bottom: 10px; }
-      header .main-nav.black-style ul .menu-item > a {
-        display: inline-block;
-        padding: 0.4em 1em;
-        text-decoration: none;
-        color: #fff;
-        font-family: "ProximaNova" sans-serif;
-        font-size: 14px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.6px; }
-        header .main-nav.black-style ul .menu-item > a::after {
-          content: "";
-          display: block;
-          width: 0;
-          margin-top: 13px;
-          height: 4px;
-          background: #000;
-          transition: width 0.2s, background 0.2s; }
-        header .main-nav.black-style ul .menu-item > a:hover::after {
-          width: 100%;
-          background: #fff; }
-      header .main-nav.black-style ul .active.menu-item > a {
-        display: inline-block;
-        padding: 0.4em 1em;
-        text-decoration: none;
-        color: #fff; }
-        header .main-nav.black-style ul .active.menu-item > a::after {
-          content: "";
-          display: block;
-          width: 100%;
-          margin-top: 13px;
-          height: 4px;
-          background: #fff; }
-      header .main-nav.black-style ul .telephone a {
-        color: #000;
-        background-color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0.7em;
-        width: 59px;
-        height: 59px;
-        text-decoration: none;
-        border-radius: 50%; }
-        header .main-nav.black-style ul .telephone a img {
           filter: invert(0); }
+
+header .main-nav.black-style {
+  background-color: #000; }
+  header .main-nav.black-style ul {
+    margin: 1em 0 0.5em;
+    text-align: center; }
+    header .main-nav.black-style ul li {
+      display: inline;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+    header .main-nav.black-style ul .menu-item > a {
+      display: inline-block;
+      padding: 0.4em 1em;
+      text-decoration: none;
+      color: #fff;
+      font-family: "ProximaNova" sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px; }
+      header .main-nav.black-style ul .menu-item > a::after {
+        content: "";
+        display: block;
+        width: 0;
+        margin-top: 13px;
+        height: 4px;
+        background: #000;
+        transition: width 0.2s, background 0.2s; }
+      header .main-nav.black-style ul .menu-item > a:hover::after {
+        width: 100%;
+        background: #fff; }
+    header .main-nav.black-style ul .active.menu-item > a {
+      display: inline-block;
+      padding: 0.4em 1em;
+      text-decoration: none;
+      color: #fff; }
+      header .main-nav.black-style ul .active.menu-item > a::after {
+        content: "";
+        display: block;
+        width: 100%;
+        margin-top: 13px;
+        height: 4px;
+        background: #fff; }
+    header .main-nav.black-style ul .telephone a {
+      color: #000;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.7em;
+      width: 35px;
+      height: 35px;
+      text-decoration: none;
+      border-radius: 50%; }
+      header .main-nav.black-style ul .telephone a img {
+        filter: invert(0); }
+    header .main-nav.black-style ul .menu {
+      margin-left: 0px; }
       header .main-nav.black-style ul .menu a {
         color: #fff;
         background-color: #000;
         display: inline-block;
-        padding: 1em 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 1em;
         text-decoration: none;
         font-family: "ProximaNova" sans-serif;
         font-size: 14px;
@@ -648,13 +634,74 @@ header {
         letter-spacing: 0.6px;
         cursor: pointer; }
         header .main-nav.black-style ul .menu a img {
-          margin-left: 30px;
           vertical-align: middle;
           filter: invert(1); }
-      header .main-nav.black-style ul .wish-list a {
-        color: #000;
+    header .main-nav.black-style ul .wish-list a {
+      color: #000;
+      background-color: #fff;
+      display: inline-block;
+      padding: 1em 1em;
+      border: 1px solid #fff;
+      text-decoration: none;
+      font-family: "ProximaNova" sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.6px; }
+      header .main-nav.black-style ul .wish-list a img {
+        margin-left: 4px;
+        vertical-align: middle;
+        filter: invert(0); }
+      header .main-nav.black-style ul .wish-list a:hover {
+        color: #fff;
+        background-color: #000;
+        border: 1px solid gray; }
+        header .main-nav.black-style ul .wish-list a:hover img {
+          margin-left: 4px;
+          vertical-align: middle;
+          filter: invert(1); }
+
+header .black-style img {
+  filter: invert(1); }
+
+header #menu-mobile {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  width: 350px;
+  background-color: #000;
+  padding-left: 20px;
+  padding-right: 20px; }
+  header #menu-mobile ul > li {
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+    border-bottom: 1px solid #424242; }
+    header #menu-mobile ul > li a {
+      background-color: #000;
+      color: #fff; }
+    header #menu-mobile ul > li img {
+      margin-left: 0;
+      filter: invert(1); }
+    header #menu-mobile ul > li a:hover {
+      text-decoration: underline; }
+    header #menu-mobile ul > li .arrow-menu-mobile {
+      float: right;
+      padding-top: 10px;
+      padding-right: 20px; }
+    header #menu-mobile ul > li .close-menu-mobile {
+      float: right;
+      padding-top: 16px;
+      padding-right: 22px; }
+      header #menu-mobile ul > li .close-menu-mobile:hover {
+        cursor: pointer; }
+    header #menu-mobile ul > li:last-child {
+      border-bottom: 0px; }
+      header #menu-mobile ul > li:last-child a {
         background-color: #fff;
+        color: #000;
         display: inline-block;
+        text-transform: none;
         padding: 1em 1em;
         border: 1px solid #fff;
         text-decoration: none;
@@ -662,76 +709,16 @@ header {
         font-size: 14px;
         font-weight: 700;
         letter-spacing: 0.6px; }
-        header .main-nav.black-style ul .wish-list a img {
-          margin-left: 4px;
+        header #menu-mobile ul > li:last-child a img {
+          margin-left: 10px;
           vertical-align: middle;
           filter: invert(0); }
-        header .main-nav.black-style ul .wish-list a:hover {
+        header #menu-mobile ul > li:last-child a:hover {
           color: #fff;
           background-color: #000;
           border: 1px solid gray; }
-          header .main-nav.black-style ul .wish-list a:hover img {
-            margin-left: 4px;
-            vertical-align: middle;
+          header #menu-mobile ul > li:last-child a:hover img {
             filter: invert(1); }
-  header .black-style img {
-    filter: invert(1); }
-  header #menu-mobile {
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    right: 0;
-    width: 350px;
-    background-color: #000;
-    padding-left: 20px;
-    padding-right: 20px; }
-    header #menu-mobile ul > li {
-      display: block;
-      text-align: left;
-      text-transform: uppercase;
-      border-bottom: 1px solid #424242; }
-      header #menu-mobile ul > li a {
-        background-color: #000;
-        color: #fff; }
-      header #menu-mobile ul > li img {
-        margin-left: 0;
-        filter: invert(1); }
-      header #menu-mobile ul > li a:hover {
-        text-decoration: underline; }
-      header #menu-mobile ul > li .arrow-menu-mobile {
-        float: right;
-        padding-top: 10px;
-        padding-right: 20px; }
-      header #menu-mobile ul > li .close-menu-mobile {
-        float: right;
-        padding-top: 16px;
-        padding-right: 22px; }
-        header #menu-mobile ul > li .close-menu-mobile:hover {
-          cursor: pointer; }
-      header #menu-mobile ul > li:last-child {
-        border-bottom: 0px; }
-        header #menu-mobile ul > li:last-child a {
-          background-color: #fff;
-          color: #000;
-          display: inline-block;
-          text-transform: none;
-          padding: 1em 1em;
-          border: 1px solid #fff;
-          text-decoration: none;
-          font-family: "ProximaNova" sans-serif;
-          font-size: 14px;
-          font-weight: 700;
-          letter-spacing: 0.6px; }
-          header #menu-mobile ul > li:last-child a img {
-            margin-left: 10px;
-            vertical-align: middle;
-            filter: invert(0); }
-          header #menu-mobile ul > li:last-child a:hover {
-            color: #fff;
-            background-color: #000;
-            border: 1px solid gray; }
-            header #menu-mobile ul > li:last-child a:hover img {
-              filter: invert(1); }
 
 /* 
   ##Device = Tablets, Ipads (landscape)
@@ -2116,6 +2103,9 @@ p {
   .container-histoire.shop .block:nth-child(even), .container-histoire.shop .block:nth-child(odd) {
     flex-basis: 50%; }
 
+.single-page-content .rotate-180 {
+  transform: rotate(180deg); }
+
 .single-page-content .center-post {
   max-width: 1362px;
   width: 100%;
@@ -2145,11 +2135,14 @@ p {
     .single-page-content .top-container .retour-posts a:hover {
       text-decoration: underline; }
 
-.single-page-content .retour-posts a {
-  color: #000;
-  text-decoration: none; }
-  .single-page-content .retour-posts a:hover {
-    text-decoration: underline; }
+.single-page-content .retour-all-posts {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .single-page-content .retour-all-posts a {
+    color: #000;
+    text-decoration: none; }
+    .single-page-content .retour-all-posts a:hover {
+      text-decoration: underline; }
 
 .single-page-content .post-title {
   color: #fff;
@@ -2160,10 +2153,12 @@ p {
   .single-page-content .post-thumbnail .wp-post-image {
     height: 500px; }
   .single-page-content .post-thumbnail .networks {
-    position: relative;
-    left: -12%;
-    bottom: 190px;
-    width: 45px; }
+    opacity: 1;
+    position: absolute;
+    top: 540px;
+    width: 45px;
+    left: 17%;
+    transition: opacity 0.2s; }
     @media (max-width: 1230px) {
       .single-page-content .post-thumbnail .networks {
         display: none; } }

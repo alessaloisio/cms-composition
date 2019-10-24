@@ -12,7 +12,10 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
 	<link rel="icon" type="image/svg" href="<?php echo get_stylesheet_directory_uri()."/assets/svg/logo-small.svg"; ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Site de mobilier intérieur">
+  <meta name="keywords" content="Architecture, Décoration, Meubles">
+  <meta name="author" content="Serge, Anso, Gus, Alessandro">
   <title>Composition <?= wp_title( '|', false ); ?></title>
 
 	<?php wp_head(); ?>

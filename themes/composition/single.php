@@ -13,9 +13,9 @@
 	<div class="block-content center-post">
 		<div class="top-container">
 			<span class="retour-posts">
-				<a href="#" class="strong">
+				<a href="javascript:history.back()" class="strong">
 					<span class="icon">
-						<img src="<?php echo get_stylesheet_directory_uri()."/assets/svg/fleche-droite.svg"; ?>"/>
+						<img class="rotate-180" src="<?php echo get_stylesheet_directory_uri()."/assets/svg/fleche-droite.svg"; ?>"/>
 					</span>
 					Retour
 				</a>
@@ -68,10 +68,12 @@
 			$content = str_replace("<p>", '<p class="fade-content">', $content);
 			echo $content; ?>
 		</div>
-		<div class="retour-posts">
-			<a href="#" class="strong">
+		
+
+		<div class="retour-all-posts">
+			<a href="<?= esc_url( get_page_link( 394 ) ) ?>" class="strong">
 				<span class="icon">
-					<img src="<?php echo get_stylesheet_directory_uri()."/assets/svg/fleche-droite.svg"; ?>"/>
+					<img class="rotate-180" src="<?php echo get_stylesheet_directory_uri()."/assets/svg/fleche-droite.svg"; ?>"/>
 				</span>
 				Voir les autres articles
 			</a>
@@ -88,9 +90,6 @@
     </div>
 	</div>
 	
-</div>
-
-
-<?php var_dump(get_post()); ?>
+</div> 
 
 <?php get_footer(); ?>  

@@ -1,4 +1,7 @@
 .single-page-content {
+  .rotate-180 {
+    transform: rotate(180deg);
+  }
   .center-post {
     max-width: 1362px;
     width: 100%;
@@ -37,7 +40,9 @@
       }
     }
   }
-  .retour-posts {
+  .retour-all-posts {
+    margin-top: 30px;
+    margin-bottom: 30px;
     a {
       color: $foreground-base-color;
       text-decoration: none;
@@ -46,6 +51,7 @@
       }
     }
   }
+
   .post-title {
     color: $background-base-color;
     margin-bottom: 85px;
@@ -59,10 +65,12 @@
       @media (max-width: 1230px) {
         display: none;
       }
-      position: relative;
-      left: -12%;
-      bottom: 190px;
+      opacity: 1;
+      position: absolute;
+      top: 540px;
       width: 45px;
+      left: 17%;
+      transition: opacity 0.2s;
       ul {
         list-style-type: none;
         display: flex;
