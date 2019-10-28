@@ -1,59 +1,99 @@
 .contact {
+
+    * {
+        transition: all 0.5s linear;
+    }
+
     width: 100%;
-    height: 680px;
+    height: 600px;
     background-color: black;
     display: flex;
     flex-direction: row;
     margin-bottom: 200px;
+    position: relative;
+
+    &::before,
+    &::after {
+        background-color: black;
+        width: 100vw;
+        height: 100%;
+        position: absolute;
+        content: '';
+        top: 0;
+    }
+
+    &::before {
+        left: -100vw;
+    }
+
+    &::after {
+        right: -100vw;
+    }
+
 
 
 
     .contact_col-side {
-        width: 42%;
+        width: 45%;
+
+        .dispo_lien_white {
+            text-decoration: none;
+
+            &:hover,
+            &:visited {
+                text-decoration: underline;
+                text-decoration-color: #fff;
+            }
+        }
 
         .contact_titre-container {
-            margin-top: 250px;
+            margin-top: 170px;
             display: flex;
             flex-direction: row;
             align-items: center;
 
             .contact_trait {
                 height: 1px;
-                width: 2em;
+                margin-left: -6em;
+                width: 4em;
+                z-index: 1;
                 background-color: rgba(255, 255, 255, 0.2);
 
             }
 
             h1 {
+                margin-left: 1em;
                 color: white;
                 font-size: 40px;
                 font-weight: 300;
-                margin-left: 1em;
                 padding-bottom: 0px;
+                transition: hover 0.5s ease-in-out;
+
+                &:hover {
+                    text-shadow: 0.3px 0.3px 0.3px #fff;
+                }
             }
 
 
         }
 
         a {
-            margin-top: 320px;
+            margin-top: 260px;
 
             p {
                 color: white;
                 text-decoration-color: white;
                 font-size: 18px;
                 font-weight: 700;
-                margin-left: 70px;
             }
         }
     }
 
     .contact_col-infos {
         width: 55%;
-        margin-right: 70px;
 
         .contact_informations {
-            margin-top: 250px;
+            margin-top: 170px;
             width: 100%;
             display: flex;
             flex-direction: row;
@@ -61,30 +101,54 @@
 
             .contact_renseignements {
                 width: 50%;
+                padding-right: 20px;
+
+                .filter-icon {
+                    filter: invert(1);
+                }
 
                 p {
+                    padding-left: 25px;
                     color: white;
                     font-size: 18px;
                     line-height: 2;
                     font-weight: 400;
+                }
+
+                .contact_adress,
+                .contact_email,
+                .contact_telephone {
+                    display: flex;
+                    flex-direction: row;
                 }
             }
 
             .contact_horaires {
                 width: 50%;
 
+                .contact_clock {
+                    display: flex;
+                    flex-direction: row;
+
+                }
+
                 h3 {
                     color: white;
                     font-size: 18px;
                     font-weight: 700;
                     letter-spacing: 0.5px;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                    padding-left: 25px;
+                    line-height: 2;
                 }
 
                 p {
                     color: white;
                     font-size: 18px;
-                    line-height: 1.5;
+                    line-height: 2;
                     font-weight: 400;
+                    padding-left: 54px;
                 }
 
             }
@@ -102,7 +166,99 @@
         iframe {
             width: 100%;
             height: 350px;
-            box-shadow: 3px 2px 10px 5px rgba(238, 238, 238, 0.45);
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
         }
+    }
+}
+
+
+@media (max-width: 1230px) {
+    .page-content .block-contact {
+        height: auto;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 0;
+
+        .contact_col-side {
+            width: 100%;
+            position: relative;
+
+            .contact_titre-container {
+                margin-top: 4em;
+            }
+
+            .dispo_lien_white {
+                position: absolute;
+                bottom: -7.8em;
+                right: 0;
+                margin-top: 0;
+            }
+        }
+
+        .contact_col-infos {
+            margin-top: 5em;
+
+            .contact_map figure iframe {
+                width: 100vw;
+                position: relative;
+                left: -4em;
+                z-index: 1;
+            }
+
+            .contact_informations {
+                margin-top: 0;
+                flex-direction: column;
+
+                .contact_renseignements {
+                    margin-bottom: 3em;
+                    width: 100%;
+                }
+
+                .contact_horaires {
+                    width: 100%;
+                }
+
+            }
+        }
+
+    }
+
+
+}
+
+@media (max-width: 640px) {
+
+
+    .contact .contact_col-side .contact_titre-container h1 {
+
+        font-size: 22px;
+    }
+
+    .contact .contact_col-infos {
+        width: 100%;
+    }
+
+    .contact .contact_col-infos .contact_informations .contact_renseignements p {
+        font-size: 13.5px;
+        padding-left: 18px;
+    }
+
+    .contact .contact_col-infos .contact_informations .contact_horaires h3 {
+        padding-left: 18px;
+    }
+
+    .contact .contact_col-infos .contact_informations .contact_horaires p {
+        font-size: 13px;
+        padding-left: 38px;
+
+
+    }
+
+    .contact .contact_col-side .dispo_lien_white {
+        display: none;
     }
 }

@@ -13,7 +13,6 @@ import fixNetwork from "./animations/fixNetwork";
   footer();
 
   sliderDiaporamaArchi();
-  frontPage();
 
   fixNetwork();
 

@@ -7,6 +7,11 @@
     background-color: #f6f6f6;
     z-index: 0;
     position: relative;
+    transition: transform 0.5s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
 
 
     .dispo_lien {
