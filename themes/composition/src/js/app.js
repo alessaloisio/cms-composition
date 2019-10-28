@@ -12,7 +12,6 @@ import slideContent from "./animations/slideContent";
   footer();
 
   sliderDiaporamaArchi();
-  frontPage();
 
   let elementsToSlide = document.querySelectorAll(
     ".slide-content-right, .slide-content-left"

@@ -2,15 +2,25 @@
     max-width: 100%;
     display: flex;
     flex-direction: row;
+    margin-bottom: 200px;
+    opacity: 0.5;
+    transition: 0.7s ease-in;
+
+    &:hover {
+        opacity: 1;
+    }
 
     .formulaire_col-side {
-        width: 42%;
+        width: 45%;
     }
 
     .formulaire_col-form {
         width: 55%;
-        margin-right: 3%;
 
+    }
+
+    .acf-input-wrap {
+        overflow: inherit;
     }
 }
 
@@ -28,10 +38,24 @@
     .acf-fields>.acf-field,
     .acf-fields.-border {
         border: none;
+
     }
 
+
     .acf-fields>.acf-field {
-        padding: 15px 12px 15px 0px;
+        padding: 15px 0px 15px 0px;
+
+    }
+
+    .acf-field-textarea::after {
+        content: '* Champs requis';
+        font-style: italic;
+        opacity: 0.8;
+        font-size: 14px;
+        position: absolute;
+        right: 0;
+        bottom: -12px;
+
     }
 
     input,
@@ -43,6 +67,14 @@
         font-family: "proxima-nova", sans-serif;
         color: #000;
         letter-spacing: 1px;
+        transition: box-shadow 0.2s linear;
+
+        &:focus {
+            border: none;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            outline: 0;
+            opacity: 0.3;
+        }
 
     }
 
@@ -50,31 +82,116 @@
         height: 54px;
     }
 
+    button {
+        width: 239px;
+        height: 77px;
+        line-height: 45px;
+        background-color: #000;
+        text-align: left;
+        margin-top: 30px;
+        border: none;
+        transition: 0.6s ease-in-out;
+
+
+        .filter-icon {
+            filter: invert(1);
+
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 700;
+            padding: 0px 20px 0px 30px;
+            user-select: none;
+            color: #fff;
+            letter-spacing: 1px;
+            text-align: left;
+            display: inline-block;
+        }
+
+        &:hover {
+            background-color: #fff;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+            p {
+                color: #000;
+            }
+
+            .filter-icon {
+                filter: invert(0);
+            }
+        }
+
+
+
+    }
+
 }
 
 .formulaire_accroche {
-    margin-left: 70px;
     width: 100%;
     padding-top: 50px;
     margin-bottom: 45px;
 
-    h3 {
+    p {
         font-size: 40px;
-        font-family: "proxima-nova", sans-serif;
         color: #000;
         letter-spacing: 1px;
         font-weight: 800;
+        line-height: 1;
     }
-
-
 
 }
 
 .formulaire_de_contact {
-    margin-left: 70px;
     font-size: 22px;
-    font-family: "proxima-nova", sans-serif;
     color: #000;
     letter-spacing: 1px;
-    font-weight: 0.6;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+}
+
+
+@media (max-width: 1230px) {
+    .formulaire {
+        padding-top: 3em;
+        flex-direction: column;
+        margin-bottom: 100px;
+
+        .formulaire_col-side {
+            width: 100%;
+        }
+
+        .formulaire_col-form {
+            width: 100%;
+        }
+    }
+}
+
+
+@media (max-width: 640px) {
+    .formulaire_accroche {
+        margin-bottom: 20px;
+
+        p {
+            font-size: 22px;
+        }
+    }
+
+    .formulaire_de_contact {
+        font-size: 13px;
+    }
+
+    .formulaire_form .acf-field-textarea::after {
+        display: none;
+    }
+
+    .af-submit {
+        clear: both;
+        display: flex;
+        padding: 15px 12px;
+        justify-content: center;
+        align-items: center;
+    }
+
 }

@@ -119,6 +119,55 @@
     af_register_form( $form );
   }
   add_action( 'af/register_forms', 'register_form' );
+
+
+// add display form
+
+  $args = array(
+    // Whether the title should be displayed or not (true/false)
+    'display_title' => false,
+    
+    // Whether the description should be displayed or not (true/false)
+    'display_description' => false,
+    
+    // Text used for the submit button
+    'submit_text' => 
+    '<div class="icon_submit">
+    <p>Envoyer</p>
+    <img class="icon filter-icon" src="' . get_template_directory_uri() .'/assets/svg/fleche-droite.svg" width="20">
+    </div>',
+    
+    // The URL to which the form points. Defaults to the current URL which will redirect and automatically display a success message after submission
+    // If this is overriden you may use af_has_submission to check for a form submission
+    'target' => "http://localhost/composition/contact/",
+    
+    // Whether the form output should be echoed or returned	
+    'echo' => true,
+    
+    // Field values to pre-fill. Should be an array with format: $field_name_or_key => $field_prefill_value
+    'values' => array(),
+    
+    // Array of field keys or names to exclude from form rendering
+    'exclude_fields' => array(),
+    
+    // Either 'wp' or 'basic'. Whether to use the Wordpress media uploader or a regular file input for file/image fields.
+    'uploader' => 'wp',
+    
+    
+    
+    // ID to use for form element. Defaults to form key.
+    'id' => "form_5da596a009fddY",
+    
+    // Filter mode disables the success message after submission and instead displays all fields again with their submitted values.
+    'filter_mode' => false,
+
+    // 'label' to place instructions right below label or 'field' to place them after the field.
+    'instruction_placement' => 'label',
+
+    // Add a honeypot to prevent spam submissions. Enabled by default.
+    'honeypot' => true,
+);
+
   
 
 

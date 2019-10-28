@@ -47,9 +47,6 @@ ul {
   padding-right: $mobile-padding-center !important;
   z-index: 2;
   position: relative;
-
-  padding-left: $mobile-padding-center;
-  padding-right: $mobile-padding-center;
 }
 
 @media (max-width: 640px) {
@@ -82,7 +79,9 @@ ul {
     max-height: 525px;
     background-size: cover;
     margin-bottom: 9.5em;
-
+    height: 100%;
+    padding-bottom: 1em;
+    padding-top: 1em;
     position: relative;
 
     .white-block {
@@ -178,6 +177,24 @@ ul {
   animation: animat_show 1.4s;
   visibility: visible !important;
 }
+
+.filter-icon {
+  transition: transform .2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.icon {
+  transition: transform .4s ease-in-out;
+
+  &:hover {
+    transform: translate(5px, 0)
+  }
+}
+
+
 
 @-webkit-keyframes animat_show {
   0% {

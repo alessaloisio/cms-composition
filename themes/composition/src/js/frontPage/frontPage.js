@@ -1,22 +1,38 @@
-const frontPage = () => {
-  console.log("import frontPage working !");
+const bandeau_block = document.querySelectorAll(".bandeau_block");
+
+const onHover = (event) => {
+
+  const childs = Array.from(event.target.childNodes);
+
+  childs.map(child => {
+    if(child.nodeName !== "#text"){
+      if(child.classList.contains("part1")) 
+        child.classList.remove("active");
+
+      if(child.classList.contains("part2"))
+        child.classList.add("active");
+    }
+  });
+      
 };
 
-const bandeau_block = document.querySelectorAll(".bandeau_block");
-bandeau_block.forEach(block => {
-  block.addEventListener(
-    "mouseover",
-    function(event) {
-      event.target.style.display = "none";
-      const hover = event.target.parentNode.querySelector(".bandeau_hover");
-      hover.style.display = "flex";
-      hover.addEventListener("mouseleave", function(e) {
-        e.target.style.display = "none";
-        block.style.display = "flex";
-      });
-    },
-    true
-  );
-});
+const onLeave = event => {
+  
+  const childs = Array.from(event.target.childNodes);
 
-export default frontPage;
+  childs.map(child => {
+    if(child.nodeName !== "#text"){
+      if(child.classList.contains("part1"))
+        child.classList.add("active");
+
+      if(child.classList.contains("part2")) 
+        child.classList.remove("active");
+    }
+  });
+  
+};
+
+bandeau_block.forEach(block => {
+  block.addEventListener("mouseenter", e => onHover(e));
+  block.addEventListener("mouseleave", e => onLeave(e))
+});
