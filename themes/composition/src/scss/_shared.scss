@@ -179,7 +179,7 @@ ul {
 }
 
 .filter-icon {
-  transition: transform .2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 
   &:hover {
     transform: scale(1.2);
@@ -187,14 +187,12 @@ ul {
 }
 
 .icon {
-  transition: transform .4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 
   &:hover {
-    transform: translate(5px, 0)
+    transform: translate(5px, 0);
   }
 }
-
-
 
 @-webkit-keyframes animat_show {
   0% {

@@ -57,12 +57,20 @@
       </div>
     </section>
     <section class="container-histoire center">
+<<<<<<< HEAD
       <div class="block first-block slide-content-left">
         <?php $firstBlock = get_field('partie_1', 'options'); ?>
         
         <h1><?= $firstBlock['title']; ?></h1>
         <p class="subtitle"><?= $firstBlock['sous_titre'] ?></p>
         <?= $firstBlock['texte'] ?>
+=======
+      <div class="block first-block">
+        <h1><span class="bolder">150 €</span> d'étude d'archi</h1>
+        <p class="subtitle">Plutôt une bonne affaire, non ?</p>
+        <p class="light">Offrez-vous une étude complète d'architecte d'intérieur dès lors que vous êtes intéressés par du mobilier de notre magasin.</p>
+        <p>Pour 150 € au lieu de 1100 €, vous recevez un projet de réaménagement complet d'une pièce ou de l'ensemble de votre maison.</p>
+>>>>>>> ddd0a9a34c4591cf88f1e170d2495fe3dbb499e1
       </div>
       <div class="block second-block fade-content">
         <?php $secondBlock = get_field('partie_2', 'options'); ?>
@@ -79,7 +87,11 @@
       </div>
     </section>
     <section class="container-caractere center">
+<<<<<<< HEAD
       <div id="history-gallery" class="container-diaporama fade-content">
+=======
+      <div id="history-gallery" class="container-diaporama">
+>>>>>>> ddd0a9a34c4591cf88f1e170d2495fe3dbb499e1
         <div class="content-diaporama">
           <div class="posts">
             <div id="slider-diaporama">

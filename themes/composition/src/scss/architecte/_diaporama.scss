@@ -60,7 +60,6 @@
           transition: all 0.3s linear;
 
           svg {
-
             path,
             line {
               stroke: #efefef;
@@ -75,7 +74,6 @@
             background-color: #efefef;
 
             svg {
-
               path,
               line {
                 stroke: #2f2f2f;
@@ -149,7 +147,6 @@
   }
 }
 
-
 // FIX NAV SLIDER 2
 @media (max-width: 1565px) {
   #history-gallery {
@@ -174,7 +171,6 @@
     h1 {
       padding: 4em 0;
     }
-
     .content-diaporama {
       padding-left: 0 !important;
       padding-right: 0 !important;
